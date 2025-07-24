@@ -1,0 +1,28 @@
+@font-face{
+    font-family: "AvenirNextCyr";
+    font-weight: 300;
+    src: url("/admin/resources/fonts/AvenirNextCyr-Regular.ttf") format('truetype'),
+         url("/admin/resources/fonts/AvenirNextCyr-Regular.eot") format('opentype'),
+         url("/admin/resources/fonts/AvenirNextCyr-Regular.woff") format('woff');
+}
+@font-face{
+    font-family: "AvenirNextCyr";
+    font-weight: 400;
+    src: url("/admin/resources/fonts/AvenirNextCyr-Medium.ttf") format('truetype'),
+    url("/admin/resources/fonts/AvenirNextCyr-Medium.eot") format('opentype'),
+    url("/admin/resources/fonts/AvenirNextCyr-Medium.woff") format('woff');
+}
+@font-face{
+    font-family: "AvenirNextCyr";
+    font-weight: 500;
+    src: url("/admin/resources/fonts/AvenirNextCyr-Demi.ttf") format('truetype'),
+    url("/admin/resources/fonts/AvenirNextCyr-Demi.eot") format('opentype'),
+    url("/admin/resources/fonts/AvenirNextCyr-Demi.woff") format('woff');
+}
+@font-face{
+    font-family: "AvenirNextCyr";
+    font-weight: 700;
+    src: url("/admin/resources/fonts/AvenirNextCyr-Bold.ttf") format('truetype'),
+    url("/admin/resources/fonts/AvenirNextCyr-Bold.eot") format('opentype'),
+    url("/admin/resources/fonts/AvenirNextCyr-Bold.woff") format('woff');
+}

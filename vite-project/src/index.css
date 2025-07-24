@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: 'Avenir Next Cyr';  /* Название, которое будет использоваться в CSS */
+  src: url('./font/avenir-next-cyr-regular.ttf') format('woff2'),  /* Современный формат */
+}
+
+@font-face{
+    font-family: "AvenirNextCyr";
+    font-weight: 300;
+    src: url("./font/AvenirNextCyr-Regular.ttf") format('truetype'),
+         url("./font/AvenirNextCyr-Regular.eot") format('opentype'),
+         url("./font/AvenirNextCyr-Regular.woff") format('woff');
+}
+@font-face{
+    font-family: "AvenirNextCyr";
+    font-weight: 400;
+    src: url("./font/AvenirNextCyr-Medium.ttf") format('truetype'),
+    url("./font/AvenirNextCyr-Medium.eot") format('opentype'),
+    url("./font/AvenirNextCyr-Medium.woff") format('woff');
+}
+@font-face{
+    font-family: "AvenirNextCyr";
+    font-weight: 500;
+    src: url("./font/AvenirNextCyr-Demi.ttf") format('truetype'),
+    url("./font/AvenirNextCyr-Demi.eot") format('opentype'),
+    url("./font/AvenirNextCyr-Demi.woff") format('woff');
+}
+@font-face{
+    font-family: "AvenirNextCyr";
+    font-weight: 700;
+    src: url("./font/AvenirNextCyr-Bold.ttf") format('truetype'),
+    url("./font/AvenirNextCyr-Bold.eot") format('opentype'),
+    url("./font/AvenirNextCyr-Bold.woff") format('woff');
+}
+
+
+:root {
+  scroll-behavior: smooth;
+}
+body{
+    font-family: 'AvenirNextCyr';
+}
+
+.svgBtn svg path{
+  fill: white;
+
+}
+.svgBtn:hover svg path{
+  fill: black;
+
+}
