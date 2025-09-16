@@ -1,53 +1,109 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: "Avenir Next Cyr"; /* Название, которое будет использоваться в CSS */
+    src: url("./font/avenir-next-cyr-regular.ttf") format("woff2"); /* Современный формат */
+}
 
 @font-face {
-  font-family: 'Avenir Next Cyr';  /* Название, которое будет использоваться в CSS */
-  src: url('./font/avenir-next-cyr-regular.ttf') format('woff2'),  /* Современный формат */
-}
-
-@font-face{
     font-family: "AvenirNextCyr";
     font-weight: 300;
-    src: url("./font/AvenirNextCyr-Regular.ttf") format('truetype'),
-         url("./font/AvenirNextCyr-Regular.eot") format('opentype'),
-         url("./font/AvenirNextCyr-Regular.woff") format('woff');
+    src: url("./font/AvenirNextCyr-Regular.ttf") format("truetype"),
+        url("./font/AvenirNextCyr-Regular.eot") format("opentype"),
+        url("./font/AvenirNextCyr-Regular.woff") format("woff");
 }
-@font-face{
+@font-face {
     font-family: "AvenirNextCyr";
     font-weight: 400;
-    src: url("./font/AvenirNextCyr-Medium.ttf") format('truetype'),
-    url("./font/AvenirNextCyr-Medium.eot") format('opentype'),
-    url("./font/AvenirNextCyr-Medium.woff") format('woff');
+    src: url("./font/AvenirNextCyr-Medium.ttf") format("truetype"),
+        url("./font/AvenirNextCyr-Medium.eot") format("opentype"),
+        url("./font/AvenirNextCyr-Medium.woff") format("woff");
 }
-@font-face{
+@font-face {
     font-family: "AvenirNextCyr";
     font-weight: 500;
-    src: url("./font/AvenirNextCyr-Demi.ttf") format('truetype'),
-    url("./font/AvenirNextCyr-Demi.eot") format('opentype'),
-    url("./font/AvenirNextCyr-Demi.woff") format('woff');
+    src: url("./font/AvenirNextCyr-Demi.ttf") format("truetype"),
+        url("./font/AvenirNextCyr-Demi.eot") format("opentype"),
+        url("./font/AvenirNextCyr-Demi.woff") format("woff");
 }
-@font-face{
+@font-face {
     font-family: "AvenirNextCyr";
     font-weight: 700;
-    src: url("./font/AvenirNextCyr-Bold.ttf") format('truetype'),
-    url("./font/AvenirNextCyr-Bold.eot") format('opentype'),
-    url("./font/AvenirNextCyr-Bold.woff") format('woff');
+    src: url("./font/AvenirNextCyr-Bold.ttf") format("truetype"),
+        url("./font/AvenirNextCyr-Bold.eot") format("opentype"),
+        url("./font/AvenirNextCyr-Bold.woff") format("woff");
 }
-
 
 :root {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-body{
-    font-family: 'AvenirNextCyr';
+body {
+    font-family: "AvenirNextCyr";
 }
 
-.svgBtn svg path{
-  fill: white;
-
+.svgBtn svg path {
+    fill: white;
 }
-.svgBtn:hover svg path{
-  fill: black;
+.svgBtn:hover svg path {
+    fill: black;
+}
+.bg-guest {
+  background: 
+    linear-gradient(251deg, #000023 -67.43%, #091267 -9.1%, rgba(126, 199, 215, 0.9) 10.56%, #0F0148 54.71%, #2F3F7A 89.71%, #7102FF 126.38%), 
+    linear-gradient(271deg, #E0921E 6.07%, #F05C14 57.87%), 
+    linear-gradient(90deg, #000023 15.14%, rgba(126, 130, 215, 0.9) 57.3%, #E95521 100.06%), 
+    #1E195D;
+}
+.gradient {
+    background: linear-gradient(
+        104deg,
+        #000023 -36.83%,
+        rgba(126, 130, 215, 0.9) 27.8%,
+        #e95521 93.37%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.my-gradient {
+    background: linear-gradient(
+        104deg,
+        #000023 -36.83%,
+        rgba(126, 130, 215, 0.9) 27.8%,
+        #e95521 93.37%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.bacc {
+    background: linear-gradient(
+        96deg,
+        #000023 -13.47%,
+        rgba(126, 130, 215, 0.9) 22.03%,
+        #e95521 58.05%
+    );
+}
+ .bac2{
+    border-radius: 24px;
+    background: linear-gradient(0deg, #091267 0%, #0716a2 100%);
+}
+.scrollbar-hide {
+    scrollbar-width: none;
+}
 
+.my-border {
+    border-bottom: 1.5px dashed white;
+    border-bottom-style: dashed;
+    border-bottom-width: 1.5px;
+    border-bottom-color: white;
+
+    border-image: repeating-linear-gradient(
+            to right,
+            white 0,
+            white 12px,
+            transparent 12px,
+            transparent 24px
+        )
+        1;
 }

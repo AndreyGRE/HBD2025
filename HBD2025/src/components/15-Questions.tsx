@@ -1,22 +1,18 @@
-import line from "../svg/line.svg";
 
 function Questions() {
     return (
-        <div className="mt-6 xl:mt-[68px] relative ">
-            <div className="flex  flex-col xl:flex-row gap-12">
-                <div className="flex flex-col flex-1 gap-4 xl:gap-6">
-                    <div className="flex gap-[18px] xl:gap-6">
-                        <div className="w-[6px] h-[124px]">
-                            <img className="w-full h-full" src={line}></img>
-                        </div>
-                        <div className="text-[32px] max-w-[320px] xl:max-w-full xl:text-[40px] text-white font-[750] uppercase">
-                            что такое house business day?
+        <div className="mt-[100px] xl:mt-[260px] xl:pl-[207px] pr-6 pl-[27px] xl:pr-[228px]  relative ">
+            <div className="flex  flex-col gap-[22px] xl:gap-12">
+                <div className="flex flex-col xl:flex-row flex-1 gap-4 xl:gap-6">
+                    <div className="flex flex-1 gap-[18px] xl:gap-6">
+                        <div className="text-[32px] xl:max-w-full xl:text-[74px] gradient font-[800] uppercase">
+                            что такое<br className="xl:hidden"></br>house business day?
                         </div>
                     </div>
-                    <div className="text-white text-[16px] font-[400]">
+                    <div className="flex-1 text-white text-[16px] xl:text-[20px] font-[300] uppercase">
                         <p>
                             Это бизнес-концерт от строительной компании{" "}
-                            <a href='https://www.gwd.ru/' target="blank" className="text-[#FFA100] hover:underline hover:decoration-1 hover:decoration-[#FFA100]">
+                            <a href='https://www.gwd.ru/' target="blank" className="text-white hover:underline hover:decoration-1 hover:decoration-[#FFA100]">
                                 GOOD&nbsp;WOOD
                             </a>
                             , который проходит с 2018 года. Здесь спикеры
@@ -26,11 +22,13 @@ function Questions() {
                             клиентский сервис, создавать команды мечты и
                             контролировать качество стройки.
                         </p>
+                        <br />
                         <p>
                             Без пустых слов и мотивационных выступлений. Только
                             проверенные советы, отработанные инструменты и кейсы
                             от реальных лидеров отрасли.
                         </p>
+                        <br />
                         <p>
                             Мероприятие, после посещения которого руководители,
                             топ-менеджеры и владельцы смогут вывести компанию на
@@ -39,22 +37,19 @@ function Questions() {
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-col flex-1 gap-4 xl:gap-6">
-                    <div className="flex gap-[18px] xl:gap-6">
-                        <div className="w-[6px] h-[124px]">
-                            <img className="w-full h-full" src={line}></img>
-                        </div>
-                        <div className="text-[32px] max-w-[320px] xl:max-w-full xl:text-[40px] text-white font-[750] uppercase">
+                <div className="flex flex-col xl:flex-row flex-1 gap-4 xl:gap-6">
+                    <div className="flex flex-1  gap-[18px] xl:gap-6">
+                        <div className="text-[32px] max-w-[320px] xl:max-w-full xl:text-[70px] gradient font-[750] uppercase">
                             ОБ ОРГАНИЗАТОРЕ GOOD WOOD{" "}
                         </div>
                     </div>
-                    <div className="text-white text-[16px] font-[400]">
+                    <div className="flex-1  text-white text-[20px] font-[300] uppercase">
                         <p>
                             Компания{" "}
-                            <a href='https://www.gwd.ru/' target="blank"  className="text-[#FFA100] hover:underline hover:decoration-1 hover:decoration-[#FFA100]">
-                                GOOD&nbsp;WOOD
+                            <a href='https://www.gwd.ru/' target="blank"  className="text-white hover:underline hover:decoration-1 hover:decoration-[#FFA100]">
+                                GOOD&nbsp;WOOD 
                             </a>
-                            — это собственное проектно-архитектурное бюро,
+                            &nbsp;— это собственное проектно-архитектурное бюро,
                             деревообрабатывающий комбинат и строительная
                             компания. Мы создаем современные дома из клееного
                             бруса и кирпича в Москве и Петербурге с гарантией 50
@@ -62,6 +57,7 @@ function Questions() {
                             центральный офис компании — GOOD WOOD PLAZA, первое
                             в России многоэтажное здание из дерева.
                         </p>
+                        <br />
                         <p>
                             GOOD WOOD строит дома так, как будто Заказчик
                             постоянно присутствует на объекте, в то время как он

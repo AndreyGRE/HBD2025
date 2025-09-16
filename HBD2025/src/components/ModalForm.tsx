@@ -66,7 +66,7 @@ export default function ModalForm() {
             });
 
             if (response.ok) {
-                console.log(formData)
+                console.log(formData);
                 alert("Форма успешно отправлена!");
                 setIsOpen(false);
             } else {
@@ -85,21 +85,9 @@ export default function ModalForm() {
             {/* Кнопка открытия модала */}
             <div
                 onClick={openModal}
-                className="cursor-pointer flex gap-2 bg-[linear-gradient(90deg,#FFA100_0%,#FF4700_100%)] rounded-3xl xl:px-[32px] xl:py-[22px] w-full xl:w-fit py-[14px] items-center justify-center text-white text-[16px] xl:text-[24px] font-[450] hover:opacity-80"
+                className="cursor-pointer flex gap-2 bg-[#E95521] -skew-x-17 rounded-lg xl:px-[31px] xl:py-[10px] w-3/4 xl:w-fit py-[10px] items-center justify-center text-white text-[20px] xl:text-[24px] font-[450] hover:opacity-80"
             >
-                СТАТЬ ПАРТНЕРОМ
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="33"
-                    viewBox="0 0 32 33"
-                    fill="none"
-                >
-                    <path
-                        d="M27.0003 6.47681H6.92189V9.99053L20.9768 9.99053L5.66699 25.3003L8.1768 27.8101L23.4866 12.5003L23.4866 26.5552H27.0003V6.47681Z"
-                        fill="white"
-                    />
-                </svg>
+                <p className="skew-x-17 font-[100]">СТАТЬ ПАРТНЁРОМ</p>
             </div>
 
             {/* Модальное окно */}
@@ -109,33 +97,40 @@ export default function ModalForm() {
                     onClick={closeModal}
                 >
                     <div
-                        className="relative bg-[#000023] rounded-lg shadow-lg w-full max-w-lg mx-auto p-6 border border-white"
+                        className="relative bac2 shadow-lg w-7/8 xl:w-full xl:max-w-2xl mx-auto p-[32px] "
                         onClick={(e) => e.stopPropagation()}
                     >
                         {/* Крестик в правом верхнем углу */}
                         <button
                             onClick={closeModal}
-                            className="absolute top-4 right-4 text-white hover:text-gray-300 focus:outline-none"
+                            className="absolute top-4 right-4 text-white hover:text-gray-300 focus:outline-none cursor-pointer w-7 h-7  xl:w-10 xl:h-10"
                             aria-label="Закрыть модальное окно"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                width="28"
-                                height="28"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
+                                viewBox="0 0 42 41"
                             >
-                                <line x1="18" y1="6" x2="6" y2="18" />
-                                <line x1="6" y1="6" x2="18" y2="18" />
+                                <line
+                                    x1="34.5"
+                                    y1="6.20711"
+                                    x2="6.92283"
+                                    y2="33.7843"
+                                    stroke="white"
+                                    stroke-linecap="round"
+                                />
+                                <line
+                                    x1="33.7929"
+                                    y1="33.4999"
+                                    x2="6.21573"
+                                    y2="5.92277"
+                                    stroke="white"
+                                    stroke-linecap="round"
+                                />
                             </svg>
                         </button>
 
-                        <h2 className="text-3xl mb-4 text-[#FFA100] text-center uppercase font-[500]">
-                            Хочу стать партнером
+                        <h2 className="text-[32px] xl:text-[40px] mt-[10px] xl:mt-[76px] mb-4 text-[#F05C14] text-center uppercase font-[700]">
+                            Хочу стать партнёром
                         </h2>
 
                         {/* Форма */}
@@ -143,7 +138,7 @@ export default function ModalForm() {
                             {/* Поля формы остаются без изменений */}
                             <div className="mb-4">
                                 <label
-                                    className="block text-white mb-2"
+                                    className="block font-[100] text-white mb-2"
                                     htmlFor="name"
                                 >
                                     Имя Фамилия
@@ -154,7 +149,8 @@ export default function ModalForm() {
                                     name="name"
                                     value={formData.name}
                                     onChange={handleChange}
-                                    className="bg-white w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
+                                    className="bg-white w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400 
+                                    placeholder:text-[#000023] placeholder:font-[100]"
                                     placeholder="Ваше Имя Фамилия"
                                     required
                                 />
@@ -162,7 +158,7 @@ export default function ModalForm() {
 
                             <div className="mb-4">
                                 <label
-                                    className="block text-white mb-2"
+                                    className="block font-[100] text-white mb-2"
                                     htmlFor="company"
                                 >
                                     Компания
@@ -173,7 +169,8 @@ export default function ModalForm() {
                                     name="company"
                                     value={formData.company}
                                     onChange={handleChange}
-                                    className="bg-white w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
+                                    className="bg-white w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400
+                                    placeholder:text-[#000023] placeholder:font-[100]"
                                     placeholder="Название Компании"
                                     required
                                 />
@@ -181,7 +178,7 @@ export default function ModalForm() {
 
                             <div className="mb-4">
                                 <label
-                                    className="block text-white mb-2"
+                                    className="block font-[100] text-white mb-2"
                                     htmlFor="phone"
                                 >
                                     Телефон
@@ -192,7 +189,8 @@ export default function ModalForm() {
                                     name="phone"
                                     value={formData.phone}
                                     onChange={handleChange}
-                                    className="bg-white w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
+                                    className="bg-white w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400
+                                    placeholder:text-[#000023] placeholder:font-[100]"
                                     placeholder="Ваш Телефон"
                                     required
                                 />
@@ -200,7 +198,7 @@ export default function ModalForm() {
 
                             <div className="mb-4">
                                 <label
-                                    className="block text-white mb-2"
+                                    className="block font-[100] text-white mb-2"
                                     htmlFor="email"
                                 >
                                     Почта
@@ -211,7 +209,8 @@ export default function ModalForm() {
                                     name="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className="bg-white w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
+                                    className="bg-white w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400
+                                                placeholder:text-[#000023] placeholder:font-[100]"
                                     placeholder="Ваш email"
                                     required
                                 />
@@ -219,7 +218,7 @@ export default function ModalForm() {
 
                             <div className="mb-6">
                                 <label
-                                    className="block text-white mb-2"
+                                    className="block font-[100] text-white mb-2"
                                     htmlFor="message"
                                 >
                                     Чем занимаетесь
@@ -230,7 +229,8 @@ export default function ModalForm() {
                                     rows={4}
                                     value={formData.message}
                                     onChange={handleChange}
-                                    className="bg-white w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
+                                    className="bg-white w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400
+                                    placeholder:text-[#000023] placeholder:font-[100]"
                                     placeholder="Ваше сообщение"
                                     required
                                 ></textarea>
@@ -238,17 +238,29 @@ export default function ModalForm() {
 
                             {/* Галочка согласия */}
                             <div className="mb-6">
-                                <label className="flex items-start">
+                                <label className="flex items-center">
                                     <input
                                         type="checkbox"
                                         checked={isConsentGiven}
                                         onChange={(e) =>
                                             setIsConsentGiven(e.target.checked)
                                         }
-                                        className="mt-1 h-4 w-4 text-orange-500 focus:ring-orange-500"
+                                        className="mt-1 h-[21px] w-[21px]   
+                                        text-[#F05C14] 
+                                        focus:ring-[#F05C14]
+                                        appearance-none rounded-sm
+                                        border-1 border-[#F05C14]
+                                        checked:bg-transparent
+                                        checked:before:content-['✓']        
+                                        checked:before:text-white          
+                                        checked:before:block 
+                                        checked:before:text-center 
+                                        checked:before:leading-5            
+                                        focus:outline-none hover:ring-1 
+                                          "
                                         required
                                     />
-                                    <span className="ml-2 text-sm text-white">
+                                    <span className="ml-2 text-[12px] xl:text-[15px] text-white font-[100]">
                                         Я согласен на обработку моих{" "}
                                         <a
                                             target="_blank"
@@ -261,19 +273,21 @@ export default function ModalForm() {
                             </div>
 
                             {/* Убрали кнопку "Отмена", оставили только основную */}
-                            <div className="flex justify-end">
+                            <div className="flex justify-center">
                                 <button
                                     type="submit"
                                     disabled={!isConsentGiven || isSubmitting}
-                                    className={`px-6 py-2 bg-gradient-to-r from-[#FFA100] to-[#FF4700] text-white font-semibold rounded-lg transition hover:opacity-90 ${
+                                    className={`px-6 py-2 -skew-x-12 bg-[#E95521] text-white font-[300] rounded-lg transition hover:opacity-90 ${
                                         isConsentGiven
                                             ? "cursor-pointer"
                                             : "cursor-not-allowed opacity-50"
                                     }`}
                                 >
-                                    {isSubmitting
-                                        ? "Отправка..."
-                                        : "ОСТАВИТЬ ЗАЯВКУ"}
+                                    <p className="skew-x-12 font-[200]">
+                                        {isSubmitting
+                                            ? "Отправка..."
+                                            : "ОСТАВИТЬ ЗАЯВКУ"}
+                                    </p>
                                 </button>
                             </div>
                         </form>

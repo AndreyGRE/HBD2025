@@ -10,7 +10,6 @@ import imageGal7 from "../images/SponsorGallery/07_ColorLogo.png";
 import imageGal8 from "../images/SponsorGallery/08_ColorLogo.png";
 import imageGal9 from "../images/SponsorGallery/09_ColorLogo.png";
 import imageGal10 from "../images/SponsorGallery/10_ColorLogo.png";
-import imageGal11 from "../images/SponsorGallery/11_ColorLogo.png";
 
 function ItWas() {
     interface originalImages {
@@ -30,17 +29,35 @@ function ItWas() {
         imageGal8,
         imageGal9,
         imageGal10,
-        imageGal11,
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
     // Дублируем изображения для бесконечного скролла
     const duplicatedImages = [...originalImages, ...originalImages];
+    // количество картинок в зависимости от экрана
+    const [imagesPerView, setImagesPerView] = useState(4);
+    useEffect(() => {
+        const updateImagesPerView = () => {
+            if (window.innerWidth < 640) {
+                setImagesPerView(3); // мобилки
+            } else if (window.innerWidth < 1024) {
+                setImagesPerView(6); // планшеты
+            } else if (window.innerWidth < 1440) { 
+                setImagesPerView(8); // десктоп
+            } else {
+                setImagesPerView(8); // большие экраны
+            }
+        };
 
+        updateImagesPerView();
+        window.addEventListener("resize", updateImagesPerView);
+        return () => window.removeEventListener("resize", updateImagesPerView);
+    }, []);
+
+    // автопрокрутка
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prev) => {
                 const nextIndex = prev + 1;
-                // Когда доходим до конца оригинальных изображений — начинаем сначала
                 if (nextIndex >= originalImages.length) {
                     return 0;
                 }
@@ -53,35 +70,38 @@ function ItWas() {
 
     return (
         <>
-            <div className="mt-[64px] xl:mt-[176px] relative ">
-                <div className="flex flex-col  justify-center gap-10">
+            <div className="mt-[100px] xl:mt-[250px] relative ">
+                <div className="flex flex-col  justify-center xl:gap-[32px] gap-[14px]">
                     <div className="flex flex-col items-center">
-                        <div className="text-white text-[32px] xl:text-[120px] font-[750] ">
-                            БУДЬ В КУРСЕ!
+                        <div className="gradient text-[32px] xl:text-[74px] font-[750] ">
+                            БУДЬ В КУРСЕ
                         </div>
                     </div>
                     <div className="flex justify-center items-center flex-col gap-10">
-                        <div className=" text-white text-[12px] xl:text-[20px] font-[700] uppercase text-center max-w-[760px]">
+                        <div className=" gradient text-[12px] xl:text-[20px] xl:font-[500] font-[700] uppercase text-center max-w-[890px] pl-[42px] pr-[41px]">
                             Приходите, и вы сможете лично пообщаться с ведущими
-                            специалистами российских и международных компаний:
+                            специалистами
+                            <br className="unvisible xl:visible"></br>
+                            российских и международных компаний:
                         </div>
 
                         <div>
-                            <div className="max-w-[858px] overflow-hidden ">
+                            <div className="max-w-full overflow-hidden ">
                                 <div
                                     className="flex transition-transform duration-500 ease-in-out"
                                     style={{
                                         transform: `translateX(-${
-                                            currentIndex * 25
+                                            currentIndex * (100 / imagesPerView)
                                         }%)`,
                                     }}
                                 >
                                     {duplicatedImages.map((src, index) => (
                                         <div
                                             key={index}
-                                            className="w-1/4 px-2 flex-shrink-0"
+                                            style={{ flex: `0 0 ${100 / imagesPerView}%` }}
+                                            className=" px-[5px] flex-shrink-0"
                                         >
-                                            <div className="aspect-[2/1] overflow-hidden bg-gray-200">
+                                            <div className="aspect-[2/1] overflow-hidden ">
                                                 <img
                                                     src={src}
                                                     alt={`slide-${index}`}
@@ -94,16 +114,10 @@ function ItWas() {
                             </div>
                         </div>
 
-                        <div className=" text-white text-[12px] xl:text-[20px] font-[700] uppercase text-center max-w-[750px]">
-                            Именно лидеры рынка задают вектор и тренды развития
-                            строительной отрасли.
-                        </div>
-                        
                         <Modal></Modal>
                     </div>
                 </div>
             </div>
-            
         </>
     );
 }

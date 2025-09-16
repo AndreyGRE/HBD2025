@@ -3,8 +3,7 @@ import logoUrl from "../svg/Logo.svg";
 function Title() {
     return (
         <>
-
-            <div className="mt-[0px] xl:mt-[193px] flex justify-between xl:flex-row flex-col-reverse gap-[38px] xl:gap-0" >
+            <div className="mt-[0px] xl:mt-[82px] flex justify-between xl:flex-row flex-col-reverse gap-[38px] xl:gap-0 xl:px-[60px]" >
                 <div className="flex flex-col xl:gap-12 gap-7">
                     <div className="flex flex-col px-[55px]">
                         <img src={logoUrl} alt="Logo" className="w-full" />
@@ -45,31 +44,31 @@ function Title() {
 
 
 
-            <div className="mt-[75px] xl:mt-[182px] flex xl:flex-row flex-col justify-between">
+            <div className="mt-[75px] xl:mt-[250px] flex xl:flex-row flex-col justify-center gap-[82px] xl:px-[60px]">
                 <div className="flex flex-col items-center">
-                    <div className="xl:text-[106px] xl:font-[900] text-[48px] font-[750] text-white">
+                    <div className="xl:text-[106px] xl:font-[900] text-[48px] font-[750] text-[#E95521]">
                         4000+
                     </div>
-                    <div className="xl:text-[32px] xl:font-[700] text-[24px] font-[700] text-[#C4C4C4]">
+                    <div className="xl:text-[32px] xl:font-[700] text-[24px] font-[700] text-[#E95521]">
                         УЧАСТНИКОВ
                     </div>
                 </div>
                 <div className="flex flex-col items-center">
-                    <div className="xl:text-[106px] xl:font-[900] text-[48px] font-[750] text-[#FFA100] ">
+                    <div className="xl:text-[106px] xl:font-[900] text-[48px] font-[750] text-[#E95521] ">
                         200+
                     </div>
-                    <div className="xl:text-[32px] xl:font-[700] text-[24px] font-[700] text-[#F28812]">
+                    <div className="xl:text-[32px] xl:font-[700] text-[24px] font-[700] text-[#E95521]">
                         КОМПАНИЙ
                     </div>
                 </div>
                 <div className="flex flex-col items-center">
-                    <div className="xl:text-[106px] xl:font-[900] text-[48px] font-[750] text-white">
-                        <span className="xl:text-[32px] xl:font-[900] text-[24px] font-[750] text-white">
+                    <div className="xl:text-[106px] xl:font-[900] text-[48px] font-[750] text-[#E95521]">
+                        <span className="xl:text-[32px] xl:font-[900] text-[24px] font-[750] text-[#E95521]">
                             C
                         </span>{" "}
                         2018
                     </div>
-                    <div className="xl:text-[32px] text-[24px]  xl:font-[700] text-[#C4C4C4]">
+                    <div className="xl:text-[32px] text-[24px]  xl:font-[700] text-[#E95521]">
                         ГОДА
                     </div>
                 </div>

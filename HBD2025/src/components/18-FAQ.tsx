@@ -81,12 +81,12 @@ const questionsAndanswer: Questions[] = [
 
 function FAQ() {
     return (
-        <div id='Questions' className="mt-[157px] pb-[100px]  xl:mt-[172px] relative xl:pb-[170px] ">
-            <div className="flex flex-col  justify-center gap-12">
-                <div className="flex flex-col justify-center items-center text-white text-[30px] xl:text-[40px] font-[750] uppercase text-center xl:max-w-full max-w-40 m-auto">
-                    ЧАСТЫЕ ВОПРОСЫ ПО&nbsp;HBD&nbsp;2025
+        <div id='Questions' className="mt-[157px]  xl:mt-[172px] relative ">
+            <div className="flex flex-col  justify-center gap-12 pl-[26px] pr-[23px]">
+                <div className="flex flex-col justify-center items-center gradient text-white text-[30px] xl:text-[74px] font-[750] uppercase text-center xl:max-w-full  m-auto">
+                    ЧАСТЫЕ ВОПРОСЫ<br></br>ПО&nbsp;HBD&nbsp;2025
                 </div>
-                <div className="flex flex-col justify-center gap-[15px] items-stretch">
+                <div className="flex flex-col justify-center gap-[15px] items-stretch max-w-[1100px] m-auto">
                     {questionsAndanswer.map((elem,index) => {
                         return (
                             <AnsQus key={index} question={elem.questions} answer={elem.answer}  />

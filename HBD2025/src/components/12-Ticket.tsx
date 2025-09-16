@@ -14,53 +14,51 @@ interface TicketProps {
 const Ticket: React.FC<TicketProps> = ({ ticket }) => {
     return (
         <div
-            className={`rounded-[10px] py-8 px-6 w-[341px] h-[465px] flex flex-col justify-between bg-cover bg-no-repeat ${
+            className={`flex-shrink-0 rounded-[20px] xl:rounded-[40px] -skew-x-8 pt-[32px] pb-[37px] px-[20px] w-[300px] xl:w-[376px] h-[456px] xl:h-[572px] flex flex-col justify-between bg-cover bg-no-repeat ${
                 ticket.is_active
                     ? "text-white"
-                    : " text-[#959D97] pointer-events-none bg-blend-multiply"
+                    : "text-[#959D97] pointer-events-none bg-blend-multiply"
             }`}
             style={{
                 background: ticket.is_active
-                    ? ticket.background_color || "#080740"
-                    : "#757678", 
+                    ? ticket.background_color || "linear-gradient(0deg, #1E195D 0%, #1E195D 100%),linear-gradient(90deg, #000023 15.14%, rgba(126, 130, 215, 0.90) 57.3%, #E95521 100.06%),#1E195D"
+                    : "#757678",
             }}
         >
-            <div className="flex flex-col gap-[22px]">
-                <div className=" text-[32px] xl:text-[40px] font-[750] flex items-center gap-3 justify-center border-b-2 ">
-                    
-                    
-                    { ticket.is_active && ticket.svg_icon ? (
-                        <img src={ticket.svg_icon} className="w-10 h-10"></img>
+            <div className="flex flex-col gap-[42px] ">
+                <div className="skew-x-8 text-[25px] xl:text-[40px] font-[750] flex items-center gap-3 justify-center my-border pb-2 ">
+                    {ticket.is_active && ticket.svg_icon ? (
+                        <img src={ticket.svg_icon} className="w-7 h-7 xl:w-10 xl:h-10"></img>
                     ) : (
                         ""
                     )}
                     {ticket.name}
                 </div>
-                <div className="flex flex-col gap-2  text-[16px] font-[700] uppercase">
+                <div className="flex flex-col gap-2 skew-x-8 text-[12px] xl:text-[18px] font-[400] uppercase max-w-[300px] xl:max-w-[320px] ml-10">
                     {ticket?.description?.split(";").map((text, index) => {
                         return (
                             <div className="flex gap-2" key={index}>
                                 <div>•</div>
-                                <div>{text}</div>
+                                <div className="whitespace-normal">{text}</div>
                             </div>
                         );
                     })}
                 </div>
             </div>
 
-            <div>
-                <div className=" text-[40px] xl:text-[45px] font-[750] uppercase text-center leading-none mb-[12px]">
+            <div className="skew-x-8">
+                <div className=" text-[40px] xl:text-[45px] font-[750] uppercase text-center leading-none mb-[44px]">
                     {ticket.price}
                 </div>
                 <a
                     href="#ByTicket"
                     className={`${
-                        ticket.background_color &&  ticket.is_active
+                        ticket.background_color && ticket.is_active
                             ? "text-black bg-white hover:opacity-80"
                             : "border-1 hover:bg-white hover:text-black"
-                    }  rounded-lg px-[18px] py-[16px] flex items-center justify-center text-[20px] font-[500] cursor-pointer `}
+                    } -skew-x-8  rounded-lg px-[18px] py-[16px] flex items-center justify-center  font-[300] cursor-pointer `}
                 >
-                    {ticket.button_name}
+                    <p className="text-[16px] xl:text-[24px] skew-x-8">{ticket.button_name}</p>
                 </a>
             </div>
         </div>

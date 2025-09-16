@@ -1,30 +1,34 @@
-
 function Registration() {
-    
     return (
-        <div id="ByTicket" className="mt-[64px] xl:mt-[176px] relative ">
+        <div
+            id="ByTicket"
+            className="mt-[100px] xl:mt-[176px] relative px-[27px]"
+        >
             <div className="flex flex-col  justify-center gap-11">
                 <div className="flex flex-col justify-center items-center">
-                    <div className="text-white text-[32px] xl:text-[120px] font-[750] mb-2 xl:mb-0">
+                    <div className="gradient text-[32px] xl:text-[74px] font-[750] mb-[24px] xl:mb-0">
                         РЕГИСТРАЦИЯ
                     </div>
-                    <div className="text-white text-[12px] xl:text-[16px] font-[750] mt-[-10px] uppercase max-w-[300px] xl:max-w-[513px] text-center xl:text-left">
+                    <div className="gradient text-[18px] xl:max-w-[558px] xl:text-[16px] font-[500] uppercase text-center ">
                         здесь вы можете оплатить билет банковской картой или по
                         безналичному расчету от организации
                     </div>
                 </div>
                 <div className="flex flex-col items-center">
-                    <div>
-                       
-                    </div> 
+                    <div></div>
                     <a
                         href="https://docs.google.com/forms/d/e/1FAIpQLScKs1ia-JovKcTqS5zNWjaChW4BN-MAOQtlmGieBAXOGHPyFg/viewform"
                         target="blank"
-                        className="flex items-center justify-center gap-1 text-white text-[16px] xl:text-[30px] font-[400] xl:px-11 py-1 xl:py-4 w-full xl:w-fit rounded-3xl border-1 cursor-pointer svgBtn hover:bg-white hover:text-black"
+                        className="flex items-center justify-center gap-1 text-white xl:text-[30px]  
+                        xl:px-11 py-1 xl:py-4 w-full xl:w-fit rounded-lg border-1 cursor-pointer 
+                        svgBtn
+                        hover:bg-white hover:text-black
+                        -skew-x-18
+                         "
                     >
-                        <svg
+                        {/* <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="w-14 h-12 xl:w-[48px] xl:h-[48px] "
+                            className="w-14 h-12 xl:w-[48px] xl:h-[48px] skew-x-18"
                         >
                             <path
                                 d="M5.30397 7.86351C5.26732 7.16358 5.91313 6.52998 6.60608 6.54744C15.74 6.54395 24.8758 6.54744 34.0097 6.54569C34.7358 6.47238 35.4235 7.12344 35.4078 7.8478C35.4131 10.1047 35.4061 12.3615 35.4113 14.6184C37.7432 14.6202 40.0787 14.6132 42.4106 14.6219C43.1681 14.6045 43.7843 15.3271 43.7005 16.0706C43.697 22.8133 43.7057 29.5578 43.697 36.3005C43.6726 39.0129 41.2795 41.4426 38.5566 41.4513C29.2446 41.4583 19.9344 41.4513 10.6224 41.4548C8.66572 41.4897 6.7527 40.315 5.89743 38.5573C5.47677 37.7597 5.28303 36.8538 5.29873 35.9549C5.30572 26.5922 5.29524 17.2279 5.30397 7.86351ZM7.91866 9.16387C7.91692 18.0395 7.92215 26.9152 7.91517 35.7908C7.73015 37.4053 9.12826 39.0024 10.7882 38.8383C18.3635 38.8366 25.9387 38.8314 33.514 38.8418C33.0689 38.011 32.7862 37.0824 32.7914 36.1346C32.7914 27.1438 32.7931 18.153 32.7896 9.16213C24.4987 9.16562 16.2096 9.16213 7.91866 9.16387ZM35.4096 17.2366C35.4078 23.4783 35.4113 29.7201 35.4078 35.9618C35.3729 36.8328 35.7377 37.7213 36.4254 38.2693C37.2667 38.9291 38.4798 39.0094 39.452 38.6184C40.44 38.2222 41.0736 37.1872 41.0823 36.1381C41.0823 29.837 41.084 23.5359 41.0823 17.2366C39.1902 17.2366 37.2999 17.2366 35.4096 17.2366Z"
@@ -38,8 +42,8 @@ function Registration() {
                                 d="M17.8712 22.7941C18.1121 22.6789 18.3879 22.6964 18.6497 22.6894C21.1544 22.6946 23.6592 22.6877 26.1656 22.6911C26.9284 22.6178 27.6318 23.3405 27.555 24.098C27.5201 24.7857 26.8586 25.3617 26.1744 25.3093C23.6068 25.3093 21.0392 25.3093 18.4717 25.3093C17.7054 25.3826 17.0003 24.653 17.084 23.892C17.1067 23.4103 17.4471 22.9983 17.8712 22.7941Z"
                                 fill="white"
                             />
-                        </svg>
-                        АККРЕДИТАЦИЯ ДЛЯ СМИ
+                        </svg> */}
+                        <p className="skew-x-18 text-center text-[18px] font-[300] xl:font-[100]"> АККРЕДИТАЦИЯ <br className="xl:hidden"></br>ДЛЯ СМИ</p>
                     </a>
                 </div>
             </div>

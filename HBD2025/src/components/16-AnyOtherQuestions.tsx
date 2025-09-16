@@ -1,27 +1,31 @@
 import VkSVG from "../svg/icon_VK.svg";
+import bgAnyOtherQues from "../images/bg-AnyOtherQues.png"
 
 function AnyOtherQuestions() {
     return (
-        <div className="mt-[64px]  xl:mt-[179px] relative ">
-            <div className="flex flex-col  justify-center gap-11">
-                <div className="flex flex-col  ">
-                    <div className="text-[#FFA100] text-[16px] xl:text-[50px] font-[400] uppercase w-5/9 xl:w-2/5 text-right">
-                        ОСТАЛИСЬ
-                    </div>
-                    <div className="text-white text-[32px] xl:text-[120px] font-[750] uppercase w-4/5 xl:w-4/5 ml-auto mt-[-10px] xl:mt-[-40px]">
-                        ВОПРОСЫ?
-                    </div>
-                    <div className="flex items-center gap-3 self-center mt-[-10px] xl:mt-[-30px]">
-                        <div className="text-white text-[16px] xl:text-[58px] font-[750] ">
-                            8 800 333-11-11
-                        </div>
+        <div className={`mt-[64px] py-[98px]  xl:mt-[147px] relative bg-cover bg-no-repeat`} 
+            style={{ backgroundImage: `url(${bgAnyOtherQues})`}}
+        >
+            <div className="flex flex-col  justify-center">
+                <div className="flex flex-col text-white  font-[500] justify-center items-center text-[20px] xl:text-[32px] uppercase">
+                    <a
+                        href="https://vk.com/housebusinessday"
+                        target="blank"
+                        className="h-[23px] w-[23px] xl:h-[53px] xl:w-[53px] mb-12 invisible xl:visible "
+                    >
+                        <img src={VkSVG}></img>
+                    </a>
+                    <div>Остались вопросы?</div>
+                    <div className="flex items-center gap-4">
+                        {" "}
                         <a
                             href="https://vk.com/housebusinessday"
                             target="blank"
-                            className="h-[30px] w-[30px] xl:h-[71px] xl:w-[71px]"
+                            className="h-[23px] w-[23px] visible xl:invisible"
                         >
                             <img src={VkSVG}></img>
-                        </a>
+                        </a>{" "}
+                        8 800 333-11-11
                     </div>
                 </div>
             </div>

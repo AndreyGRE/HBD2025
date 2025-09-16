@@ -12,9 +12,8 @@ interface ticket {
     sort_order?: number;
 }
 
-
 function TicketPrices() {
-     const [ticket, setTicket] = useState<ticket[]>([]);
+    const [ticket, setTicket] = useState<ticket[]>([]);
     useEffect(() => {
         fetch("https://devnewlk2.gwd.ru:5000/api/tickets")
             .then((res) => res.json())
@@ -30,23 +29,19 @@ function TicketPrices() {
             });
     }, []);
     return (
-        <div id='TicketPrices' className="mt-[64px] xl:mt-[176px] relative ">
-            <div className="flex flex-col  justify-center gap-11">
-                <div className="flex flex-col justify-center items-center">
-                    <div className="text-white text-[32px] xl:text-[120px] font-[750]  text-center xl:text-left">
-                        СТОИМОСТЬ
-                    </div>
-                    <div className="text-[#FFA100] text-[14px] xl:text-[50px] font-[400]  mt-[-10px] xl:mt-[-40px]">
-                        МЕРОПРТИЯТИЯ
-                    </div>
-                    <div className="text-white text-[12px] xl:text-[20px] font-[450] text-center uppercase">
-                        Мы предлагаем несколько вариантов участия
-                    </div>
+        <div id="TicketPrices" className="mt-[64px] xl:mt-[176px] relative ">
+            <div className="flex flex-col  justify-center gap-11 ">
+                <div className="gradient text-[32px] xl:text-[74px] font-[750] text-left xl:ml-[263px] pl-[26px] pr-[25px]">
+                    СТОИМОСТЬ МЕРОПРТИЯТИЯ
                 </div>
-                <div className="flex flex-wrap gap-x-[52px] gap-y-6 justify-center xl:justify-start items-center ">
-                    {ticket .sort((a, b) => (a.sort_order ?? 0) - (b.sort_order ?? 0)).map((ticket, index) => {
-                        return <Tiket key={index} ticket={ticket} />;
-                    })}
+                <div className="flex xl:flex-wrap gap-10 xl:gap-x-[150px] gap-y-12 justify-start xl:justify-center xl:mx-auto items-center xl:max-w-[1700px] overflow-x-auto whitespace-nowrap scrollbar-hide pl-10 xl:px-0 pr-2">
+                    {ticket
+                        .sort(
+                            (a, b) => (a.sort_order ?? 0) - (b.sort_order ?? 0)
+                        )
+                        .map((ticket, index) => {
+                            return <Tiket key={index} ticket={ticket} />;
+                        })}
                 </div>
             </div>
         </div>

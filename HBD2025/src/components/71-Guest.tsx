@@ -1,33 +1,24 @@
-import frame from "../images/Rectangle 1846.png";
+
 type guest = {
     srcImg?: string;
     name?: string;
     text?: string;
 };
 
-function Speaker({ srcImg, name, text }: guest) {
-   
+function Speaker({ index, srcImg, name, text }: guest & { index: number }) {
     return (
-        <div
-            className="xl:w-[327px] xl:h-[384px] mt-[100px] px-6  h-[320px] w-[320px] bg-no-repeat xl:bg-cover bg-size-[auto_320px]"
-            style={{
-                backgroundImage: `url(${frame})`,
-            }}
-        >
-            <div className="flex justify-between relative">
-                <div className="absolute w-[135px] h-[135px]  xl:top-[-100px] top-[-80px] xl:w-[195px] xl:h-[213px]">
-                    <img
-                        src={srcImg}
-                        alt="Speaker Photo"
-                        className="w-auto h-auto"
-                    />
-                </div>
-            </div>
-            <div className="max-w-[201px] xl:max-w-[231px] text-white text-[24px] xl:text-[30px] font-[750] uppercase mt-22 xl:mt-30 ">
-                {name}
-            </div>
-            <div className="max-w-[201px] xl:max-w-[231px] text-white text-[16px] font-[400] mt-2 ">
-                {text}
+        <div className={`h-[160px] xl:h-[265px] w-[300px] xl:w-[420px] rounded-[40px] -skew-x-30 ${index == 3 ? 'xl:ml-70' : ''} ${index == 6 ? 'xl:mr-70' : ''}`} >
+            <div className={`h-full w-full rounded-[40px]  bg-guest `} >
+                <img className={`skew-x-30 absolute xl:-left-22 h-[160px] xl:h-[265px] -left-[33px]`} src={srcImg} />
+                <div className="skew-x-30 ml-[110px] xl:ml-[150px]  text-white text-left flex flex-col justify-center pt-[20px] xl:pt-[29px]">
+                    <div className=" text-[15px] xl:text-[24px] uppercase font-[750]">
+                        {name?.split(" ").map((word, index) => (
+                            <div key={index}>{word}</div>
+                        ))}
+                        
+                    </div>
+                    <div className="text-[10px] xl:text-[16px] font-[100] xl:font-[400] max-w-[163px] xl:max-w-[220px]">{text}</div>   
+                </div>                
             </div>
         </div>
     );
