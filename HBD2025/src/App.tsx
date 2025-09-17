@@ -21,10 +21,11 @@ import FAQ from "./components/18-FAQ.tsx";
 function App() {
     return (
         <div className="bg-[#000023]">
-            <div className=" w-full xl:max-w-[1920px] xl:mx-auto">
-                <NavigationMenu></NavigationMenu>
-                <Title></Title>
-
+            <div className=" w-full xl:max-w-[1920px] xl:mx-auto realative">
+                    {/*  */}
+                    <NavigationMenu></NavigationMenu>
+                    {/*  */}
+                    <Title></Title>
                     {/*  */}
                     <AboutEvent></AboutEvent>
                     {/*  */}
@@ -32,14 +33,14 @@ function App() {
                     {/*  */}
                     <WhoTeedsCome></WhoTeedsCome>
 
-
                 <Speakers></Speakers>
-                    {/*  */}
-                    {/* <Guests></Guests> */}
-                <Music></Music>
-                {/* не получается маску на картинки */}
-                <ExpoZone></ExpoZone>
 
+                    {/*  */}
+                    <Guests></Guests>
+                    {/*  */}
+                    <Music></Music>
+                    {/*  */}
+                    <ExpoZone></ExpoZone>
                     {/*  */}
                     <ItWas></ItWas>
                     {/*  */}
@@ -48,10 +49,8 @@ function App() {
                     <TicketPrices></TicketPrices>
                     {/*  */}
                     <Registration></Registration>
-
-                <AfterParty></AfterParty>
-
-
+                    {/*  */}
+                    <AfterParty></AfterParty>
                     {/*  */}
                     <Questions></Questions>
                     {/*  */}

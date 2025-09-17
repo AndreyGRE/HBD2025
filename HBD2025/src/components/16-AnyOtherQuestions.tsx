@@ -3,7 +3,7 @@ import bgAnyOtherQues from "../images/bg-AnyOtherQues.png"
 
 function AnyOtherQuestions() {
     return (
-        <div className={`mt-[64px] py-[98px]  xl:mt-[147px] relative bg-cover bg-no-repeat`} 
+        <div className={`mt-[64px] py-[44px] xl:py-[98px]  xl:mt-[147px] relative bg-cover bg-no-repeat`} 
             style={{ backgroundImage: `url(${bgAnyOtherQues})`}}
         >
             <div className="flex flex-col  justify-center">
@@ -11,7 +11,7 @@ function AnyOtherQuestions() {
                     <a
                         href="https://vk.com/housebusinessday"
                         target="blank"
-                        className="h-[23px] w-[23px] xl:h-[53px] xl:w-[53px] mb-12 invisible xl:visible "
+                        className="h-[23px] w-[23px] xl:h-[53px] xl:w-[53px] mb-12 hidden xl:block "
                     >
                         <img src={VkSVG}></img>
                     </a>
@@ -21,7 +21,7 @@ function AnyOtherQuestions() {
                         <a
                             href="https://vk.com/housebusinessday"
                             target="blank"
-                            className="h-[23px] w-[23px] visible xl:invisible"
+                            className="h-[23px] w-[23px] block xl:hidden"
                         >
                             <img src={VkSVG}></img>
                         </a>{" "}

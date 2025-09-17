@@ -9,6 +9,7 @@ interface speakerTop {
     text3?: string;
     url?: string;
     sort_order?: number;
+    index?: number;
 }
 
 interface speaker {
@@ -18,6 +19,7 @@ interface speaker {
     text3?: string;
     url?: string;
     sort_order?: number;
+    index?: number;
 }
 function Speakers() {
     const [speakers, setSpeakers] = useState<speaker[]>([]);
@@ -53,52 +55,54 @@ function Speakers() {
     }, []);
 
     return (
-        <div id="Speakers" className="mt-[56px] xl:mt-[176px] relative ">
-            <div className="flex flex-col gap-0 xl:gap-17">
-                <div className="flex  flex-col items-center">
-                    <div className="text-white text-[32px] xl:text-[120px] font-[750] ">
+        <div id="Speakers" className="mt-[100px] xl:mt-[251px] relative ">
+            <div className="flex flex-col gap-0 xl:gap-17 pl-[28] pr-[25px] xl:pr-[60px] xl:pl-[201px]">
+                <div className="flex flex-col ">
+                    <div className="gradient text-[32px] xl:text-[74px] font-[750] ">
                         СПИКЕРЫ
                     </div>
-                    <div className="text-[#FFA100] text-[14px] xl:text-[25px] font-[400] text-center">
-                        СТРОИТЕЛИ, ДЕВЕЛОПЕРЫ, УПРАВЛЕНЦЫ<br></br>
-                        СТРОИТЕЛЬНЫХ КОММПАНИЙ, АНАЛИТИКИ, НЕЗАВИСИМЫЕ ЭКСПЕРТЫ
-                    </div>
                 </div>
-                <div className="flex items-center justify-center">
-                    {speakersTop
-                        .sort(
-                            (a, b) => (a.sort_order ?? 0) - (b.sort_order ?? 0)
-                        )
-                        .map((speakersTop1, index) => {
-                            return (
-                                <SpikerTopElem
-                                    key={index}
-                                    srcImg={speakersTop1.image_url}
-                                    text1={speakersTop1.text1}
-                                    text2={speakersTop1.text2}
-                                    text3={speakersTop1.text3}
-                                    url={speakersTop1.url}
-                                />
-                            );
-                        })}
-                </div>
-                <div className="flex flex-wrap gap-x-6 xl:gap-y-15 gap-y-0 justify-center xl:justify-start">
-                    {speakers
-                        .sort(
-                            (a, b) => (a.sort_order ?? 0) - (b.sort_order ?? 0)
-                        )
-                        .map((speakerObj, index) => {
-                            return (
-                                <Spiker
-                                    key={index}
-                                    srcImg={speakerObj.image_url}
-                                    text1={speakerObj.text1}
-                                    text2={speakerObj.text2}
-                                    text3={speakerObj.text3}
-                                    url={speakerObj.url}
-                                />
-                            );
-                        })}
+                <div className="flex flex-wrap gap-x-0 xl:gap-y-15 gap-y-0 justify-center xl:justify-start xl:items-start">
+                    <>
+                        {speakersTop
+                            .sort(
+                                (a, b) =>
+                                    (a.sort_order ?? 0) - (b.sort_order ?? 0)
+                            )
+                            .map((speakersTop1, i) => {
+                                return (
+                                    <SpikerTopElem
+                                        key={i}
+                                        index={i}
+                                        srcImg={speakersTop1.image_url}
+                                        text1={speakersTop1.text1}
+                                        text2={speakersTop1.text2}
+                                        text3={speakersTop1.text3}
+                                        url={speakersTop1.url}
+                                    />
+                                );
+                            })}
+                    </>
+                    <>
+                        {speakers
+                            .sort(
+                                (a, b) =>
+                                    (a.sort_order ?? 0) - (b.sort_order ?? 0)
+                            )
+                            .map((speakerObj, index) => {
+                                return (
+                                    <Spiker
+                                        key={index}
+                                        index={index}
+                                        srcImg={speakerObj.image_url}
+                                        text1={speakerObj.text1}
+                                        text2={speakerObj.text2}
+                                        text3={speakerObj.text3}
+                                        url={speakerObj.url}
+                                    />
+                                );
+                            })}
+                    </>
                 </div>
             </div>
         </div>

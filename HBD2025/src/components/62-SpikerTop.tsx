@@ -4,39 +4,20 @@ type speaker = {
     text2?: string;
     text3?: string;
     url?: string;
+    index?: number
 };
 
-function SpikerTop({ srcImg, text1, text2, text3, url }: speaker) {
+function SpikerTop({ srcImg, index, text1, text2, text3, url }: speaker) {
     return (
-        <div className=" bg-[#05042E] py-6 pl-6 xl:py-10 xl:pl-10 w-[552px] mi-h-[309px] mt-[100px] relative ">
-            <div className="flex justify-between">
-                <div className="">
-                    <div className="inline-block py-[6px] px-[18px] rounded-sm bg-[linear-gradient(180deg,#E0921E_26.96%,#F05C14_100%)] text-[14px] font-[400] text-white uppercase">
-                        ЭКСКЛЮЗИВ
-                    </div>
-                    <div className="mt-6 text-[15px] text-[#FFA100] font-[750] uppercase max-w-[280px]">
-                        {text1}
-                    </div>
-                </div>
-                <a href={url}>
+        <div className="speakerBgTop gradient-border py-[40px] pl-2 pr-2  min-w-[530px] min-h-[760px] rounded-[40px] -skew-x-10 relative ">
+            <div className="skew-x-10 flex flex-col h-full">
+                <div className="flex justify-center items-end flex-1">
                     <img
                         src={srcImg}
                         alt="Speaker Photo"
-                        className="object-cover h-[130px] w-[120px] top-[-60px] xl:w-[237px] xl:h-[247px] absolute xl:top-[-165px] right-0"
+                        className="object-cover h-[130px] w-[120px]  xl:w-[180px] xl:h-[187px] xl:top-[-118px] right-0"
                     />
-                </a>
-            </div>
-            <div className="flex justify-between items-end mt-4">
-                <div className="flex flex-col gap-3 max-w-[370px]">
-                    <div className="text-[26px] xl:text-[30px] text-white font-[750] uppercase">
-                        {text2}
-                    </div>
-                    <div className="text-[16px] text-white font-[400]">
-                        {text3}
-                    </div>
-                </div>
-                <div>
-                    <a href={url}>
+                    <a href={url} className=" absolute -top-5 -right-10" >
                         {url ? (
                             <svg
                                 className="mr-10 cursor-pointer"
@@ -67,9 +48,20 @@ function SpikerTop({ srcImg, text1, text2, text3, url }: speaker) {
                                 </defs>
                             </svg>
                         ) : (
-                            ""
+                            ''
                         )}
                     </a>
+                </div>
+                <div className="flex-1 border-t-4 border-black">
+                    <div className="max-w-[330px] text-white text-[27px] font-[200] uppercase mt-6">
+                        {text1}
+                    </div>
+                    <div className="max-w-[212px] text-white text-[32px] xl:text-[40px] font-[750] uppercase mt-4">
+                        {text2}
+                    </div>
+                    <div className="max-w-[250px] text-white text-[22px] font-[100] mt-3">
+                        {text3}
+                    </div>
                 </div>
             </div>
         </div>

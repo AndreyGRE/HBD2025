@@ -1,8 +1,10 @@
+import ImgMusic from '../images/Music/Music.png' 
 function App() {
     return (
-        <div className="mt-[100] xl:mt-[252px]">
+        <div className="mt-[100px] xl:mt-[252px] px-[27px] relative">
+            <img src={ImgMusic} className='absolute right-0 scale-x-[-1] bottom-0 w-[42%] mr-[17px] max-h-[617px] max-w-[783px] xl:right-10'/>
             <svg
-                className="mx-auto max-w-[1770px] max-h-[775px]"
+                className="mx-auto max-w-[1770px] max-h-[775px] "
                 viewBox="0 0 1452 775"
                 fill="none"
             >
@@ -11,9 +13,26 @@ function App() {
                     fill="url(#paint0_linear_3594_1054)"
                 />
 
-                <text x="50" y="200" fill="white" fontSize="72">
-                    sdsdысысысcsdccsd2
+                <text x="220" y="200" fill="white"  style={{textTransform: "uppercase", fontFamily: "AvenirNextCyr" , fontWeight: "700", color: "white", fontSize: "100px"}}>
+                    Концертное
                 </text>
+                <text x="220" y="300" fill="white" style={{textTransform: "uppercase", fontFamily: "AvenirNextCyr" , fontWeight: "700", fontSize: "100px"}}>
+                    выступление
+                </text>
+                <text x="220" y="400" fill="white" style={{ fontFamily: "AvenirNextCyr" ,fontWeight: "100", fontSize: "32px"}}>
+                    Звезда мировой музыки, 
+                </text>
+                <text x="220" y="450" fill="white" style={{ fontFamily: "AvenirNextCyr" ,fontWeight: "100", fontSize: "32px"}}>
+                    народный артист России
+                </text>
+                <text x="220" y="550" fill="white" style={{textTransform: "uppercase", fontWeight: "700", fontFamily: "AvenirNextCyr" ,fontSize: "40px"}}>
+                    Игорь
+                </text>
+                <text x="220" y="600" fill="white" style={{textTransform: "uppercase", fontWeight: "700", fontFamily: "AvenirNextCyr" ,fontSize: "40px"}}>
+                    Корнелюк
+                </text>
+                
+           
 
                 <defs>
                     <linearGradient

@@ -48,11 +48,23 @@ body {
     fill: black;
 }
 .bg-guest {
-  background: 
-    linear-gradient(251deg, #000023 -67.43%, #091267 -9.1%, rgba(126, 199, 215, 0.9) 10.56%, #0F0148 54.71%, #2F3F7A 89.71%, #7102FF 126.38%), 
-    linear-gradient(271deg, #E0921E 6.07%, #F05C14 57.87%), 
-    linear-gradient(90deg, #000023 15.14%, rgba(126, 130, 215, 0.9) 57.3%, #E95521 100.06%), 
-    #1E195D;
+    background: linear-gradient(
+            251deg,
+            #000023 -67.43%,
+            #091267 -9.1%,
+            rgba(126, 199, 215, 0.9) 10.56%,
+            #0f0148 54.71%,
+            #2f3f7a 89.71%,
+            #7102ff 126.38%
+        ),
+        linear-gradient(271deg, #e0921e 6.07%, #f05c14 57.87%),
+        linear-gradient(
+            90deg,
+            #000023 15.14%,
+            rgba(126, 130, 215, 0.9) 57.3%,
+            #e95521 100.06%
+        ),
+        #1e195d;
 }
 .gradient {
     background: linear-gradient(
@@ -84,7 +96,7 @@ body {
         #e95521 58.05%
     );
 }
- .bac2{
+.bac2 {
     border-radius: 24px;
     background: linear-gradient(0deg, #091267 0%, #0716a2 100%);
 }
@@ -106,4 +118,107 @@ body {
             transparent 24px
         )
         1;
+}
+
+.bg-mobile {
+    background-image: url("./svg/LogoMob.svg");
+}
+
+@media (min-width: 1280px) {
+    .bg-mobile {
+        background-image: url("./images/Title/BgTitle.png");
+    }
+}
+
+.bg-Af {
+    background-image: url("./images/AfterParty/MbAf.svg");
+}
+
+@media (min-width: 1280px) {
+    .bg-Af {
+        background-image: url("./images/AfterParty/BgAf.svg");
+    }
+}
+
+.mask-Expo {
+    -webkit-mask-image: url("./images/ExpoZone/maskM.svg"); /* по умолчанию мобильная */
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: 100% 100%;
+
+    mask-image: url("./images/ExpoZone/maskM.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 100% 100%;
+}
+
+/* планшеты и выше */
+@media (min-width: 640px) {
+    .mask-Expo {
+        -webkit-mask-image: url("./images/ExpoZone/mask.svg");
+        mask-image: url("./images/ExpoZone/mask.svg");
+    }
+}
+
+.speakerBgTop {
+     background: linear-gradient(90deg, #000023 18.95%, rgba(126, 130, 215, 0.90) 59.21%, #E95521 100.05%),
+                 linear-gradient(180deg, #000023 8.23%, rgba(126, 130, 215, 0.90) 65.78%, #E95521 144.32%),
+                 linear-gradient(252deg, #000023 -65.13%, #091267 -8.79%, rgba(126, 199, 215, 0.90) 10.2%, #0F0148 52.84%, #2F3F7A 86.65%, #7102FF 122.06%),
+                 linear-gradient(271deg, #E0921E 5.79%, #F05C14 55.28%),
+                 linear-gradient(90deg, #000023 18.95%, rgba(126, 130, 215, 0.90) 59.21%, #E95521 100.05%),
+                 #1E195D
+  
+}
+
+.speakerBg {
+    background: linear-gradient(
+            180deg,
+            #000023 7.21%,
+            rgba(126, 130, 215, 0.9) 65.38%,
+            #e95521 144.77%
+        ),
+        linear-gradient(
+            253deg,
+            #000023 -60.44%,
+            #091267 -5.34%,
+            rgba(126, 199, 215, 0.9) 13.23%,
+            #0f0148 54.94%,
+            #2f3f7a 88%,
+            #7102ff 122.64%
+        ),
+        linear-gradient(271deg, #e0921e 10.18%, #f05c14 58.08%),
+        linear-gradient(
+            90deg,
+            #000023 16.97%,
+            rgba(126, 130, 215, 0.9) 55.95%,
+            #e95521 95.48%
+        ),
+        #1e195d;
+}
+.gradient-border {
+    border: 1px solid transparent;
+    border-image: linear-gradient(
+            180deg,
+            #000023 7.21%,
+            rgba(126, 130, 215, 0.9) 65.38%,
+            #e95521 144.77%
+        ),
+        linear-gradient(
+            253deg,
+            #000023 -60.44%,
+            #091267 -5.34%,
+            rgba(126, 199, 215, 0.9) 13.23%,
+            #0f0148 54.94%,
+            #2f3f7a 88%,
+            #7102ff 122.64%
+        ),
+        linear-gradient(271deg, #e0921e 10.18%, #f05c14 58.08%),
+        linear-gradient(
+            90deg,
+            #000023 16.97%,
+            rgba(126, 130, 215, 0.9) 55.95%,
+            #e95521 95.48%
+        ),
+        #1e195d;
+    border-image-slice: 1;
 }

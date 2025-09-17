@@ -53,11 +53,11 @@ function ExpoZone() {
     return (
         <div className="mt-[100px] xl:mt-[250px] relative ">
             <div className="flex flex-col  justify-center ">
-                <div className="ml-[27px] mb-5 xl:mb-[76px] xl:ml-[207px] flex gradient flex-col xl:flex-row xl:gap-[264px] xl:items-center items-start">
+                <div className="ml-[27px] mb-5 xl:mb-[76px] xl:ml-[207px] flex gradient flex-col xl:flex-row xl:gap-[264px] gap-[14px] xl:items-center items-start">
                     <div className="gradient text-[32px] xl:text-[74px] font-[750] xl:text-center text-left">
                         ЭКСПОЗОНА
                     </div>
-                    <div className="  text-[18px] xl:text-[20px] font-[450] max-w-[540px] text-left uppercase ">
+                    <div className="  text-[18px] xl:text-[20px] font-[450] max-w-[620px] text-left uppercase pr-[120px] ">
                         Новинки материалов и технологий от ключевых игроков
                         строительного рынка
                     </div>
@@ -80,22 +80,13 @@ function ExpoZone() {
                                     }}
                                     className=" px-[5px] flex-shrink-0 "
                                 >
-                                    {/* <div className="aspect-[2/1] overflow-hidden ">
+                                    <div className="relative xl:w-[900px] xl:h-[800px] w-full h-[250px] overflow-hidden">
                                         <img
                                             src={src}
                                             alt={`slide-${index}`}
-                                            className="h-full w-full object-cover [mask-image:url(#parallelogramMask)] [mask-repeat:no-repeat] [mask-size:100%_100%] "
-                                        />
-                                    </div> */}
-                                    <div className="relative w-[400px] h-[250px] overflow-hidden ">
-                                        <img
-                                           src={src}
-                                            alt={`slide-${index}`}
-                                            className="w-full h-full object-cover rounded-2xl"
+                                            className="w-full h-full object-cover mask-Expo"
                                         />
                                     </div>
-
-
                                 </div>
                             ))}
                         </div>
