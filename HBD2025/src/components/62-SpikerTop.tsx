@@ -9,15 +9,16 @@ type speaker = {
 
 function SpikerTop({ srcImg, index, text1, text2, text3, url }: speaker) {
     return (
-        <div className="speakerBgTop gradient-border py-[40px] pl-2 pr-2  min-w-[530px] min-h-[760px] rounded-[40px] -skew-x-10 relative ">
-            <div className="skew-x-10 flex flex-col h-full">
-                <div className="flex justify-center items-end flex-1">
+        <div className="speakerBgTop xl:left-20  py-[40px] pl-2 pr-2 -skew-x-7 h-[430px]  xl:h-[890px] w-7/9 xl:min-w-[430px] max-w-[563px] xl:min-h-[760px] max-h-[923px]  rounded-[40px]  relative ">
+            <div className="skew-x-7 flex flex-col h-full ">
+                <div className="flex flex-col justify-center flex-1 w-full items-center">
                     <img
                         src={srcImg}
                         alt="Speaker Photo"
-                        className="object-cover h-[130px] w-[120px]  xl:w-[180px] xl:h-[187px] xl:top-[-118px] right-0"
+                        className="object-cover h-[170px] w-[180px]  xl:w-full xl:h-[90%] xl:top-[-118px] right-0"
                     />
-                    <a href={url} className=" absolute -top-5 -right-10" >
+                    <div className=" bg-black w-full h-1 rounded-2xl"></div>
+                    <a href={url} className=" absolute xl:-top-5 xl:-right-10 -top-4 -right-1" >
                         {url ? (
                             <svg
                                 className="mr-10 cursor-pointer"
@@ -52,14 +53,14 @@ function SpikerTop({ srcImg, index, text1, text2, text3, url }: speaker) {
                         )}
                     </a>
                 </div>
-                <div className="flex-1 border-t-4 border-black">
-                    <div className="max-w-[330px] text-white text-[27px] font-[200] uppercase mt-6">
+                <div className="flex-1 border-black">
+                    <div className="max-w-[420px] text-white text-[14px] xl:text-[24px] font-[400] uppercase mt-6 xl:px-3 xl:leading-[30px]">
                         {text1}
                     </div>
-                    <div className="max-w-[212px] text-white text-[32px] xl:text-[40px] font-[750] uppercase mt-4">
+                    <div className="max-w-[212px] text-white text-[18px] xl:text-[40px] font-[750] uppercase mt-4 xl:px-3 xl:leading-[45px]">
                         {text2}
                     </div>
-                    <div className="max-w-[250px] text-white text-[22px] font-[100] mt-3">
+                    <div className="max-w-[250px] text-white text-[10px] xl:text-[21px] font-[100] mt-3">
                         {text3}
                     </div>
                 </div>

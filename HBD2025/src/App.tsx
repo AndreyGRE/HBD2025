@@ -21,44 +21,25 @@ import FAQ from "./components/18-FAQ.tsx";
 function App() {
     return (
         <div className="bg-[#000023]">
-            <div className=" w-full xl:max-w-[1920px] xl:mx-auto realative">
-                    {/*  */}
-                    <NavigationMenu></NavigationMenu>
-                    {/*  */}
-                    <Title></Title>
-                    {/*  */}
-                    <AboutEvent></AboutEvent>
-                    {/*  */}
-                    <AnonsVideo></AnonsVideo>
-                    {/*  */}
-                    <WhoTeedsCome></WhoTeedsCome>
-
+            <div className=" w-full xl:max-w-[1920px] xl:mx-auto realative z-20 ">
+                <NavigationMenu></NavigationMenu>
+                <Title></Title>
+                <AboutEvent></AboutEvent>
+                <AnonsVideo></AnonsVideo>
+                <WhoTeedsCome></WhoTeedsCome>
                 <Speakers></Speakers>
-
-                    {/*  */}
-                    <Guests></Guests>
-                    {/*  */}
-                    <Music></Music>
-                    {/*  */}
-                    <ExpoZone></ExpoZone>
-                    {/*  */}
-                    <ItWas></ItWas>
-                    {/*  */}
-                    <StayInformed></StayInformed>
-                    {/*  */}
-                    <TicketPrices></TicketPrices>
-                    {/*  */}
-                    <Registration></Registration>
-                    {/*  */}
-                    <AfterParty></AfterParty>
-                    {/*  */}
-                    <Questions></Questions>
-                    {/*  */}
-                    <Sponsors></Sponsors>        
-                    {/*  */}
-                    <FAQ></FAQ>
-                    {/*  */}
-                    <AnyOtherQuestions></AnyOtherQuestions>
+                <Guests></Guests>
+                <Music></Music>
+                <ExpoZone></ExpoZone>
+                <ItWas></ItWas>
+                <StayInformed></StayInformed>
+                <TicketPrices></TicketPrices>
+                <Registration></Registration>
+                <AfterParty></AfterParty>
+                <Questions></Questions>
+                <Sponsors></Sponsors>
+                <FAQ></FAQ>
+                <AnyOtherQuestions></AnyOtherQuestions>
             </div>
         </div>
     );

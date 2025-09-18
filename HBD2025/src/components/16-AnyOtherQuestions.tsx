@@ -1,5 +1,5 @@
 import VkSVG from "../svg/icon_VK.svg";
-import bgAnyOtherQues from "../images/bg-AnyOtherQues.png"
+import bgAnyOtherQues from "../images/AnyOtherQuestions/bg-AnyOtherQues.png"
 
 function AnyOtherQuestions() {
     return (

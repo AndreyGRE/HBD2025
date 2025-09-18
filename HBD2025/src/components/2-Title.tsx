@@ -3,7 +3,8 @@ import logoUrl from "../svg/Logo.svg";
 function Title() {
     return (
         <>
-            <div className=" mt-[0px] xl:mt-[82px] w-full flex justify-between xl:flex-row flex-col-reverse gap-[38px] xl:gap-0 xl:px-[60px] bg-contain bg-no-repeat bg-mobile"> 
+            
+            <div className=" mt-[0px] xl:mt-[82px] w-full flex justify-between xl:flex-row flex-col-reverse gap-[38px] xl:gap-0 xl:px-[60px] bg-contain bg-no-repeat bg-mobile">
                 <div className="pl-[27px] pr-[26px] xl:pt-[80px] xl:pb-[54px] pt-[64px] pb-[32px] ">
                     <div className="flex flex-col gap-y-6  xl:flex-row  relative">
                         <div className="flex flex-col">
@@ -22,7 +23,7 @@ function Title() {
                             <div className="skew-x-20">КУПИТЬ БИЛЕТ</div>
                         </a>
                         <div className="flex flex-row gap-[32px]">
-                            <div className="flex flex-col items-start" >
+                            <div className="flex flex-col items-start">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="41"
@@ -100,10 +101,10 @@ function Title() {
                         </div>
                     </div>
                     <a
-                            href="#ByTicket"
-                            className="mt-[32px] flex xl:hidden cursor-pointer gap-2 bg-[#E95521] -skew-x-17 rounded-lg   w-full  py-[10px] items-center justify-center text-white text-[20px] font-[300] hover:opacity-80"
-                        >
-                            <div className="skew-x-20">КУПИТЬ БИЛЕТ</div>
+                        href="#ByTicket"
+                        className="mt-[32px] flex xl:hidden cursor-pointer gap-2 bg-[#E95521] -skew-x-17 rounded-lg   w-full  py-[10px] items-center justify-center text-white text-[20px] font-[300] hover:opacity-80"
+                    >
+                        <div className="skew-x-20">КУПИТЬ БИЛЕТ</div>
                     </a>
                 </div>
             </div>
@@ -111,7 +112,7 @@ function Title() {
             <div className="mt-[75px] xl:mt-[250px] flex xl:flex-row flex-col justify-center gap-[30px] xl:gap-[82px] xl:px-[60px]">
                 <div className="flex flex-col items-center">
                     <div className="xl:text-[106px] xl:font-[900]  text-[67px] font-[750] text-[#E95521]">
-                        4000+
+                        4500+
                     </div>
                     <div className="xl:text-[32px] xl:font-[700] text-[20px] font-[750] text-[#E95521]">
                         УЧАСТНИКОВ
