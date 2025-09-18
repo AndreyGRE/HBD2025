@@ -26,12 +26,14 @@ function Guests() {
     }, []);
     return (
         <div className="mt-[100px] xl:mt-[259px]  relative">
+            <div className=" absolute -right-[20%] w-[1604px] h-[772px] rounded-[1604px] flex-shrink-0 rotate-[30deg] blur-[250px] custom-gradient-bg -z-10"></div>
+
             <div className="flex flex-col xl:gap-12 gap-0 relative">
                 <div className="flex flex-col mb-[64px]">
                     <div className="gradient text-[32px] xl:text-[74px] font-[700] xl:ml-[207px] uppercase ml-[28px] mr-[24px]">
                         СПЕЦИАЛЬНЫЕ<br></br>ГОСТИ
                     </div>
-                     <div className="absolute right-0 xl:-top-105 -top-55 opacity-35 xl:w-[444px] xl:h-[734px] w-[35%] h-[35%]">
+                    <div className="absolute right-0 xl:-top-105 -top-55 opacity-35 xl:w-[444px] xl:h-[734px] w-[35%] h-[35%]">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 444 734"
@@ -82,13 +84,19 @@ function Guests() {
                                     y2="-2131.51"
                                     gradientUnits="userSpaceOnUse"
                                 >
-                                    <stop offset="0.128556" stop-color="#000023" />
+                                    <stop
+                                        offset="0.128556"
+                                        stop-color="#000023"
+                                    />
                                     <stop
                                         offset="0.497073"
                                         stop-color="#7E82D7"
                                         stop-opacity="0.9"
                                     />
-                                    <stop offset="0.870922" stop-color="#E95521" />
+                                    <stop
+                                        offset="0.870922"
+                                        stop-color="#E95521"
+                                    />
                                 </linearGradient>
                                 <linearGradient
                                     id="paint1_linear_3633_1178"
@@ -98,13 +106,19 @@ function Guests() {
                                     y2="-2131.51"
                                     gradientUnits="userSpaceOnUse"
                                 >
-                                    <stop offset="0.128556" stop-color="#000023" />
+                                    <stop
+                                        offset="0.128556"
+                                        stop-color="#000023"
+                                    />
                                     <stop
                                         offset="0.497073"
                                         stop-color="#7E82D7"
                                         stop-opacity="0.9"
                                     />
-                                    <stop offset="0.870922" stop-color="#E95521" />
+                                    <stop
+                                        offset="0.870922"
+                                        stop-color="#E95521"
+                                    />
                                 </linearGradient>
                                 <linearGradient
                                     id="paint2_linear_3633_1178"
@@ -114,13 +128,19 @@ function Guests() {
                                     y2="-2131.51"
                                     gradientUnits="userSpaceOnUse"
                                 >
-                                    <stop offset="0.128556" stop-color="#000023" />
+                                    <stop
+                                        offset="0.128556"
+                                        stop-color="#000023"
+                                    />
                                     <stop
                                         offset="0.497073"
                                         stop-color="#7E82D7"
                                         stop-opacity="0.9"
                                     />
-                                    <stop offset="0.870922" stop-color="#E95521" />
+                                    <stop
+                                        offset="0.870922"
+                                        stop-color="#E95521"
+                                    />
                                 </linearGradient>
                                 <linearGradient
                                     id="paint3_linear_3633_1178"
@@ -130,13 +150,19 @@ function Guests() {
                                     y2="-2131.51"
                                     gradientUnits="userSpaceOnUse"
                                 >
-                                    <stop offset="0.128556" stop-color="#000023" />
+                                    <stop
+                                        offset="0.128556"
+                                        stop-color="#000023"
+                                    />
                                     <stop
                                         offset="0.497073"
                                         stop-color="#7E82D7"
                                         stop-opacity="0.9"
                                     />
-                                    <stop offset="0.870922" stop-color="#E95521" />
+                                    <stop
+                                        offset="0.870922"
+                                        stop-color="#E95521"
+                                    />
                                 </linearGradient>
                                 <linearGradient
                                     id="paint4_linear_3633_1178"
@@ -146,13 +172,19 @@ function Guests() {
                                     y2="-2131.51"
                                     gradientUnits="userSpaceOnUse"
                                 >
-                                    <stop offset="0.128556" stop-color="#000023" />
+                                    <stop
+                                        offset="0.128556"
+                                        stop-color="#000023"
+                                    />
                                     <stop
                                         offset="0.497073"
                                         stop-color="#7E82D7"
                                         stop-opacity="0.9"
                                     />
-                                    <stop offset="0.870922" stop-color="#E95521" />
+                                    <stop
+                                        offset="0.870922"
+                                        stop-color="#E95521"
+                                    />
                                 </linearGradient>
                                 <linearGradient
                                     id="paint5_linear_3633_1178"
@@ -162,13 +194,19 @@ function Guests() {
                                     y2="-2131.51"
                                     gradientUnits="userSpaceOnUse"
                                 >
-                                    <stop offset="0.128556" stop-color="#000023" />
+                                    <stop
+                                        offset="0.128556"
+                                        stop-color="#000023"
+                                    />
                                     <stop
                                         offset="0.497073"
                                         stop-color="#7E82D7"
                                         stop-opacity="0.9"
                                     />
-                                    <stop offset="0.870922" stop-color="#E95521" />
+                                    <stop
+                                        offset="0.870922"
+                                        stop-color="#E95521"
+                                    />
                                 </linearGradient>
                                 <linearGradient
                                     id="paint6_linear_3633_1178"
@@ -178,13 +216,19 @@ function Guests() {
                                     y2="-2131.51"
                                     gradientUnits="userSpaceOnUse"
                                 >
-                                    <stop offset="0.128556" stop-color="#000023" />
+                                    <stop
+                                        offset="0.128556"
+                                        stop-color="#000023"
+                                    />
                                     <stop
                                         offset="0.497073"
                                         stop-color="#7E82D7"
                                         stop-opacity="0.9"
                                     />
-                                    <stop offset="0.870922" stop-color="#E95521" />
+                                    <stop
+                                        offset="0.870922"
+                                        stop-color="#E95521"
+                                    />
                                 </linearGradient>
                                 <linearGradient
                                     id="paint7_linear_3633_1178"
@@ -194,13 +238,19 @@ function Guests() {
                                     y2="-2131.51"
                                     gradientUnits="userSpaceOnUse"
                                 >
-                                    <stop offset="0.128556" stop-color="#000023" />
+                                    <stop
+                                        offset="0.128556"
+                                        stop-color="#000023"
+                                    />
                                     <stop
                                         offset="0.497073"
                                         stop-color="#7E82D7"
                                         stop-opacity="0.9"
                                     />
-                                    <stop offset="0.870922" stop-color="#E95521" />
+                                    <stop
+                                        offset="0.870922"
+                                        stop-color="#E95521"
+                                    />
                                 </linearGradient>
                                 <linearGradient
                                     id="paint8_linear_3633_1178"
@@ -210,13 +260,19 @@ function Guests() {
                                     y2="-2131.51"
                                     gradientUnits="userSpaceOnUse"
                                 >
-                                    <stop offset="0.128556" stop-color="#000023" />
+                                    <stop
+                                        offset="0.128556"
+                                        stop-color="#000023"
+                                    />
                                     <stop
                                         offset="0.497073"
                                         stop-color="#7E82D7"
                                         stop-opacity="0.9"
                                     />
-                                    <stop offset="0.870922" stop-color="#E95521" />
+                                    <stop
+                                        offset="0.870922"
+                                        stop-color="#E95521"
+                                    />
                                 </linearGradient>
                             </defs>
                         </svg>
@@ -240,7 +296,6 @@ function Guests() {
                         })}
                 </div>
             </div>
-           
         </div>
     );
 }

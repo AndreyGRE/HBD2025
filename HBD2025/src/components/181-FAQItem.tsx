@@ -10,7 +10,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
 
     return (
         <>
-            <div className=" overflow-hidden border-b border-white">
+            <div id='Questions' className=" overflow-hidden border-b border-white">
                 <button
                     className="py-5 flex justify-between items-center w-full text-left text-lg font-medium text-gray-900 cursor-pointer"
                     onClick={() => setIsOpen(!isOpen)}

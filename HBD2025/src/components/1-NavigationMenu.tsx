@@ -7,7 +7,7 @@ export default function Navbar() {
     return (
         <>
             {/* Бургер-меню (видно только на мобильных) */}
-            <div className="md:hidden flex justify-between items-center pt-[14px] pl-[24px] pr-[21px] pb-[15px] sticky top-0 z-100 bg-[#000023]">
+            <div className="md:hidden flex justify-between items-center pt-[14px] pl-[24px] pr-[21px] pb-[15px] sticky top-0 z-100  ">
                 {/* иконка и сайта а также бургер меню */}
                 <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     <svg width="34" height="58" viewBox="0 0 34 58" fill="none">
@@ -189,17 +189,13 @@ export default function Navbar() {
                                 >
                                     AFTERPARTY
                                 </a>
-
-
                             </div>
-                                <a
-                                    href="#ByTicket"
-                                    className="cursor-pointer flex gap-2 bg-[#E95521] -skew-x-17 rounded-lg  w-full  py-[10px] items-center justify-center text-white text-[20px]  font-[300] hover:opacity-80"
-                                >
-                                    <div className="skew-x-20">
-                                        КУПИТЬ БИЛЕТ
-                                    </div>
-                                </a>
+                            <a
+                                href="#ByTicket"
+                                className="cursor-pointer flex gap-2 bg-[#E95521] -skew-x-17 rounded-lg  w-full  py-[10px] items-center justify-center text-white text-[20px]  font-[300] hover:opacity-80"
+                            >
+                                <div className="skew-x-20">КУПИТЬ БИЛЕТ</div>
+                            </a>
                         </nav>
                     </div>
                 </div>
@@ -207,7 +203,7 @@ export default function Navbar() {
 
             {/* Навигация для десктопа */}
 
-            <div className="hidden md:flex justify-between items-end pl-[164px] pr-[156px] pt-[32px] sticky top-0 z-100 bg-[#000023]">
+            <div className="hidden bg-[#000023]/70  md:flex justify-between items-end pl-[164px] pr-[156px] pt-[32px] sticky top-0 z-100 pb-3 ">
                 <a href="https://housebusinessday.ru/">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -238,7 +234,7 @@ export default function Navbar() {
                     </svg>
                 </a>
 
-                <div className="flex gap-[46px] items-end">
+                <div className="flex gap-[46px] items-end ">
                     <div className="text-white font-[400] text-[17px] flex gap-[29px] leading-[160%] pb-[12px]">
                         <a
                             href="#AboutEvent"

@@ -13,9 +13,10 @@ import Modal from "./ModalForm";
 function Sponsors() {
     return (
         <div className="mt-[100px]  xl:mt-[240px] relative ">
-             <div className="flex flex-col justify-center items-center gradient text-white text-[30px] xl:text-[74px] font-[750] uppercase text-center xl:max-w-full  m-auto">
+            <div className="-z-1 absolute -left-[20%] flex-shrink-0 w-[1604px] h-[772px] rotate-[-32.855deg] rounded-[1604px] bg-custom-gradient blur-[250px]"></div>
+            <div className="flex flex-col justify-center items-center gradient text-white text-[30px] xl:text-[74px] font-[750] uppercase text-center xl:max-w-full  m-auto">
                     Наши партнеры
-                </div>
+            </div>
             <div className="flex flex-col gap-[10px] xl:gap-8 xl:mt-[64px] mt-[24px]">
                 
                 <div className="flex justify-center">

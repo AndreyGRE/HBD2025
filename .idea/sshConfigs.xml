@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="housebusinessday.ru" id="3b282031-bede-4dd4-99cb-b17446155d7c" port="22" nameFormat="DESCRIPTIVE" username="spolis_grebnevhbd" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

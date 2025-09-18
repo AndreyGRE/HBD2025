@@ -2,7 +2,7 @@ function AboutEvent() {
     return (
         <div
             id="AboutEvent"
-            className="w-full flex flex-col xl:flex-row px-[30px] xl:px-[60px] mt-[75px] xl:mt-[250px] items-start relative"
+            className="w-full flex flex-col xl:flex-row px-[30px] xl:px-[60px] mt-[75px] xl:mt-[250px] items-start relative "
         >
             <div className="absolute opacity-25 xl:top-25 xl:bottom-50 bottom-120 xl:left-0  right-0 xl:w-[877px] xl:h-[519px] w-[70%] :h-[70%]">
                 <svg
@@ -39,6 +39,8 @@ function AboutEvent() {
             <div className="flex-1 gradient text-[32px] xl:text-[74px] font-[750] xl:font-[800] xl:mb-10 mb-6 text-center  ">
                 О СОБЫТИИ
             </div>
+            <div className=" absolute -right-[20%] w-[1604px] h-[772px] rounded-[1604px] flex-shrink-0 rotate-[30deg] blur-[250px] custom-gradient-bg -z-10"></div>
+
             <div className="flex-1 text-[16px] xl:text-[30px] font-[300] xl:font-[400] uppercase xl:max-w-[887px]">
                 <div className="text-white  shadow-[0px_0px_18px_rgba(0,1,5,0.30) text-left">
                     Строительный рынок штормит: падают продажи, дорожают

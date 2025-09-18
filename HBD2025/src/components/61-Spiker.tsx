@@ -10,7 +10,7 @@ type speaker = {
 function Speaker({ srcImg, index, text1, text2, text3, url }: speaker) {
     return (
         // -skew-x-7
-        <div className= {`speakerBg border-1 py-[20px] xl:py-[40px] pl-2 pr-2 -skew-x-9  xl:-skew-x-7 w-5/9 h-[300px] xl:w-[420px] xl:h-[673px]  max-h-[672px] max-w-[600px] rounded-[40px]   relative ${index == 0 ? 'xl:mt-100  ' : ''}
+        <div className= {`speakerBg border-1 border-white py-[20px] xl:py-[40px] pl-2 pr-2 -skew-x-9  xl:-skew-x-7 w-5/9 h-[300px] xl:w-[420px] xl:h-[673px]  max-h-[672px] max-w-[600px] xl:rounded-[40px] rounded-[14px]  relative ${index == 0 ? 'xl:mt-100  ' : ''}
         ${index == 2 ? 'xl:ml-120 ' : ''}
         ${index == 3 ? 'xl:-mt-100' : ''}
         `} >
@@ -53,7 +53,7 @@ function Speaker({ srcImg, index, text1, text2, text3, url }: speaker) {
                                     </clipPath>
                                 </defs>
                             </svg>
-                        ) : ('2'
+                        ) : (''
                         )}
                     </a>
                 </div>

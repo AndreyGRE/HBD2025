@@ -20,9 +20,11 @@ import FAQ from "./components/18-FAQ.tsx";
 
 function App() {
     return (
-        <div className="bg-[#000023]">
-            <div className=" w-full xl:max-w-[1920px] xl:mx-auto realative z-20 ">
+        <div>
+            <div className="bg-[#000023] bg-opasity-100  w-full xl:max-w-[1920px] xl:mx-auto relative">
                 <NavigationMenu></NavigationMenu>
+            <div className=" relative z-10  overflow-hidden">
+                
                 <Title></Title>
                 <AboutEvent></AboutEvent>
                 <AnonsVideo></AnonsVideo>
@@ -42,6 +44,8 @@ function App() {
                 <AnyOtherQuestions></AnyOtherQuestions>
             </div>
         </div>
+        </div>
+        
     );
 }
 

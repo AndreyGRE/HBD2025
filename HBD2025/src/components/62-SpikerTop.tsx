@@ -4,21 +4,32 @@ type speaker = {
     text2?: string;
     text3?: string;
     url?: string;
-    index?: number
+    index?: number;
 };
 
-function SpikerTop({ srcImg, index, text1, text2, text3, url }: speaker) {
+function SpikerTop({ srcImg, text1, text2, text3, url }: speaker) {
     return (
-        <div className="speakerBgTop xl:left-20  py-[40px] pl-2 pr-2 -skew-x-7 h-[430px]  xl:h-[890px] w-7/9 xl:min-w-[430px] max-w-[563px] xl:min-h-[760px] max-h-[923px]  rounded-[40px]  relative ">
+        <div
+            className=" card xl:left-20  py-[40px] pl-2 pr-2 -skew-x-7 h-[430px]  xl:h-[890px] w-7/9 xl:min-w-[430px] max-w-[563px] xl:min-h-[760px] max-h-[923px]  xl:rounded-[40px] rounded-[14px]  relative "
+          
+        >
             <div className="skew-x-7 flex flex-col h-full ">
-                <div className="flex flex-col justify-center flex-1 w-full items-center">
+                <div className="flex flex-col justify-center flex-1 w-full items-center relative">
                     <img
                         src={srcImg}
                         alt="Speaker Photo"
-                        className="object-cover h-[170px] w-[180px]  xl:w-full xl:h-[90%] xl:top-[-118px] right-0"
+                        className="object-cover h-[170px] w-[180px]  xl:w-auto xl:h-[98%] xl:top-[-118px] right-0"
                     />
                     <div className=" bg-black w-full h-1 rounded-2xl"></div>
-                    <a href={url} className=" absolute xl:-top-5 xl:-right-10 -top-4 -right-1" >
+                    <div className="-skew-x-7 absolute bottom-0 -right-[6px] px-[27px] py-[3px] bg-[linear-gradient(261deg,#3F34C3_43.22%,#1E195D_99.3%)] rounded-[4px] border-1 border-white ">
+                        <p className="skew-x-7 text-white  text-[16px] fount-[400]">
+                            эксклюзив
+                        </p>
+                    </div>
+                    <a
+                        href={url}
+                        className=" absolute xl:-top-5 xl:-right-10 -top-4 -right-1"
+                    >
                         {url ? (
                             <svg
                                 className="mr-10 cursor-pointer"
@@ -49,7 +60,7 @@ function SpikerTop({ srcImg, index, text1, text2, text3, url }: speaker) {
                                 </defs>
                             </svg>
                         ) : (
-                            ''
+                            ""
                         )}
                     </a>
                 </div>

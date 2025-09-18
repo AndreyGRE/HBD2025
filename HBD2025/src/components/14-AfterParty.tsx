@@ -5,8 +5,9 @@ function AfterParty() {
     return (
         <div
             id="AfterParty"
-            className=" xl:px-[16px] px-[0px]  mt-[100px] xl:mt-[384px] xl:ml-[211px] xl:mx-auto"
+            className=" xl:px-[16px] px-[0px]  mt-[100px] xl:mt-[384px] xl:ml-[211px] xl:mx-auto "
         >
+            <div className=" absolute -right-[20%] w-[1604px] h-[772px] rounded-[1604px] flex-shrink-0 rotate-[30deg] blur-[250px] custom-gradient-bg -z-10"></div>
             <div className="bg-Af bg-contain bg-no-repeat text-white xl:ml-[211px] pl-[27px] xl:mr-[174px] xl:pt-[44px] pt-[42px] relative">
                 <div className="relative">
                     <div className="flex flex-col gap-[30px]  relative">
@@ -26,10 +27,6 @@ function AfterParty() {
                             афтерпати требуется покупка дополнительного билета.
                         </p>
                     </div>
-                    {/* <div className='absolute xl:left-200 xl:-top-30  top-155 -right-0 max-w-[180px]'>
-                        <img src={AfImg} className="xl:max-w-[450px] "  />
-                        <img src={AfImg2} className="xl:max-w-[550px] xl:mt-[80px]  max-w-[350px] mt-[70px] "  />
-                    </div> */}
                     <div className="absolute xl:left-250 xl:-top-30 top-146 right-0 max-w-[180px] flex flex-col items-end ">
                         <img src={AfImg} className="xl:max-w-[450px] " />
                         <img

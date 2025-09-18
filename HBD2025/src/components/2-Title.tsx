@@ -3,8 +3,8 @@ import logoUrl from "../svg/Logo.svg";
 function Title() {
     return (
         <>
-            
-            <div className=" mt-[0px] xl:mt-[82px] w-full flex justify-between xl:flex-row flex-col-reverse gap-[38px] xl:gap-0 xl:px-[60px] bg-contain bg-no-repeat bg-mobile">
+            <div className="relative mt-[87px] xl:mt-[82px] w-full flex justify-between xl:flex-row flex-col-reverse gap-[38px] xl:gap-0 xl:px-[60px] bg-contain bg-no-repeat bg-mobile">
+                <div className="-z-1 absolute -left-[30%] top-0 flex-shrink-0 w-[1604px] h-[772px] rounded-[1604px] rotate-[30deg] blur-[250px] custom2-gradient-bg"></div>
                 <div className="pl-[27px] pr-[26px] xl:pt-[80px] xl:pb-[54px] pt-[64px] pb-[32px] ">
                     <div className="flex flex-col gap-y-6  xl:flex-row  relative">
                         <div className="flex flex-col">
