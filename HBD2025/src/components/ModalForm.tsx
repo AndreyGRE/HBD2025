@@ -85,7 +85,7 @@ export default function ModalForm() {
             {/* Кнопка открытия модала */}
             <div
                 onClick={openModal}
-                className="cursor-pointer flex gap-2 bg-[#E95521] -skew-x-17 rounded-lg xl:px-[31px] xl:py-[10px] w-3/4 xl:w-fit py-[10px] items-center justify-center text-white text-[20px] xl:text-[24px] font-[450] hover:opacity-80"
+                className="cursor-pointer flex gap-2 bg-[#E95521] -skew-x-17 rounded-lg lg:px-[31px] xl:py-[10px] w-3/4  lg:w-fit py-[10px] items-center justify-center text-white text-[20px] xl:text-[24px] font-[450] hover:opacity-80"
             >
                 <p className="skew-x-17 font-[100]">СТАТЬ ПАРТНЁРОМ</p>
             </div>

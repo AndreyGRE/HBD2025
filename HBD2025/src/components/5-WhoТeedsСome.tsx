@@ -9,9 +9,9 @@ function WhoTeedsCome() {
     ];
 
     return (
-        <div className="mt-[103px] xl:mt-[250px] xl:p-[60px] z-10 ">
-            <div className="flex flex-col gap-6 xl:gap-18 xl:pl-[148px] xl:pr-[125px] relative">
-                <div className="absolute xl:-top-80  right-0 xl:w-[427px] xl:h-[519px] w-[50%] h-[50%] -top-30 opacity-35 z-5">
+        <div className="mt-[103px] xl:mt-[250px]  xl:py-[60px] lg:pr-0 z-10 ">
+            <div className="flex flex-col gap-6 xl:gap-18  2xl:pl-[148px]   lg:pr-[0px] relative">
+                <div className="absolute xl:-top-80  z-[-1] right-0 xl:w-[427px] xl:h-[519px] w-[50%] h-[50%] -top-30 opacity-35 z-5">
                     <svg
                         viewBox="0 0 427 519"
                         fill="none"
@@ -160,7 +160,7 @@ function WhoTeedsCome() {
                         </defs>
                     </svg>
                 </div>
-                <div className="flex  font-[750] xl:text-[74px] pl-[27px] text-[32px] gradient z-9">
+                <div className="flex lg:pl-[58px] xl:pl-[108px] font-[750] xl:text-[74px] pl-[27px] text-[32px] gradient z-9">
                     <div className="font-[750] xl:text-[74px] gradient ">
                         КОМУ
                         <br></br>
@@ -168,21 +168,27 @@ function WhoTeedsCome() {
                     </div>
                 </div>
                 <div
-                    className="  flex flex-nowrap overflow-x-auto gap-x-[20px] px-4 z-9
-                                xl:flex-wrap xl:overflow-visible xl:gap-x-[46px] xl:gap-y-[62px] xl:pl-[46px]
-                                pl-15
-                                scrollbar-hide "
+                    className=" flex flex-nowrap overflow-x-auto gap-x-[20px] px-4 z-9
+                                2xl:flex-wrap 2xl:overflow-visible xl:gap-x-[46px] xl:gap-y-[62px] xl:pl-[46px]
+                                scrollbar-hide 
+                                pl-14
+                                "
                 >
                     {text.map((item, i) => {
                         return (
                             <div
-                                className={`bg-[#2e2a78] pl-11 gap-3 text-white px-8 py-6 xl:max-w-[400px] xl:min-w-[353px] h-[160px] min-w-[305px] justify-center xl:rounded-[40px] rounded-[14px] shadow-lg transform items-center -skew-x-32 flex ${
-                                    i === 3 ? "xl:ml-27" : ""
+                             className={`bg-[#2e2a78] pl-11 gap-3 text-white px-8 py-6 2xl:max-w-[400px] 2xl:min-w-[353px] h-[160px] min-w-[305px] justify-center 2xl:rounded-[40px] rounded-[14px] shadow-lg transform items-center -skew-x-32 flex ${
+                                    i === 3 ? "2xl:ml-27" : ""
                                 }`}
+                                // className={`bg-WhoТeedsСome pl-11 gap-3 text-white px-8 py-6 xl:max-w-[400px] xl:min-w-[353px] h-[162px] min-w-[337px] justify-center xl:rounded-[40px] shadow-lg transform items-center  flex ${
+                                //     i === 3 ? "xl:ml-27" : ""
+                                // }`}
                                 key={i}
                             >
-                                <div className="w-[6px] xl:w-[6px] h-[61px]  bacc skew-x-32"></div>
-                                <p className="transform skew-x-32 xl:text-[20px] text-[16px] font-[400] uppercase  ">
+                                <div className="w-[6px] 2xl:w-[6px] h-[61px]  bacc skew-x-32"></div>
+                                {/* <div className="w-[6px] xl:w-[6px] h-[61px]  bacc "></div> */}
+                                  <p className="transform skew-x-32 2xl:text-[20px] text-[16px] font-[400] uppercase  ">
+                                {/* <p className="transform  xl:text-[20px] text-[16px] font-[400] uppercase  "> */}
                                     {item}
                                 </p>
                             </div>

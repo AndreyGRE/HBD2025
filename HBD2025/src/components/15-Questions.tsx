@@ -1,15 +1,15 @@
 
 function Questions() {
     return (
-        <div className="mt-[100px] xl:mt-[260px] xl:pl-[207px] pr-6 pl-[27px] xl:pr-[228px]  relative ">
+        <div className="mt-[100px] xl:mt-[160px] 2xl:mt-[260px] xl:pl-[107px] 2xl:pl-[207px] pr-6 pl-[27px] xl:pr-[228px]  relative ">
             <div className="flex  flex-col gap-[22px] xl:gap-12">
-                <div className="flex flex-col xl:flex-row flex-1 gap-4 xl:gap-6">
+                <div className="flex flex-col lg:flex-row flex-1 gap-4 xl:gap-6">
                     <div className="flex flex-1 gap-[18px] xl:gap-6">
-                        <div className="text-[32px] xl:max-w-full xl:text-[74px] gradient font-[800] uppercase">
+                        <div className="text-[32px] md:text-[56px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] xl:max-w-full  gradient font-[800] uppercase">
                             что такое<br className="xl:hidden"></br>house business day?
                         </div>
                     </div>
-                    <div className="flex-1 text-white text-[16px] xl:text-[20px] font-[300] uppercase">
+                    <div className="flex-1 text-white text-[16px] lg:text-[18px]  xl:text-[20px] font-[300] uppercase">
                         <p>
                             Это бизнес-концерт от строительной компании{" "}
                             <a href='https://www.gwd.ru/' target="blank" className="text-white hover:underline hover:decoration-1 hover:decoration-[#FFA100]">
@@ -37,13 +37,13 @@ function Questions() {
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-col xl:flex-row flex-1 gap-4 xl:gap-6">
+                <div className="flex flex-col lg:flex-row flex-1 gap-4 xl:gap-6"> 
                     <div className="flex flex-1  gap-[18px] xl:gap-6">
-                        <div className="text-[32px] max-w-[320px] xl:max-w-full xl:text-[70px] gradient font-[750] uppercase">
+                        <div className="text-[32px] lg:text-[54px] xl:text-[58px] 2xl:text-[74px] max-w-[320px] lg:max-w-full  gradient font-[750] uppercase">
                             ОБ ОРГАНИЗАТОРЕ GOOD WOOD{" "}
                         </div>
                     </div>
-                    <div className="flex-1  text-white text-[20px] font-[300] uppercase">
+                    <div className="flex-1  text-white text-[20px] lg:text-[18px] font-[300] uppercase">
                         <p>
                             Компания{" "}
                             <a href='https://www.gwd.ru/' target="blank"  className="text-white hover:underline hover:decoration-1 hover:decoration-[#FFA100]">

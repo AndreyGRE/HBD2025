@@ -7,7 +7,7 @@ export default function Navbar() {
     return (
         <>
             {/* Бургер-меню (видно только на мобильных) */}
-            <div className="md:hidden flex justify-between items-center pt-[14px] pl-[24px] pr-[21px] pb-[15px] sticky top-0 z-100  ">
+            <div className="md:hidden flex justify-between items-center pt-[14px] pl-[24px] pr-[21px] pb-[15px] sticky top-0 z-100 bg-[#000023]/70 ">
                 {/* иконка и сайта а также бургер меню */}
                 <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     <svg width="34" height="58" viewBox="0 0 34 58" fill="none">
@@ -203,7 +203,7 @@ export default function Navbar() {
 
             {/* Навигация для десктопа */}
 
-            <div className="hidden bg-[#000023]/70  md:flex justify-between items-end pl-[164px] pr-[156px] pt-[32px] sticky top-0 z-100 pb-3 ">
+            <div className="hidden bg-[#000023]/70  md:flex justify-between items-end lg:pl-[54px] lg:pr-[56px] xl:pl-[104px] xl:pr-[106px] 2xl:pl-[164px] 2xl:pr-[156px] pt-[22px] xl:pt-[32px] sticky top-0 z-100 pb-3 ">
                 <a href="https://housebusinessday.ru/">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -235,7 +235,7 @@ export default function Navbar() {
                 </a>
 
                 <div className="flex gap-[46px] items-end ">
-                    <div className="text-white font-[400] text-[17px] flex gap-[29px] leading-[160%] pb-[12px]">
+                    <div className="text-white font-[400] lg:text-[15px]  xl:text-[17px] flex gap-[29px] leading-[160%] pb-[12px]">
                         <a
                             href="#AboutEvent"
                             className="cursor-pointer border-b-3 border-transparent hover:text-[#F28812] hover:border-b-3 hover:border-[#F28812]"
@@ -270,7 +270,7 @@ export default function Navbar() {
 
                     <a
                         href="#ByTicket"
-                        className="svgBtn flex items-center cursor-pointer -skew-x-20 rounded-[8px] border-2 border-white text-white text-[19px] py-[8px] px-[24px] gap-1 font-[400] transition hover:bg-white hover:text-black"
+                        className="svgBtn flex items-center cursor-pointer -skew-x-20 rounded-[8px] border-2 border-white text-white lg:text-[16px] xl:text-[19px] py-[8px] px-[24px] gap-1 font-[400] transition hover:bg-white hover:text-black"
                     >
                         <div className="skew-x-20">КУПИТЬ БИЛЕТ</div>
                     </a>

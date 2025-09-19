@@ -219,11 +219,11 @@ function ExpoZone() {
                 </svg>
             </div>
             <div className="flex flex-col  justify-center z-10">
-                <div className="ml-[27px] mb-5 xl:mb-[76px] xl:ml-[207px] flex gradient flex-col xl:flex-row xl:gap-[264px] gap-[14px] xl:items-center items-start relative">
-                    <div className="gradient text-[32px] xl:text-[74px] font-[750] xl:text-center text-left">
+                <div className="ml-[27px] mb-5  xl:mb-[76px] lg:ml-[107px] xl:ml-[157px] 2xl:ml-[207px] flex gradient flex-col xl:flex-row xl:gap-[264px] gap-[14px] xl:items-center items-start relative">
+                    <div className="gradient text-[32px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[750] xl:text-center text-left">
                         ЭКСПОЗОНА
                     </div>
-                    <div className="  text-[18px] xl:text-[20px] font-[450] max-w-[620px] text-left uppercase pr-[120px] ">
+                    <div className="  text-[18px] lg:text-[19px] xl:text-[20px] font-[450] max-w-[620px] text-left uppercase pr-[120px] ">
                         Новинки материалов и технологий от ключевых игроков
                         строительного рынка
                     </div>

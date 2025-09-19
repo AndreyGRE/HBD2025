@@ -124,7 +124,7 @@ body {
     background-image: url("./svg/LogoMob.png");
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
     .bg-mobile {
         background-image: url("./images/Title/BgTitle.png");
     }
@@ -134,7 +134,7 @@ body {
     background-image: url("./images/AfterParty/MbAf.svg");
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
     .bg-Af {
         background-image: url("./images/AfterParty/BgAf.svg");
     }
@@ -161,11 +161,15 @@ body {
 }
 
 .speakerBgTop {
-     background: linear-gradient(90deg, #000023 18.95%, rgba(126, 130, 215, 0.90) 59.21%, #E95521 100.05%),
+     background: 
+     linear-gradient(189deg, #E95521 -5.09%, rgba(126, 130, 215, 0.90) 64.87%, #000023 116.13%)
+
+
+     /* linear-gradient(90deg, #000023 18.95%, rgba(126, 130, 215, 0.90) 59.21%, #E95521 100.05%),
                  linear-gradient(180deg, #000023 8.23%, rgba(126, 130, 215, 0.90) 65.78%, #E95521 144.32%),
                  linear-gradient(252deg, #000023 -65.13%, #091267 -8.79%, rgba(126, 199, 215, 0.90) 10.2%, #0F0148 52.84%, #2F3F7A 86.65%, #7102FF 122.06%),
                  linear-gradient(271deg, #E0921E 5.79%, #F05C14 55.28%),
-                 linear-gradient(90deg, #000023 18.95%, rgba(126, 130, 215, 0.90) 59.21%, #E95521 100.05%),
+                 linear-gradient(90deg, #000023 18.95%, rgba(126, 130, 215, 0.90) 59.21%, #E95521 100.05%), */
                  #1E195D
   
 }
@@ -254,12 +258,17 @@ body {
 
 .card {
   background: 
-    linear-gradient(90deg, #000023 20.8%, rgba(126, 130, 215, 0.90) 60.43%, #E95521 100.63%),
+    linear-gradient(105deg, #000023 24.15%, rgba(126,130,215,0.90) 56.81%, #E95521 89.93%)
+    /* linear-gradient(90deg, #000023 20.8%, rgba(126, 130, 215, 0.90) 60.43%, #E95521 100.63%),
     linear-gradient(180deg, #000023 8.24%, rgba(126, 130, 215, 0.90) 65.79%, #E95521 144.32%),
     linear-gradient(252deg, #000023 -64.79%, #091267 -9.13%, rgba(126, 199, 215, 0.90) 9.63%, #0F0148 51.77%, #2F3F7A 85.17%, #7102FF 120.16%),
     linear-gradient(271deg, #E0921E 5.13%, #F05C14 53.83%),
-    linear-gradient(90deg, #000023 20.8%, rgba(126, 130, 215, 0.90) 60.43%, #E95521 100.63%),
+    linear-gradient(90deg, #000023 20.8%, rgba(126, 130, 215, 0.90) 60.43%, #E95521 100.63%), */
     #1E195D;
 
  
+}
+
+.bg-WhoТeedsСome{
+    background-image: url("./images/WhoТeedsСome/bgCart.png");
 }

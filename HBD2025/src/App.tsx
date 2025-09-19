@@ -20,27 +20,45 @@ import FAQ from "./components/18-FAQ.tsx";
 
 function App() {
     return (
-        <div>
+        <div className="bg-[#000023]">
             <div className="bg-[#000023] bg-opasity-100  w-full xl:max-w-[1920px] xl:mx-auto relative">
+                {/*  */}
                 <NavigationMenu></NavigationMenu>
             <div className=" relative z-10  overflow-hidden">
                 
+                {/*  */}
                 <Title></Title>
+                {/*  */}
                 <AboutEvent></AboutEvent>
+                {/*  */}
                 <AnonsVideo></AnonsVideo>
+                {/*  */}
                 <WhoTeedsCome></WhoTeedsCome>
+                {/*  */}
                 <Speakers></Speakers>
+                {/*  */}
                 <Guests></Guests>
-                <Music></Music>
+                {/*  */}
+                {/* <Music></Music> */}
+                {/*  */}
                 <ExpoZone></ExpoZone>
+                {/*  */}
                 <ItWas></ItWas>
+                {/*  */}
                 <StayInformed></StayInformed>
+                {/*  */}
                 <TicketPrices></TicketPrices>
+                {/*  */}
                 <Registration></Registration>
-                <AfterParty></AfterParty>
+        
+                                                                <AfterParty></AfterParty>
+                {/*  */}
                 <Questions></Questions>
+                {/*  */}
                 <Sponsors></Sponsors>
+                {/*  */}
                 <FAQ></FAQ>
+                {/*  */}
                 <AnyOtherQuestions></AnyOtherQuestions>
             </div>
         </div>

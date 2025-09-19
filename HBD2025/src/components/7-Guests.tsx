@@ -30,7 +30,7 @@ function Guests() {
 
             <div className="flex flex-col xl:gap-12 gap-0 relative">
                 <div className="flex flex-col mb-[64px]">
-                    <div className="gradient text-[32px] xl:text-[74px] font-[700] xl:ml-[207px] uppercase ml-[28px] mr-[24px]">
+                    <div className="gradient text-[32px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[700] ml-[28px] lg:ml-[107px] xl:ml-[157] 2xl:ml-[207px] uppercase  mr-[24px]">
                         СПЕЦИАЛЬНЫЕ<br></br>ГОСТИ
                     </div>
                     <div className="absolute right-0 xl:-top-105 -top-55 opacity-35 xl:w-[444px] xl:h-[734px] w-[35%] h-[35%]">
@@ -278,7 +278,7 @@ function Guests() {
                         </svg>
                     </div>
                 </div>
-                <div className="flex flex-wrap xl:gap-x-40 gap-y-[26px] xl:gap-y-[32px] justify-center xl:items-center xl:pl-[57px] overflow-hidden">
+                <div className="flex flex-wrap lg:gap-x-40 gap-y-[26px] lg:gap-y-[32px] justify-center xl:items-center xl:pl-[57px] overflow-hidden">
                     {guests
                         .sort(
                             (a, b) => (a.sort_order ?? 0) - (b.sort_order ?? 0)

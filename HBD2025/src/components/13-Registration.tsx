@@ -4,12 +4,12 @@ function Registration() {
             id="ByTicket"
             className="mt-[100px] xl:mt-[176px] relative px-[27px]"
         >
-            <div className="flex flex-col  justify-center gap-11">
+            <div className="flex flex-col  justify-center gap-11 lg:mx-[50px] xl:mx-[60px] 2xl:mx-[70px]">
                 <div className="flex flex-col justify-center items-center">
-                    <div className="gradient text-[32px] xl:text-[74px] font-[750] mb-[24px] xl:mb-0">
+                    <div className="gradient text-[32px] lg:text-[54px] xl:text-[74px] 2xl:text-[74px]  font-[750] mb-[24px] xl:mb-0">
                         РЕГИСТРАЦИЯ
                     </div>
-                    <div className="gradient text-[18px] xl:max-w-[558px] xl:text-[16px] font-[500] uppercase text-center ">
+                    <div className="gradient  text-[18px] lg:text-[19px]  xl:text-[20px]  lg:max-w-[558px] font-[500] uppercase text-center ">
                         здесь вы можете оплатить билет банковской картой или по
                         безналичному расчету от организации
                     </div>
@@ -21,33 +21,17 @@ function Registration() {
                     <a
                         href="https://docs.google.com/forms/d/e/1FAIpQLScKs1ia-JovKcTqS5zNWjaChW4BN-MAOQtlmGieBAXOGHPyFg/viewform"
                         target="blank"
-                        className="flex items-center justify-center gap-1 text-white xl:text-[30px]  
-                        xl:px-11 py-1 xl:py-4 w-full xl:w-fit rounded-lg border-1 cursor-pointer 
+                        className="flex items-center justify-center gap-1 text-white lg:text-[30px]  
+                        lg:px-11 py-1 lg:py-4 w-full  lg:w-fit rounded-lg border-1 cursor-pointer 
                         svgBtn
                         hover:bg-white hover:text-black
                         -skew-x-18
                          "
                     >
-                        {/* <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="w-14 h-12 xl:w-[48px] xl:h-[48px] skew-x-18"
-                        >
-                            <path
-                                d="M5.30397 7.86351C5.26732 7.16358 5.91313 6.52998 6.60608 6.54744C15.74 6.54395 24.8758 6.54744 34.0097 6.54569C34.7358 6.47238 35.4235 7.12344 35.4078 7.8478C35.4131 10.1047 35.4061 12.3615 35.4113 14.6184C37.7432 14.6202 40.0787 14.6132 42.4106 14.6219C43.1681 14.6045 43.7843 15.3271 43.7005 16.0706C43.697 22.8133 43.7057 29.5578 43.697 36.3005C43.6726 39.0129 41.2795 41.4426 38.5566 41.4513C29.2446 41.4583 19.9344 41.4513 10.6224 41.4548C8.66572 41.4897 6.7527 40.315 5.89743 38.5573C5.47677 37.7597 5.28303 36.8538 5.29873 35.9549C5.30572 26.5922 5.29524 17.2279 5.30397 7.86351ZM7.91866 9.16387C7.91692 18.0395 7.92215 26.9152 7.91517 35.7908C7.73015 37.4053 9.12826 39.0024 10.7882 38.8383C18.3635 38.8366 25.9387 38.8314 33.514 38.8418C33.0689 38.011 32.7862 37.0824 32.7914 36.1346C32.7914 27.1438 32.7931 18.153 32.7896 9.16213C24.4987 9.16562 16.2096 9.16213 7.91866 9.16387ZM35.4096 17.2366C35.4078 23.4783 35.4113 29.7201 35.4078 35.9618C35.3729 36.8328 35.7377 37.7213 36.4254 38.2693C37.2667 38.9291 38.4798 39.0094 39.452 38.6184C40.44 38.2222 41.0736 37.1872 41.0823 36.1381C41.0823 29.837 41.084 23.5359 41.0823 17.2366C39.1902 17.2366 37.2999 17.2366 35.4096 17.2366Z"
-                                fill="white"
-                            />
-                            <path
-                                d="M13.8392 14.7773C14.1395 14.6219 14.4798 14.6079 14.8097 14.6149C18.6567 14.6289 22.5037 14.6027 26.3507 14.6271C27.1222 14.6516 27.7174 15.4685 27.5219 16.212C27.3997 16.8334 26.7905 17.268 26.1674 17.2366C22.2663 17.2349 18.3652 17.2401 14.4641 17.2349C13.9352 17.2401 13.4168 16.9015 13.2423 16.3953C12.9997 15.8106 13.272 15.06 13.8392 14.7773Z"
-                                fill="white"
-                            />
-                            <path
-                                d="M17.8712 22.7941C18.1121 22.6789 18.3879 22.6964 18.6497 22.6894C21.1544 22.6946 23.6592 22.6877 26.1656 22.6911C26.9284 22.6178 27.6318 23.3405 27.555 24.098C27.5201 24.7857 26.8586 25.3617 26.1744 25.3093C23.6068 25.3093 21.0392 25.3093 18.4717 25.3093C17.7054 25.3826 17.0003 24.653 17.084 23.892C17.1067 23.4103 17.4471 22.9983 17.8712 22.7941Z"
-                                fill="white"
-                            />
-                        </svg> */}
+                       
                         <p className="skew-x-18 text-center text-[18px] font-[300] xl:font-[100]">
                             {" "}
-                            АККРЕДИТАЦИЯ <br className="xl:hidden"></br>ДЛЯ СМИ
+                            АККРЕДИТАЦИЯ <br className="lg:hidden"></br>ДЛЯ СМИ
                         </p>
                     </a>
                     <div className="absolute xl:left-0 right-0 xl:top-0 -top-80 opacity-35 z-0 xl:h-[444px] xl:w-[494px] w-[50%] h-[50%]">

@@ -10,9 +10,11 @@ type speaker = {
 function Speaker({ srcImg, index, text1, text2, text3, url }: speaker) {
     return (
         // -skew-x-7
-        <div className= {`speakerBg border-1 border-white py-[20px] xl:py-[40px] pl-2 pr-2 -skew-x-9  xl:-skew-x-7 w-5/9 h-[300px] xl:w-[420px] xl:h-[673px]  max-h-[672px] max-w-[600px] xl:rounded-[40px] rounded-[14px]  relative ${index == 0 ? 'xl:mt-100  ' : ''}
-        ${index == 2 ? 'xl:ml-120 ' : ''}
-        ${index == 3 ? 'xl:-mt-100' : ''}
+        <div className= {`speakerBg py-[20px] xl:py-[40px] pl-2 pr-2 -skew-x-9  xl:-skew-x-7 w-6/9 h-[320px] lg:w-[380px] lg:h-[590px] xl:w-[420px] xl:h-[673px]  max-h-[672px] max-w-[600px] xl:rounded-[40px] rounded-[14px]  relative 
+        ${index == 0 ? 'lg:-skew-x-7   ' : ''}
+        ${index == 0 ? 'xl:mt-100  ' : ''}
+        ${index == 2 ? '2xl:ml-120 ' : ''}
+        ${index == 3 ? '2xl:-mt-100' : ''}
         `} >
             <div className="skew-x-9 xl:skew-x-7 flex flex-col h-full items-center">
                 
@@ -20,7 +22,7 @@ function Speaker({ srcImg, index, text1, text2, text3, url }: speaker) {
                     <img
                         src={srcImg}
                         alt="Speaker Photo"
-                        className={`object-cover max-h-[130px] ${index == 0 ? 'xl:max-h-[250px]' : 'xl:max-h-[300px]'}  xl:max-w-[380px]  `}
+                        className={`object-cover max-h-[130px] lg:max-h-[250px] ${index == 0 ? '2xl:max-h-[250px]' : '2xl:max-h-[300px]  '}  2xl:max-w-[380px]  `}
                     />
                     <div className=" bg-black w-full h-1 rounded-2xl"></div>
                     <a href={url} className=" absolute xl:-top-5 xl:-right-10 -top-2 -right-7" >
@@ -58,13 +60,13 @@ function Speaker({ srcImg, index, text1, text2, text3, url }: speaker) {
                     </a>
                 </div>
                 <div className="flex-1 border-black flex-col justify-center w-full">
-                    <div className="max-w-[330px] text-white xl:text-[21px] text-[10px] font-[500] uppercase mt-6 xl:px-2 xl:leading-[25px]">
+                    <div className="max-w-[330px] text-white xl:text-[21px] lg:text-[18px] text-[10px] font-[500] uppercase mt-6 xl:px-2 xl:leading-[25px]">
                         {text1}
                     </div>
-                    <div className="max-w-[212px] text-white  text-[15px] xl:text-[30px] font-[750] uppercase mt-4 xl:px-2 xl:leading-[35px]">
+                    <div className="max-w-[120px] text-white  text-[15px] lg:text-[26px] xl:text-[30px] font-[750] uppercase mt-4 xl:px-2 lg:leading-[35px]">
                         {text2}
                     </div>
-                    <div className="max-w-[250px] text-white text-[7px] xl:text-[16px] font-[100] mt-3 xl:px-2 xl:leading-[20px]">
+                    <div className="max-w-[200px] text-white text-[7px] lg:text-[12px] xl:text-[16px] font-[100] mt-3 xl:px-2 xl:leading-[20px]">
                         {text3}
                     </div>
                 </div>

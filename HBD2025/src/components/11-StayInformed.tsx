@@ -46,7 +46,7 @@ function StayInformed() {
         <div className="mt-[78px] xl:mt-[236px] relative ">
             <div className="flex flex-col  justify-center gap-10">
                 <div className="flex flex-col ">
-                    <div className="my-gradient text-[32px] xl:text-[74px] font-[750] text-left xl:ml-[207px] ml-[27px]">
+                    <div className="my-gradient text-[32px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[750] text-left xl:ml-[207px] ml-[27px]">
                         КАК ЭТО БЫЛО
                     </div>
                 </div>
@@ -391,7 +391,7 @@ function StayInformed() {
                         <img
                             src={images[currentIndex]}
                             alt={`Gallery Image ${currentIndex + 1}`}
-                            className={`xl:max-w-[1400px] xl:max-h-[700px] mx-auto object-contain transition-opacity duration-300 ${
+                            className={`lg:max-w-[700px] xl:max-w-[1000px] 2xl:max-w-[1400px] lg:max-h-[600px] xl:max-h-[600px] 2xl:max-h-[700px] mx-auto object-contain transition-opacity duration-300 ${
                                 fade ? "opacity-0" : "opacity-100"
                             }`}
                         />

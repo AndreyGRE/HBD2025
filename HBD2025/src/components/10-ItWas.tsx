@@ -6,10 +6,16 @@ import imageGal3 from "../images/SponsorGallery/03_ColorLogo.png";
 import imageGal4 from "../images/SponsorGallery/04_ColorLogo.png";
 import imageGal5 from "../images/SponsorGallery/05_ColorLogo.png";
 import imageGal6 from "../images/SponsorGallery/06_ColorLogo.png";
-import imageGal7 from "../images/SponsorGallery/07_ColorLogo.png";
-import imageGal8 from "../images/SponsorGallery/08_ColorLogo.png";
-import imageGal9 from "../images/SponsorGallery/09_ColorLogo.png";
-import imageGal10 from "../images/SponsorGallery/10_ColorLogo.png";
+import imageGal21 from "../images/SponsorGallery/21_ColorLogo.png";
+import imageGal22 from "../images/SponsorGallery/22_ColorLogo.png";
+import imageGal23 from "../images/SponsorGallery/23_ColorLogo.png";
+import imageGal24 from "../images/SponsorGallery/24_ColorLogo.png";
+import imageGal25 from "../images/SponsorGallery/25_ColorLogo.png";
+import imageGal26 from "../images/SponsorGallery/26_ColorLogo.png";
+import imageGal27 from "../images/SponsorGallery/27_ColorLogo.png";
+import imageGal31 from "../images/SponsorGallery/31_ColorLogo.png";
+import imageGal32 from "../images/SponsorGallery/32_ColorLogo.png";
+import imageGal33 from "../images/SponsorGallery/33_ColorLogo.png";
 
 function ItWas() {
     interface originalImages {
@@ -25,10 +31,16 @@ function ItWas() {
         imageGal4,
         imageGal5,
         imageGal6,
-        imageGal7,
-        imageGal8,
-        imageGal9,
-        imageGal10,
+        imageGal21,
+        imageGal22,
+        imageGal23,
+        imageGal24,
+        imageGal25,
+        imageGal26,
+        imageGal27,
+        imageGal31,
+        imageGal32,
+        imageGal33, 
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
     // Дублируем изображения для бесконечного скролла
@@ -38,13 +50,13 @@ function ItWas() {
     useEffect(() => {
         const updateImagesPerView = () => {
             if (window.innerWidth < 640) {
-                setImagesPerView(3); // мобилки
+                setImagesPerView(8); // мобилки
             } else if (window.innerWidth < 1024) {
-                setImagesPerView(6); // планшеты
+                setImagesPerView(18); // планшеты
             } else if (window.innerWidth < 1440) {
-                setImagesPerView(8); // десктоп
+                setImagesPerView(18); // десктоп
             } else {
-                setImagesPerView(8); // большие экраны
+                setImagesPerView(18); // большие экраны
             }
         };
 
@@ -73,12 +85,12 @@ function ItWas() {
             <div className="mt-[100px] xl:mt-[250px] relative ">
                 <div className="flex flex-col  justify-center xl:gap-[32px] gap-[14px]">
                     <div className="flex flex-col items-center">
-                        <div className="gradient text-[32px] xl:text-[74px] font-[750] ">
+                        <div className="gradient text-[32px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[750] ">
                             БУДЬ В КУРСЕ
                         </div>
                     </div>
                     <div className="flex justify-center items-center flex-col gap-10">
-                        <div className=" gradient text-[12px] xl:text-[20px] xl:font-[500] font-[700] uppercase text-center max-w-[890px] pl-[42px] pr-[41px]">
+                        <div className=" gradient text-[12px] lg:text-[16px]  xl:text-[18px] 2xl:text-[20px] xl:font-[500] font-[700] uppercase text-center max-w-[890px] pl-[42px] pr-[41px]">
                             Приходите, и вы сможете лично пообщаться с ведущими
                             специалистами
                             <br className="unvisible xl:visible"></br>
@@ -88,7 +100,8 @@ function ItWas() {
                         <div>
                             <div className="max-w-full overflow-hidden ">
                                 <div
-                                    className="flex transition-transform duration-500 ease-in-out"
+                                
+                                    className="flex ease-in-out duration-500 transition-transform gap-[20px] xl:gap-[89px]"
                                     style={{
                                         transform: `translateX(-${
                                             currentIndex * (100 / imagesPerView)
@@ -105,11 +118,11 @@ function ItWas() {
                                             }}
                                             className=" px-[5px] flex-shrink-0"
                                         >
-                                            <div className="aspect-[2/1] overflow-hidden ">
+                                            <div className="overflow-hidden ">
                                                 <img
                                                     src={src}
                                                     alt={`slide-${index}`}
-                                                    className="h-full w-full object-cover"
+                                                    className="h-full w-full object-contain"
                                                 />
                                             </div>
                                         </div>
