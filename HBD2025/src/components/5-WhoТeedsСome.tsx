@@ -177,9 +177,9 @@ function WhoTeedsCome() {
                     {text.map((item, i) => {
                         return (
                             <div
-                             className={`bg-[#2e2a78] pl-11 gap-3 text-white px-8 py-6 2xl:max-w-[400px] 2xl:min-w-[353px] h-[160px] min-w-[305px] justify-center 2xl:rounded-[40px] rounded-[14px] shadow-lg transform items-center -skew-x-32 flex ${
-                                    i === 3 ? "2xl:ml-27" : ""
-                                }`}
+                             className={`bg-[#2e2a78] pl-11 gap-3 text-white px-8 py-6 2xl:max-w-[350px] 2xl:min-w-[353px] h-[160px] min-w-[305px] justify-center 2xl:rounded-[40px] rounded-[14px] shadow-lg transform items-center -skew-x-32 flex 
+                                 ${i === 2 ? "2xl:mr-10" : ""}
+                                ${i === 3 ? "2xl:ml-27" : ""}`}
                                 // className={`bg-WhoТeedsСome pl-11 gap-3 text-white px-8 py-6 xl:max-w-[400px] xl:min-w-[353px] h-[162px] min-w-[337px] justify-center xl:rounded-[40px] shadow-lg transform items-center  flex ${
                                 //     i === 3 ? "xl:ml-27" : ""
                                 // }`}

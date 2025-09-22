@@ -391,7 +391,7 @@ function StayInformed() {
                         <img
                             src={images[currentIndex]}
                             alt={`Gallery Image ${currentIndex + 1}`}
-                            className={`lg:max-w-[700px] xl:max-w-[1000px] 2xl:max-w-[1400px] lg:max-h-[600px] xl:max-h-[600px] 2xl:max-h-[700px] mx-auto object-contain transition-opacity duration-300 ${
+                            className={`lg:max-w-[700px] xl:max-w-[1000px] 2xl:max-w-[1200px] lg:max-h-[600px] xl:max-h-[600px] 2xl:max-h-[700px] mx-auto object-contain transition-opacity duration-300 ${
                                 fade ? "opacity-0" : "opacity-100"
                             }`}
                         />

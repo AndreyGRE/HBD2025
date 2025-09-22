@@ -246,7 +246,7 @@ function ExpoZone() {
                                     }}
                                     className=" px-[5px] flex-shrink-0 "
                                 >
-                                    <div className="relative xl:w-[700px] xl:h-[700px] w-full h-[250px] overflow-hidden">
+                                    <div className="relative xl:w-[400px] xl:h-[500px] 2xl:w-[600px] 2xl:h-[600px]  w-full h-[250px] overflow-hidden">
                                         <img
                                             src={src}
                                             alt={`slide-${index}`}

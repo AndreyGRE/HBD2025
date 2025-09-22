@@ -1,12 +1,12 @@
 
 function Questions() {
     return (
-        <div className="mt-[100px] xl:mt-[160px] 2xl:mt-[260px] xl:pl-[107px] 2xl:pl-[207px] pr-6 pl-[27px] xl:pr-[228px]  relative ">
+        <div className="mt-[100px] xl:mt-[160px] 2xl:mt-[260px] xl:pl-[107px] 2xl:max-w-[1500px] 2xl:mx-auto pr-6 pl-[27px] xl:pr-[228px] 2xl:pr-[128px]  relative ">
             <div className="flex  flex-col gap-[22px] xl:gap-12">
                 <div className="flex flex-col lg:flex-row flex-1 gap-4 xl:gap-6">
                     <div className="flex flex-1 gap-[18px] xl:gap-6">
                         <div className="text-[32px] md:text-[56px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] xl:max-w-full  gradient font-[800] uppercase">
-                            что такое<br className="xl:hidden"></br>house business day?
+                            что такое<br className="xl:hidden"></br> house business day?
                         </div>
                     </div>
                     <div className="flex-1 text-white text-[16px] lg:text-[18px]  xl:text-[20px] font-[300] uppercase">

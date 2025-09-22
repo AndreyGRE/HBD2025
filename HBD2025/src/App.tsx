@@ -39,7 +39,7 @@ function App() {
                 {/*  */}
                 <Guests></Guests>
                 {/*  */}
-                {/* <Music></Music> */}
+                <Music></Music>
                 {/*  */}
                 <ExpoZone></ExpoZone>
                 {/*  */}

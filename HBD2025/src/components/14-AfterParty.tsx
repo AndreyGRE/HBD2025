@@ -5,10 +5,10 @@ function AfterParty() {
     return (
         <div
             id="AfterParty"
-            className="  px-[0px] mt-[100px] lg:mx-auto xl:mt-[384px] lg:max-w-[1000px] xl:max-w-[1200px]   2xl:ml-[211px] "
+            className="px-[0px] mt-[100px] lg:mx-auto xl:mt-[384px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-full  2xl:ml-[0px] "
         >
-            <div className=" absolute -right-[20%] w-[1604px] h-[772px] rounded-[1604px] flex-shrink-0 rotate-[30deg] blur-[250px] custom-gradient-bg -z-10"></div>
-            <div className="bg-Af bg-contain bg-no-repeat text-white 2xl:ml-[211px] pl-[27px] 2xl:mr-[174px] 2xl:pt-[44px] pt-[42px] relative">
+            <div className="absolute -right-[20%] w-[1604px] h-[772px] rounded-[1604px] flex-shrink-0 rotate-[30deg] blur-[250px] custom-gradient-bg -z-10"></div>
+            <div className="bg-Af bg-contain bg-no-repeat text-white 2xl:ml-[211px] pl-[27px] 2xl:mr-[0px] 2xl:pt-[44px] pt-[42px] relative">
                 <div className="relative">
                     <div className="flex flex-col gap-[30px]  relative">
                         <p className="text-[67px] lg:text-[70px] xl:text-[90px]  2xl:text-[120px] font-[750] xl:leading-[120px] leading-[40px] max-w-[440px]">

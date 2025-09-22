@@ -159,19 +159,37 @@ body {
         mask-image: url("./images/ExpoZone/mask.svg");
     }
 }
+@media (min-width: 1740px) {
+    .ml-71w {
+        margin-left: 250px;
+    }
+}
 
 .speakerBgTop {
-     background: 
-     linear-gradient(189deg, #E95521 -5.09%, rgba(126, 130, 215, 0.90) 64.87%, #000023 116.13%)
+    background: linear-gradient(
+            189deg,
+            #e95521 -5.09%,
+            rgba(126, 130, 215, 0.9) 64.87%,
+            #000023 116.13%
+        )
+        #1e195d;
+}
 
+@media (min-width: 1500px) {
+    .lll {
+    }
+    .ggg{
 
-     /* linear-gradient(90deg, #000023 18.95%, rgba(126, 130, 215, 0.90) 59.21%, #E95521 100.05%),
-                 linear-gradient(180deg, #000023 8.23%, rgba(126, 130, 215, 0.90) 65.78%, #E95521 144.32%),
-                 linear-gradient(252deg, #000023 -65.13%, #091267 -8.79%, rgba(126, 199, 215, 0.90) 10.2%, #0F0148 52.84%, #2F3F7A 86.65%, #7102FF 122.06%),
-                 linear-gradient(271deg, #E0921E 5.79%, #F05C14 55.28%),
-                 linear-gradient(90deg, #000023 18.95%, rgba(126, 130, 215, 0.90) 59.21%, #E95521 100.05%), */
-                 #1E195D
-  
+    }
+}
+@media (min-width: 1900px) {
+    .lll {
+        margin-left: 380px;
+     
+    }
+    .ggg{
+        margin-top: -400px;
+    }
 }
 
 .speakerBg {
@@ -227,48 +245,57 @@ body {
     border-image-slice: 1;
 }
 
-
 .bg-custom-gradient {
-  background: linear-gradient(
-    1deg,
-    #000023 -1.8%,
-    #091267 14.73%,
-    #0f0148 47.8%,
-    rgba(126, 130, 215, 0.9) 63.8%,
-    #ff8900 88.87%,
-    #ff8900 104.88%
-  );
-  filter: blur(250px);
+    background: linear-gradient(
+        1deg,
+        #000023 -1.8%,
+        #091267 14.73%,
+        #0f0148 47.8%,
+        rgba(126, 130, 215, 0.9) 63.8%,
+        #ff8900 88.87%,
+        #ff8900 104.88%
+    );
+    filter: blur(250px);
 }
 
 .custom-gradient-bg {
-  background: linear-gradient(1deg, #000023 -1.8%, #091267 14.73%, #0F0148 47.8%, rgba(126, 130, 215, 0.90) 63.8%, #FF8900 88.87%, #FF8900 104.88%);
+    background: linear-gradient(
+        1deg,
+        #000023 -1.8%,
+        #091267 14.73%,
+        #0f0148 47.8%,
+        rgba(126, 130, 215, 0.9) 63.8%,
+        #ff8900 88.87%,
+        #ff8900 104.88%
+    );
 }
 .custom2-gradient-bg {
-  background: linear-gradient(
-    1deg,
-    #000023 -1.8%,
-    #091267 14.73%,
-    #0F0148 47.8%,
-    rgba(126, 130, 215, 0.90) 63.8%,
-    #FF8900 88.87%,
-    #FF8900 104.88%
-  );
+    background: linear-gradient(
+        1deg,
+        #000023 -1.8%,
+        #091267 14.73%,
+        #0f0148 47.8%,
+        rgba(126, 130, 215, 0.9) 63.8%,
+        #ff8900 88.87%,
+        #ff8900 104.88%
+    );
 }
 
 .card {
-  background: 
-    linear-gradient(105deg, #000023 24.15%, rgba(126,130,215,0.90) 56.81%, #E95521 89.93%)
-    /* linear-gradient(90deg, #000023 20.8%, rgba(126, 130, 215, 0.90) 60.43%, #E95521 100.63%),
+    background: linear-gradient(
+            105deg,
+            #000023 24.15%,
+            rgba(126, 130, 215, 0.9) 56.81%,
+            #e95521 89.93%
+        )
+        /* linear-gradient(90deg, #000023 20.8%, rgba(126, 130, 215, 0.90) 60.43%, #E95521 100.63%),
     linear-gradient(180deg, #000023 8.24%, rgba(126, 130, 215, 0.90) 65.79%, #E95521 144.32%),
     linear-gradient(252deg, #000023 -64.79%, #091267 -9.13%, rgba(126, 199, 215, 0.90) 9.63%, #0F0148 51.77%, #2F3F7A 85.17%, #7102FF 120.16%),
     linear-gradient(271deg, #E0921E 5.13%, #F05C14 53.83%),
     linear-gradient(90deg, #000023 20.8%, rgba(126, 130, 215, 0.90) 60.43%, #E95521 100.63%), */
-    #1E195D;
-
- 
+        #1e195d;
 }
 
-.bg-WhoТeedsСome{
+.bg-WhoТeedsСome {
     background-image: url("./images/WhoТeedsСome/bgCart.png");
 }
