@@ -7,7 +7,7 @@ interface speakerTop {
     text1?: string;
     text2?: string;
     text3?: string;
-    url?: string;
+    video_url?: string;
     sort_order?: number;
     index?: number;
 }
@@ -17,7 +17,7 @@ interface speaker {
     text1?: string;
     text2?: string;
     text3?: string;
-    url?: string;
+    video_url?: string;
     sort_order?: number;
     index?: number;
 }
@@ -28,6 +28,7 @@ function Speakers() {
             .then((res) => res.json())
             .then((data) => {
                 if (Array.isArray(data)) {
+                    console.log(data);
                     setSpeakers(data);
                 } else {
                     console.error("Данные не являются массивом:", data);
@@ -57,7 +58,7 @@ function Speakers() {
     return (
         <div id="Speakers" className="mt-[100px] xl:mt-[251px] relative ">
             <div className="flex flex-col gap-0 xl:gap-17 pl-[28px] pr-[25px] xl:pr-[60px] xl:pl-[201px]">
-                <div className="flex flex-col relative">
+                <div className="flex flex-col relative mb-[24px]">
                     <div className="gradient text-[32px] xl:text-[74px] font-[750] ">
                         СПИКЕРЫ
                     </div>
@@ -79,7 +80,7 @@ function Speakers() {
                                         text1={speakersTop1.text1}
                                         text2={speakersTop1.text2}
                                         text3={speakersTop1.text3}
-                                        url={speakersTop1.url}
+                                        url={speakersTop1.video_url}
                                     />
                                 );
                             })}
@@ -99,7 +100,7 @@ function Speakers() {
                                         text1={speakerObj.text1}
                                         text2={speakerObj.text2}
                                         text3={speakerObj.text3}
-                                        url={speakerObj.url}
+                                        url={speakerObj.video_url}
                                     />
                                 );
                             })}

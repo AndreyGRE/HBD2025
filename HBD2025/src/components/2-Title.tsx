@@ -5,7 +5,7 @@ function Title() {
         <>
             <div className="relative mt-[0px] xl:mt-[82px] w-full flex justify-between xl:flex-row flex-col-reverse gap-[38px] xl:gap-0 xl:px-[60px] bg-contain bg-no-repeat bg-mobile">
                 <div className="-z-1 absolute -left-[30%] top-0 flex-shrink-0 w-[1604px] h-[772px] rounded-[1604px] rotate-[30deg] blur-[250px] custom2-gradient-bg"></div>
-                <div className="pl-[27px] pr-[26px] lg:pt-[40px]  2xl:pt-[80px] xl:pb-[54px] pt-[64px] pb-[32px] ">
+                <div className="pl-[27px]  pr-[26px] lg:pt-[40px]  2xl:pt-[80px] xl:pb-[54px] pt-[64px] pb-[32px] ">
                     <div className="flex flex-col gap-y-6  lg:flex-row  relative">
                         <div className="flex flex-col">
                             <img src={logoUrl} alt="Logo" className="w-full lg:h-[90%] xl:h-full" />
@@ -15,7 +15,7 @@ function Title() {
                             СТРОИТЕЛЬСТВО
                         </div>
                     </div>
-                    <div className="mt-[43px] lg:mt-[15px] 2xl:mt-[33px] flex flex-row lg:justify-start lg:gap-30 xl:justify-between items-start ">
+                    <div className="mt-[43px] lg:mt-[15px] 2xl:mt-[33px] flex flex-row lg:justify-start lg:gap-32 xl:justify-between items-start ">
                         <a
                             href="#ByTicket"
                             className="hidden lg:flex lg:ml-8 cursor-pointer gap-2 bg-[#E95521] -skew-x-17 rounded-lg lg:px-[165px] xl:px-[100px]  xl:py-[15px]  2xl:py-[20px] w-3/4 lg:w-fit py-[10px] items-center justify-center text-white text-[20px] xl:text-[24px] font-[300] hover:opacity-80"
@@ -54,7 +54,7 @@ function Title() {
                                 </a>
                             </div>
 
-                            <div className="mr-20">
+                            <div className="mr-20 xl:mr-35">
                                 <div className="w-[24px] h-[24px]  xl:w-[44px] xl:h-[44px] ">
                                     <svg viewBox="0 0 44 44" fill="none">
                                         <path
@@ -95,14 +95,14 @@ function Title() {
                     </div>
                     <a
                         href="#ByTicket"
-                        className="mt-[62px] flex lg:hidden cursor-pointer gap-2 bg-[#E95521] -skew-x-17 rounded-lg   w-full  py-[10px] items-center justify-center text-white text-[20px] font-[300] hover:opacity-80"
+                        className="mt-[82px] flex lg:hidden cursor-pointer gap-2 bg-[#E95521] -skew-x-17 rounded-lg   w-full  py-[10px] items-center justify-center text-white text-[20px] font-[300] hover:opacity-80"
                     >
                         <div className="skew-x-20">КУПИТЬ БИЛЕТ</div>
                     </a>
                 </div>
             </div>
 
-            <div className="mt-[75px] xl:mt-[250px] flex lg:flex-row flex-col justify-center gap-[20px] 2xl:gap-[82px] 2xl:px-[60px]">
+            <div className="mt-[75px] xl:mt-[250px] flex lg:flex-row flex-col justify-center gap-[20px] lg:gap-[60px] 2xl:gap-[82px] 2xl:px-[60px]">
                 <div className="flex flex-col items-center">
                     <div className="xl:text-[106px] xl:font-[900]  text-[67px] font-[750] text-[#E95521]">
                         4500+

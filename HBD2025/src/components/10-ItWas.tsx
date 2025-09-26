@@ -13,9 +13,11 @@ import imageGal24 from "../images/SponsorGallery/24_ColorLogo.png";
 import imageGal25 from "../images/SponsorGallery/25_ColorLogo.png";
 import imageGal26 from "../images/SponsorGallery/26_ColorLogo.png";
 import imageGal27 from "../images/SponsorGallery/27_ColorLogo.png";
+import imageGal28 from "../images/SponsorGallery/28_ColorLogo.png";
 import imageGal31 from "../images/SponsorGallery/31_ColorLogo.png";
 import imageGal32 from "../images/SponsorGallery/32_ColorLogo.png";
 import imageGal33 from "../images/SponsorGallery/33_ColorLogo.png";
+import imageGal34 from "../images/SponsorGallery/34_ColorLogo.png";
 
 function ItWas() {
     interface originalImages {
@@ -38,9 +40,11 @@ function ItWas() {
         imageGal25,
         imageGal26,
         imageGal27,
+        imageGal28,
         imageGal31,
         imageGal32,
         imageGal33, 
+        imageGal34,
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
     // Дублируем изображения для бесконечного скролла
@@ -85,8 +89,8 @@ function ItWas() {
             <div className="mt-[100px] xl:mt-[250px] relative ">
                 <div className="flex flex-col  justify-center xl:gap-[32px] gap-[14px]">
                     <div className="flex flex-col items-center">
-                        <div className="gradient text-[32px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[750] ">
-                            БУДЬ В КУРСЕ
+                        <div className="gradient text-[32px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[750] uppercase">
+                            нетворкинг с лучшими 
                         </div>
                     </div>
                     <div className="flex justify-center items-center flex-col gap-10">

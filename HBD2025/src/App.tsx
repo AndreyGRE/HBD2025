@@ -51,7 +51,7 @@ function App() {
                 {/*  */}
                 <Registration></Registration>
         
-                                                                <AfterParty></AfterParty>
+                <AfterParty></AfterParty>
                 {/*  */}
                 <Questions></Questions>
                 {/*  */}

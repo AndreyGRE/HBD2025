@@ -7,7 +7,7 @@ export default function Navbar() {
     return (
         <>
             {/* Бургер-меню (видно только на мобильных) */}
-            <div className="md:hidden flex justify-between items-center pt-[14px] pl-[24px] pr-[21px] pb-[15px] sticky top-0 z-100 bg-[#000023]/70 ">
+            <div className="md:hidden flex justify-between items-center pt-[14px] pl-[24px] pr-[21px] pb-[15px] sticky top-0 z-40 bg-[#000023]/70 ">
                 {/* иконка и сайта а также бургер меню */}
                 <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     <svg width="34" height="58" viewBox="0 0 34 58" fill="none">
@@ -128,7 +128,7 @@ export default function Navbar() {
                 >
                     <div className="flex justify-between items-center p-4 ">
                         <button className="text-white">
-                            <svg
+                            {/* <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
                                 height="24"
@@ -141,7 +141,7 @@ export default function Navbar() {
                             >
                                 <line x1="18" y1="6" x2="6" y2="18" />
                                 <line x1="6" y1="6" x2="18" y2="18" />
-                            </svg>
+                            </svg> */}
                         </button>
                     </div>
 
@@ -203,7 +203,7 @@ export default function Navbar() {
 
             {/* Навигация для десктопа */}
 
-            <div className="hidden bg-[#000023]/70  md:flex justify-between items-end lg:pl-[54px] lg:pr-[56px] xl:pl-[104px] xl:pr-[106px] 2xl:pl-[164px] 2xl:pr-[156px] pt-[22px] xl:pt-[32px] sticky top-0 z-100 pb-3 ">
+            <div className="hidden bg-[#000023]/70 z-40  md:flex justify-between items-end lg:pl-[54px] lg:pr-[56px] xl:pl-[104px] xl:pr-[106px] 2xl:pl-[164px] 2xl:pr-[156px] pt-[22px] xl:pt-[32px] sticky top-0 pb-3 ">
                 <a href="https://housebusinessday.ru/">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

@@ -32,9 +32,9 @@ function TicketPrices() {
         <div id="TicketPrices" className="mt-[64px] xl:mt-[176px] relative ">
             <div className="flex flex-col  justify-center gap-11 ">
                 <div className="gradient text-[32px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[750] text-left   lg:ml-[53px] xl:ml-[156px] 2xl:ml-[263px] pl-[26px] pr-[25px]">
-                    СТОИМОСТЬ МЕРОПРТИЯТИЯ
+                    СТОИМОСТЬ МЕРОПРИЯТИЯ
                 </div>
-                <div className="flex xl:flex-wrap gap-10 xl:gap-x-[150px] gap-y-12 justify-start xl:justify-center xl:mx-auto items-center xl:max-w-[1700px] overflow-x-auto whitespace-nowrap scrollbar-hide pl-10 xl:px-0 pr-2">
+                <div className="flex flex-wrap gap-10 xl:gap-x-[150px] gap-y-12 justify-center xl:justify-center  items-center xl:max-w-[1700px]   xl:px-0 pr-2">
                     {ticket
                         .sort(
                             (a, b) => (a.sort_order ?? 0) - (b.sort_order ?? 0)

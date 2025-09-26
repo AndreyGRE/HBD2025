@@ -1,11 +1,11 @@
 function WhoTeedsCome() {
     const text: string[] = [
-        "Менеджерам проектов Лидерам команд",
-        "Владельцам крупного и среднего бизнеса",
-        "будущим руководителям в строительной сфере",
-        "руководителям Архитектурных бюро, Архитекторам",
-        "менеджерам Высшего и среднего звена строительных компаний",
-        "предпринимателям, руководителям в строительной сфере",
+        "ЛИДЕРОВ КОМАНД и менеджерОВ проектов",
+        "ВладельцЕВ крупного и среднего бизнеса",
+        "будущих руководителей в строительной сфере",
+        "АРХИТЕКТОРов и руководителей архитектурных бюро",
+        "менеджеров Высшего и среднего звена строительных компаний",
+        "предпринимателей, руководителей в строительной сфере",
     ];
 
     return (
@@ -161,15 +161,13 @@ function WhoTeedsCome() {
                     </svg>
                 </div>
                 <div className="flex lg:pl-[58px] xl:pl-[108px] font-[750] xl:text-[74px] pl-[27px] text-[32px] gradient z-9">
-                    <div className="font-[750] xl:text-[74px] gradient ">
-                        КОМУ
-                        <br></br>
-                        ОБЯЗАТЕЛЬНО ПОЙТИ
+                    <div className="font-[750] xl:text-[74px] gradient  uppercase">
+                        Для кого это мероприятие
                     </div>
                 </div>
                 <div
-                    className=" flex flex-nowrap overflow-x-auto gap-x-[20px] px-4 z-9
-                                2xl:flex-wrap 2xl:overflow-visible xl:gap-x-[46px] xl:gap-y-[62px] xl:pl-[46px]
+                    className=" flex flex-nowrap overflow-x-auto gap-x-[20px] px-4 z-9 justify-evenly
+                                lg:flex-wrap lg:overflow-visible lg:gap-x-[86px] lg:gap-y-[62px] xl:pl-[46px]
                                 scrollbar-hide 
                                 pl-14
                                 "
@@ -177,9 +175,10 @@ function WhoTeedsCome() {
                     {text.map((item, i) => {
                         return (
                             <div
-                             className={`bg-[#2e2a78] pl-11 gap-3 text-white px-8 py-6 2xl:max-w-[350px] 2xl:min-w-[353px] h-[160px] min-w-[305px] justify-center 2xl:rounded-[40px] rounded-[14px] shadow-lg transform items-center -skew-x-32 flex 
+                             className={`bg-[#2e2a78] pl-11 gap-3 text-white px-8 py-6 lg:max-w-[300px] 2xl:max-w-[350px] 2xl:min-w-[353px] h-[160px] min-w-[305px] lg:justify-center justify-center 2xl:rounded-[40px] rounded-[14px] shadow-lg transform items-center -skew-x-32 flex 
                                  ${i === 2 ? "2xl:mr-10" : ""}
-                                ${i === 3 ? "2xl:ml-27" : ""}`}
+                                 ${i === 3 ? "2xl:ml-27" : ""}
+                                `}
                                 // className={`bg-WhoТeedsСome pl-11 gap-3 text-white px-8 py-6 xl:max-w-[400px] xl:min-w-[353px] h-[162px] min-w-[337px] justify-center xl:rounded-[40px] shadow-lg transform items-center  flex ${
                                 //     i === 3 ? "xl:ml-27" : ""
                                 // }`}

@@ -93,11 +93,11 @@ export default function ModalForm() {
             {/* Модальное окно */}
             {isOpen && (
                 <div
-                    className="fixed inset-0 z-50 flex items-center justify-center bg-[#00000080] px-2"
+                    className="fixed py-2 inset-0  z-50 flex items-center justify-center bg-[#00000080] px-2"
                     onClick={closeModal}
                 >
                     <div
-                        className="relative bac2 shadow-lg w-7/8 xl:w-full xl:max-w-2xl mx-auto p-[32px] "
+                        className="relative top-10 bac2 shadow-lg w-7/8 h-[] xl:w-full xl:max-w-2xl mx-auto p-[32px] z-50"
                         onClick={(e) => e.stopPropagation()}
                     >
                         {/* Крестик в правом верхнем углу */}
@@ -129,7 +129,7 @@ export default function ModalForm() {
                             </svg>
                         </button>
 
-                        <h2 className="text-[32px] xl:text-[40px] mt-[10px] xl:mt-[76px] mb-4 text-[#F05C14] text-center uppercase font-[700]">
+                        <h2 className="text-[32px] xl:text-[40px] mt-[10px] xl:mt-[10px] mb-4 text-[#F05C14] text-center uppercase font-[700]">
                             Хочу стать партнёром
                         </h2>
 
@@ -226,7 +226,7 @@ export default function ModalForm() {
                                 <textarea
                                     id="message"
                                     name="message"
-                                    rows={4}
+                                    rows={1}
                                     value={formData.message}
                                     onChange={handleChange}
                                     className="bg-white w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400
@@ -263,6 +263,7 @@ export default function ModalForm() {
                                     <span className="ml-2 text-[12px] xl:text-[15px] text-white font-[100]">
                                         Я согласен на обработку моих{" "}
                                         <a
+                                            href="https://www.gwd.ru/about/politika-konfidentsialnosti/"
                                             target="_blank"
                                             className="text-[#FFA100] underline"
                                         >

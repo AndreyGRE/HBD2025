@@ -9,5 +9,5 @@ export default defineConfig({
         host: true, // открывает на всех интерфейсах
         port: 5173, // можно поменять порт, если нужно
     },
-     base: '/test2025/',
+    //  base: '/test2025/',
 });

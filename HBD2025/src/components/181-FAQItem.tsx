@@ -61,15 +61,14 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
                     
                 </button>
                 <div className="">
-                    <div
-                        className={`overflow-hidden transition-all  duration-400 ease-in-out ${
+                    <div className={`overflow-hidden transition-all  duration-400 ease-in-out ${
                             isOpen
                                 ? "max-h-96 opacity-100 lg:py-[30px] py-5  "
                                 : "max-h-0 opacity-0"
                         }`}
                     >
                         <p className="text-[16px] lg:text-[20px] font-[300] text-white">
-                            {answer}
+                            <span dangerouslySetInnerHTML={{ __html: answer }} />
                         </p>
                     </div>
                 </div>

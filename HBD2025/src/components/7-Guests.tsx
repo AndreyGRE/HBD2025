@@ -278,7 +278,8 @@ function Guests() {
                         </svg>
                     </div>
                 </div>
-                <div className="flex flex-wrap lg:gap-x-40 gap-y-[26px] lg:gap-y-[32px] justify-center xl:items-center xl:pl-[57px] overflow-hidden">
+                <div className="flex flex-wrap lg:gap-x-40 gap-y-[26px] lg:gap-y-[32px] justify-center xl:items-center xl:px-[57px] overflow-hidden">
+                    
                     {guests
                         .sort(
                             (a, b) => (a.sort_order ?? 0) - (b.sort_order ?? 0)

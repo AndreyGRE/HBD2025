@@ -5,7 +5,7 @@ function Registration() {
             className="mt-[100px] xl:mt-[176px] relative px-[27px]"
         >
             <div className="flex flex-col  justify-center gap-11 lg:mx-[50px] xl:mx-[60px] 2xl:mx-[70px]">
-                <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-col px-[27px] justify-center items-center">
                     <div className="gradient text-[32px] lg:text-[54px] xl:text-[74px] 2xl:text-[74px]  font-[750] mb-[24px] xl:mb-0">
                         РЕГИСТРАЦИЯ
                     </div>
@@ -17,7 +17,13 @@ function Registration() {
                 <div className="flex flex-col items-center relative">
                     <div className="-z-1 absolute -left-[30%] flex-shrink-0 w-[1604px] h-[772px] rotate-[-32.855deg] rounded-[1604px] bg-custom-gradient blur-[250px]"></div>
 
-                    <div></div>
+                    <div className="z-10 w-full h-[600px] xl:h-[850px] mb-11">
+                        <iframe
+                            className="w-full h-full"
+                            src="https://events.nethouse.ru/buy_tickets/122555/iframe/"
+                            style={{ border: "none" }}
+                        ></iframe>
+                    </div>
                     <a
                         href="https://docs.google.com/forms/d/e/1FAIpQLScKs1ia-JovKcTqS5zNWjaChW4BN-MAOQtlmGieBAXOGHPyFg/viewform"
                         target="blank"
@@ -28,7 +34,6 @@ function Registration() {
                         -skew-x-18
                          "
                     >
-                       
                         <p className="skew-x-18 text-center text-[18px] font-[300] xl:font-[100]">
                             {" "}
                             АККРЕДИТАЦИЯ <br className="lg:hidden"></br>ДЛЯ СМИ
