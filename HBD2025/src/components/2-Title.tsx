@@ -12,7 +12,7 @@ function Title() {
                         </div>
                         <div className="relative max-w-[300px] xl:max-w-[420px] text-white font-[300] lg:text-[25px]  xl:text-[29px] text-[20px] text-left 2xl:-left-20">
                             VII БИЗНЕС-КОНЦЕРТ ОТРАСЛИ МАЛОЭТАЖНОГО
-                            СТРОИТЕЛЬСТВО
+                            СТРОИТЕЛЬСТВА
                         </div>
                     </div>
                     <div className="mt-[43px] lg:mt-[15px] 2xl:mt-[33px] flex flex-row lg:justify-start lg:gap-32 xl:justify-between items-start ">

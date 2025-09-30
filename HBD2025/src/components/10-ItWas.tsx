@@ -1,23 +1,26 @@
 import { useEffect, useState } from "react";
 import Modal from "./ModalForm";
-import imageGal1 from "../images/SponsorGallery/01_ColorLogo.png";
-import imageGal2 from "../images/SponsorGallery/02_ColorLogo.png";
-import imageGal3 from "../images/SponsorGallery/03_ColorLogo.png";
-import imageGal4 from "../images/SponsorGallery/04_ColorLogo.png";
-import imageGal5 from "../images/SponsorGallery/05_ColorLogo.png";
-import imageGal6 from "../images/SponsorGallery/06_ColorLogo.png";
-import imageGal21 from "../images/SponsorGallery/21_ColorLogo.png";
-import imageGal22 from "../images/SponsorGallery/22_ColorLogo.png";
-import imageGal23 from "../images/SponsorGallery/23_ColorLogo.png";
-import imageGal24 from "../images/SponsorGallery/24_ColorLogo.png";
-import imageGal25 from "../images/SponsorGallery/25_ColorLogo.png";
-import imageGal26 from "../images/SponsorGallery/26_ColorLogo.png";
-import imageGal27 from "../images/SponsorGallery/27_ColorLogo.png";
-import imageGal28 from "../images/SponsorGallery/28_ColorLogo.png";
-import imageGal31 from "../images/SponsorGallery/31_ColorLogo.png";
-import imageGal32 from "../images/SponsorGallery/32_ColorLogo.png";
-import imageGal33 from "../images/SponsorGallery/33_ColorLogo.png";
-import imageGal34 from "../images/SponsorGallery/34_ColorLogo.png";
+import imageGal1 from "../images/SponsorGallery/ColorLogo_01.png";
+
+import imageGal21 from "../images/SponsorGallery/ColorLogo_21.png";
+import imageGal22 from "../images/SponsorGallery/ColorLogo_22.png";
+import imageGal23 from "../images/SponsorGallery/ColorLogo_23.png";
+import imageGal24 from "../images/SponsorGallery/ColorLogo_24.png";
+import imageGal25 from "../images/SponsorGallery/ColorLogo_25.png";
+import imageGal26 from "../images/SponsorGallery/ColorLogo_26.png";
+
+import imageGal31 from "../images/SponsorGallery/ColorLogo_31.png";
+import imageGal32 from "../images/SponsorGallery/ColorLogo_32.png";
+import imageGal33 from "../images/SponsorGallery/ColorLogo_33.png";
+import imageGal34 from "../images/SponsorGallery/ColorLogo_34.png";
+import imageGal35 from "../images/SponsorGallery/ColorLogo_35.png";
+import imageGal36 from "../images/SponsorGallery/ColorLogo_36.png";
+import imageGal37 from "../images/SponsorGallery/ColorLogo_37.png";
+import imageGal38 from "../images/SponsorGallery/ColorLogo_38.png";
+
+import imageGal41 from "../images/SponsorGallery/ColorLogo_41.png";
+import imageGal42 from "../images/SponsorGallery/ColorLogo_42.png";
+import imageGal43 from "../images/SponsorGallery/ColorLogo_43.png";
 
 function ItWas() {
     interface originalImages {
@@ -28,23 +31,27 @@ function ItWas() {
     }
     const originalImages = [
         imageGal1,
-        imageGal2,
-        imageGal3,
-        imageGal4,
-        imageGal5,
-        imageGal6,
+
         imageGal21,
         imageGal22,
         imageGal23,
         imageGal24,
         imageGal25,
         imageGal26,
-        imageGal27,
-        imageGal28,
+
         imageGal31,
         imageGal32,
-        imageGal33, 
+        imageGal33,
         imageGal34,
+        imageGal35,
+        imageGal36,
+        imageGal37,
+        imageGal38,
+
+        imageGal41,
+        imageGal42,
+        imageGal43
+
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
     // Дублируем изображения для бесконечного скролла
@@ -105,7 +112,7 @@ function ItWas() {
                             <div className="max-w-full overflow-hidden ">
                                 <div
                                 
-                                    className="flex ease-in-out duration-500 transition-transform gap-[20px] xl:gap-[89px]"
+                                    className="flex ease-in-out duration-500 transition-transform items-center gap-[20px] xl:gap-[89px]"
                                     style={{
                                         transform: `translateX(-${
                                             currentIndex * (100 / imagesPerView)

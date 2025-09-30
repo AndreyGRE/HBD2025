@@ -128,7 +128,7 @@ export default function Navbar() {
                 >
                     <div className="flex justify-between items-center p-4 ">
                         <button className="text-white">
-                            {/* <svg
+                            <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
                                 height="24"
@@ -141,7 +141,7 @@ export default function Navbar() {
                             >
                                 <line x1="18" y1="6" x2="6" y2="18" />
                                 <line x1="6" y1="6" x2="18" y2="18" />
-                            </svg> */}
+                            </svg>
                         </button>
                     </div>
 
