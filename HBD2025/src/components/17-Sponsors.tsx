@@ -19,6 +19,7 @@ import imageGal38 from "../images/SponsorGallery/ColorLogo_38.png";
 import imageGal41 from "../images/SponsorGallery/ColorLogo_41.png";
 import imageGal42 from "../images/SponsorGallery/ColorLogo_42.png";
 import imageGal43 from "../images/SponsorGallery/ColorLogo_43.png";
+import imageGal44 from "../images/SponsorGallery/ColorLogo_44.png";
 
 import Modal from "./ModalForm";
 
@@ -64,6 +65,7 @@ function Sponsors() {
                    <img src={imageGal41} className="w-17 lg:w-22 xl:w-25"></img>   
                    <img src={imageGal42} className="w-17 lg:w-22 xl:w-25"></img>   
                    <img src={imageGal43} className="w-17 lg:w-22 xl:w-25"></img>   
+                   <img src={imageGal44} className="w-17 lg:w-22 xl:w-25"></img> 
                 </div>
 
                 <div className="flex justify-center w-full lg:max-w-[440px] mt-4">

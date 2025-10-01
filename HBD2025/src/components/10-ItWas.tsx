@@ -21,6 +21,7 @@ import imageGal38 from "../images/SponsorGallery/ColorLogo_38.png";
 import imageGal41 from "../images/SponsorGallery/ColorLogo_41.png";
 import imageGal42 from "../images/SponsorGallery/ColorLogo_42.png";
 import imageGal43 from "../images/SponsorGallery/ColorLogo_43.png";
+import imageGal44 from "../images/SponsorGallery/ColorLogo_44.png";
 
 function ItWas() {
     interface originalImages {
@@ -50,7 +51,8 @@ function ItWas() {
 
         imageGal41,
         imageGal42,
-        imageGal43
+        imageGal43,
+        imageGal44
 
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
