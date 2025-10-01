@@ -34,36 +34,36 @@ function Sponsors() {
                 
                 <div className="flex flex-wrap items-center justify-center gap-[30px] xl:gap-[89px]">
                     <div className="flex flex-wrap items-center justify-center gap-[30px] xl:gap-[89px]">
-                        <img src={imageGal1} className="w-17 lg:w-22 xl:w-22"></img>
+                        <img src={imageGal1} className="w-17 lg:w-40 xl:w-40"></img>
                     </div>
                 </div>
                 
                 <div className="flex flex-wrap items-center  justify-center gap-[40px] gap-y-[30px] xl:gap-[69px]">
                     <div className="flex flex-wrap items-center  justify-center gap-[40px] gap-y-[30px] xl:gap-[69px]">
-                        <img src={imageGal21} className="w-17 lg:w-22 xl:w-22"></img>     
-                        <img src={imageGal22} className="w-17 lg:w-22 xl:w-22"></img>  
-                        <img src={imageGal23} className="w-17 lg:w-22 xl:w-22"></img>  
-                        <img src={imageGal24} className="w-17 lg:w-22 xl:w-22"></img>  
-                        <img src={imageGal25} className="w-17 lg:w-22 xl:w-22"></img>  
-                        <img src={imageGal26} className="w-17 lg:w-22 xl:w-22"></img>  
+                        <img src={imageGal22} className="w-17 lg:w-22 xl:w-25"></img>  
+                        <img src={imageGal23} className="w-17 lg:w-22 xl:w-25"></img>  
+                        <img src={imageGal24} className="w-17 lg:w-22 xl:w-25"></img>  
+                        <img src={imageGal25} className="w-17 lg:w-22 xl:w-25"></img>  
+                        <img src={imageGal26} className="w-17 lg:w-22 xl:w-25"></img>  
+                        <img src={imageGal21} className="w-17 lg:w-25 xl:w-27"></img>   
                     </div> 
                 </div>
                 
-                <div className="flex items-center  justify-center gap-[40px] xl:gap-[45px]">
-                   <img src={imageGal31} className="w-17 lg:w-22 xl:w-22"></img>   
-                   <img src={imageGal32} className="w-17 lg:w-22 xl:w-22"></img> 
-                   <img src={imageGal33} className="w-17 lg:w-22 xl:w-22"></img>   
-                   <img src={imageGal34} className="w-17 lg:w-22 xl:w-22"></img>   
-                   <img src={imageGal35} className="w-17 lg:w-22 xl:w-22"></img> 
-                   <img src={imageGal36} className="w-17 lg:w-22 xl:w-22"></img>   
-                   <img src={imageGal37} className="w-17 lg:w-22 xl:w-22"></img>   
-                   <img src={imageGal38} className="w-17 lg:w-22 xl:w-22"></img>  
+                <div className="flex items-center  justify-center gap-[40px] xl:gap-[45px]  ">
+                   <img src={imageGal31} className="w-17 lg:w-22 xl:w-25"></img>   
+                   <img src={imageGal32} className="w-17 lg:w-22 xl:w-25"></img> 
+                   <img src={imageGal33} className="w-17 lg:w-22 xl:w-25"></img>   
+                   <img src={imageGal34} className="w-17 lg:w-19 xl:w-20 "></img>   
+                   <img src={imageGal35} className="w-17 lg:w-22 xl:w-25"></img> 
+                   <img src={imageGal36} className="w-17 lg:w-22 xl:w-25"></img>   
+                   <img src={imageGal37} className="w-17 lg:w-22 xl:w-25"></img>   
+                   <img src={imageGal38} className="w-17 lg:w-22 xl:w-25"></img>  
                 </div>
 
                 <div className="flex items-center  justify-center gap-[40px] xl:gap-[45px]">
-                   <img src={imageGal41} className="w-17 lg:w-22 xl:w-22"></img>   
-                   <img src={imageGal42} className="w-17 lg:w-22 xl:w-22"></img>   
-                   <img src={imageGal43} className="w-17 lg:w-22 xl:w-22"></img>   
+                   <img src={imageGal41} className="w-17 lg:w-22 xl:w-25"></img>   
+                   <img src={imageGal42} className="w-17 lg:w-22 xl:w-25"></img>   
+                   <img src={imageGal43} className="w-17 lg:w-22 xl:w-25"></img>   
                 </div>
 
                 <div className="flex justify-center w-full lg:max-w-[440px] mt-4">

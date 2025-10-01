@@ -127,9 +127,8 @@ export default function Navbar() {
                             bg-top"
                 >
                     <div className="flex justify-between items-center p-4 ">
-                        <button className="text-white">
+                        <button className="flex text-white z-50" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                             <svg
-                                xmlns="http://www.w3.org/2000/svg"
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
