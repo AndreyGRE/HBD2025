@@ -89,7 +89,7 @@ function Speaker({ srcImg, index, text1, text2, text3, url }: speaker) {
                         <div className="max-w-[120px] text-white  text-[15px] lg:text-[26px] xl:text-[30px] font-[750] uppercase mt-4 xl:px-2 lg:leading-[35px]">
                             {text2}
                         </div>
-                        <div className="max-w-[200px] text-white text-[7px] lg:text-[12px] xl:text-[16px] font-[100] mt-3 xl:px-2 xl:leading-[20px]">
+                        <div className="max-w-[200px] text-white text-[6px] lg:text-[12px] xl:text-[16px] font-[100] mt-3 xl:px-2 xl:leading-[20px]">
                             {text3}
                         </div>
                     </div>

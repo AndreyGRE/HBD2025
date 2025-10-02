@@ -70,7 +70,7 @@ const questionsAndanswer: Questions[] = [
         answer: "Клуб Sisters по адресу: ул. Большая Переяславская, 46с1.",
     },
     {
-        questions: "До скольки продлится автопати?",
+        questions: "До скольки продлится афтерпати?",
         answer: "До 00:00.",
     },
 ];
