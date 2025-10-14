@@ -1,7 +1,20 @@
+import { useEffect } from "react";
 import AfImg from "../images/AfterParty/image1.png";
 import AfImg2 from "../images/AfterParty/image2.png";
 
 function AfterParty() {
+
+    useEffect(() => {
+        if (window.location.hash === '#AfterParty') {
+            setTimeout(() => {
+                const element = document.getElementById('AfterParty');
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 2000);
+        }
+    }, []);
+
     return (
         <div
             id="AfterParty"
