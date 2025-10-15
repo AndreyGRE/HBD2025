@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import Modal from "./ModalForm";
-import imageGal1 from "../images/SponsorGallery/ColorLogo_01.png";
+import imageGal0 from "../images/SponsorGallery/ColorLogo_00.png";
 
+import imageGal1 from "../images/SponsorGallery/ColorLogo_01.png";
 import imageGal21 from "../images/SponsorGallery/ColorLogo_21.png";
 import imageGal22 from "../images/SponsorGallery/ColorLogo_22.png";
 import imageGal23 from "../images/SponsorGallery/ColorLogo_23.png";
@@ -31,6 +32,7 @@ function ItWas() {
         imageUrls: string;
     }
     const originalImages = [
+        imageGal0,
         imageGal1,
 
         imageGal21,

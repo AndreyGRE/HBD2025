@@ -1,5 +1,7 @@
-import imageGal1 from "../images/SponsorGallery/ColorLogo_01.png";
 
+import imageGal0 from "../images/SponsorGallery/ColorLogo_00.png";
+
+import imageGal1 from "../images/SponsorGallery/ColorLogo_01.png";
 import imageGal21 from "../images/SponsorGallery/ColorLogo_21.png";
 import imageGal22 from "../images/SponsorGallery/ColorLogo_22.png";
 import imageGal23 from "../images/SponsorGallery/ColorLogo_23.png";
@@ -35,12 +37,13 @@ function Sponsors() {
                 
                 <div className="flex flex-wrap items-center justify-center gap-[30px] xl:gap-[89px]">
                     <div className="flex flex-wrap items-center justify-center gap-[30px] xl:gap-[89px]">
-                        <img src={imageGal1} className="w-17 lg:w-40 xl:w-40"></img>
+                        <img src={imageGal0} className="w-17 lg:w-40 xl:w-40"></img>
                     </div>
                 </div>
                 
                 <div className="flex flex-wrap items-center  justify-center gap-[40px] gap-y-[30px] xl:gap-[69px]">
                     <div className="flex flex-wrap items-center  justify-center gap-[40px] gap-y-[30px] xl:gap-[69px]">
+                        <img src={imageGal1} className="w-17 lg:w-22 xl:w-25"></img>
                         <img src={imageGal22} className="w-17 lg:w-22 xl:w-25"></img>  
                         <img src={imageGal23} className="w-17 lg:w-22 xl:w-25"></img>  
                         <img src={imageGal24} className="w-17 lg:w-22 xl:w-25"></img>  
