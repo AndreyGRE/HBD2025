@@ -25,13 +25,13 @@ function Guests() {
             });
     }, []);
     return (
-        <div className="mt-[100px] xl:mt-[259px]  relative">
+        <div className="mt-[80px] xl:mt-[150px]  relative">
             <div className=" absolute -right-[20%] w-[1604px] h-[772px] rounded-[1604px] flex-shrink-0 rotate-[30deg] blur-[250px] custom-gradient-bg -z-10"></div>
 
             <div className="flex flex-col xl:gap-12 gap-0 relative">
-                <div className="flex flex-col mb-[64px]">
-                    <div className="gradient text-[32px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[700] ml-[28px] lg:ml-[107px] xl:ml-[157] 2xl:ml-[207px] uppercase  mr-[24px]">
-                        СПЕЦИАЛЬНЫЕ<br></br>ГОСТИ
+                <div className="flex flex-col mb-[22px] lg:mb-[64px]">
+                    <div className="gradient text-left lg:text-center text-[32px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[700] ml-[28px] lg:ml-[107px] xl:ml-[157] 2xl:ml-[207px] uppercase  mr-[24px]">
+                        СПЕЦИАЛЬНЫЕ ГОСТИ
                     </div>
                     <div className="absolute right-0 xl:-top-105 -top-55 opacity-35 xl:w-[444px] xl:h-[734px] w-[35%] h-[35%]">
                         <svg

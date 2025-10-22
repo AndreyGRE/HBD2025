@@ -12,7 +12,7 @@ function SpikerTop({ srcImg, text1, text2, text3, url }: speaker) {
     const [open, setOpen] = useState(false);
     return (
         <>
-            <div className=" card 2xl:left-20  py-[40px] pl-2 pr-2 -skew-x-7 h-[430px] lg:w-[450px] lg:h-[700px] xl:h-[890px] w-7/9 xl:min-w-[430px] max-w-[563px] xl:min-h-[760px] max-h-[923px]  xl:rounded-[40px] rounded-[14px]  relative ">
+            <div className=" card  -skew-x-7 py-[40px] pl-2 pr-2  h-[430px] lg:w-[450px] lg:h-[700px] xl:h-[890px] w-6/9 xl:min-w-[430px] max-w-[563px] xl:min-h-[760px] max-h-[923px]  xl:rounded-[40px] rounded-[14px]  relative ">
                 <div className="skew-x-7 flex flex-col h-full ">
                     <div className="flex flex-col justify-center flex-1 w-full items-center relative">
                         <img
@@ -99,15 +99,18 @@ function SpikerTop({ srcImg, text1, text2, text3, url }: speaker) {
                             )}
                         </a> */}
                     </div>
-                    <div className="flex-1 border-black">
+                    <div className="flex-1  border-black flex-col flex justify-between  w-full">
                         <div className="max-w-[420px] text-white text-[14px] lg:text-[16px] xl:text-[24px] font-[400] uppercase mt-6 xl:px-3 xl:leading-[30px]">
                             {text1}
                         </div>
+                        <div>
                         <div className="max-w-[212px] text-white text-[18px] lg:text-[26px] xl:text-[40px] font-[750] uppercase mt-4 xl:px-3 xl:leading-[45px]">
                             {text2}
                         </div>
                         <div className="max-w-[250px] text-white text-[10px] lg:text-[16px]  lg: xl:text-[21px] font-[100] mt-3">
                             {text3}
+                        </div>
+
                         </div>
                     </div>
                 </div>

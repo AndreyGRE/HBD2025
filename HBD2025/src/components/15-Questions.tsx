@@ -1,11 +1,11 @@
 
 function Questions() {
     return (
-        <div className="mt-[100px] xl:mt-[160px] 2xl:mt-[260px] xl:pl-[107px] 2xl:max-w-[1500px] 2xl:mx-auto pr-6 pl-[27px] xl:pr-[228px] 2xl:pr-[128px]  relative ">
-            <div className="flex  flex-col gap-[22px] xl:gap-12">
-                <div className="flex flex-col lg:flex-row flex-1 gap-4 xl:gap-6">
+        <div className="mt-[80px] xl:mt-[150px]  2xl:mx-auto   relative ">
+            <div className="flex  flex-col gap-[22px] xl:gap-12 mx-[27px] lg:mx-40">
+                <div className="flex flex-col lg:flex-row flex-1 gap-4 xl:gap-6 ">
                     <div className="flex flex-1 gap-[18px] xl:gap-6">
-                        <div className="text-[32px] md:text-[56px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] xl:max-w-full  gradient font-[800] uppercase">
+                        <div className="text-[32px] md:text-[56px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] xl:max-w-full  gradient font-[800] uppercase lg:leading-20  leading-none">
                             что такое<br className="xl:hidden"></br> house business day?
                         </div>
                     </div>
@@ -19,11 +19,11 @@ function Questions() {
                 </div>
                 <div className="flex flex-col lg:flex-row flex-1 gap-4 xl:gap-6"> 
                     <div className="flex flex-1  gap-[18px] xl:gap-6">
-                        <div className="text-[32px] lg:text-[54px] xl:text-[58px] 2xl:text-[74px] max-w-[320px] lg:max-w-full  gradient font-[750] uppercase">
+                        <div className="text-[32px] lg:text-[54px] xl:text-[58px] 2xl:text-[74px] max-w-[320px] lg:max-w-full  gradient font-[750] uppercase lg:leading-20 leading-none">
                             ОБ ОРГАНИЗАТОРЕ GOOD WOOD{" "}
                         </div>
                     </div>
-                    <div className="flex-1  text-white text-[20px] lg:text-[18px] font-[300] uppercase">
+                    <div className="flex-1  text-white text-[16px] lg:text-[18px] font-[300] uppercase ">
                         <p>
                             Компания{" "}
                             <a href='https://www.gwd.ru/' target="blank"  className="text-white hover:underline hover:decoration-1 hover:decoration-[#FFA100]">

@@ -4,7 +4,7 @@ import bgAnyOtherQues from "../images/AnyOtherQuestions/bg-AnyOtherQues.png";
 function AnyOtherQuestions() {
     return (
         <div
-            className={`mt-[64px] py-[44px] xl:py-[98px]  xl:mt-[147px] relative bg-cover bg-no-repeat`}
+            className={`mt-[80px] py-[44px] xl:py-[98px]  xl:mt-[150px] relative bg-cover bg-no-repeat`}
             style={{ backgroundImage: `url(${bgAnyOtherQues})` }}
         >
             <div className="flex flex-col  justify-center">

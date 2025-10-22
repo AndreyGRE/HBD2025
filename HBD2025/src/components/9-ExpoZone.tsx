@@ -20,7 +20,7 @@ function ExpoZone() {
     useEffect(() => {
         const updateImagesPerView = () => {
             if (window.innerWidth < 640) {
-                setImagesPerView(2); // мобилки
+                setImagesPerView(1); // мобилки
             } else if (window.innerWidth < 1024) {
                 setImagesPerView(4); // планшеты
             } else if (window.innerWidth < 1440) {
@@ -51,7 +51,7 @@ function ExpoZone() {
     }, [originalImages.length]);
 
     return (
-        <div className="mt-[100px] xl:mt-[250px] relative ">
+        <div className="mt-[80px] xl:mt-[150px] relative ">
             <div className="absolute right-0 xl:-top-60 -top-20 opacity-35 z-0 xl:h-[490px] xl:w-[295px] w-[25%] h-[25%] ">
                 <svg viewBox="0 0 295 490" fill="none">
                     <path
@@ -218,18 +218,18 @@ function ExpoZone() {
                     </defs>
                 </svg>
             </div>
-            <div className="flex flex-col  justify-center z-10">
-                <div className="ml-[27px] mb-5  xl:mb-[76px] lg:ml-[107px] xl:ml-[157px] 2xl:ml-[207px] flex gradient flex-col xl:flex-row xl:gap-[264px] gap-[14px] xl:items-center items-start relative">
-                    <div className="gradient text-[32px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[750] xl:text-center text-left">
+            <div className="flex flex-col justify-center z-10">
+                <div className="mb-0 xl:mb-[62px] flex gradient flex-col xl:flex-col  gap-[24px]  relative lg:items-center items-start px-[27px]">
+                    <div className="gradient text-[32px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[750] text-left lg:text-center ">
                         ЭКСПОЗОНА
                     </div>
-                    <div className="  text-[18px] lg:text-[19px] xl:text-[20px] font-[450] max-w-[620px] text-left uppercase pr-[120px] ">
-                        Новинки материалов и технологий от ключевых игроков
-                        строительного рынка
+                    <div className="  text-[18px] text-white lg:text-[19px] xl:text-[20px] font-[300] max-w-[620px]  uppercase text-left lg:text-center ">
+                        Новинки материалов и технологий 
+                        от ключевых игроков строительного рынка
                     </div>
                 </div>
                 <div className="relative">
-                    <div className="max-w-full overflow-hidden z-10">
+                    <div className="max-w-full overflow-hidden z-10 mt-2 lg:mt-0">
                         <div
                             className="flex transition-transform duration-500 ease-in-out"
                             style={{

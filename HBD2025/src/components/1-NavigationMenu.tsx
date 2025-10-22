@@ -190,6 +190,7 @@ export default function Navbar() {
                                 </a>
                             </div>
                             <a
+                                onClick={() => setIsMenuOpen(!isMenuOpen)}
                                 href="#ByTicket"
                                 className="cursor-pointer flex gap-2 bg-[#E95521] -skew-x-17 rounded-lg  w-full  py-[10px] items-center justify-center text-white text-[20px]  font-[300] hover:opacity-80"
                             >

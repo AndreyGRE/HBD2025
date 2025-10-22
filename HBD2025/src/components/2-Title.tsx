@@ -102,7 +102,7 @@ function Title() {
                 </div>
             </div>
 
-            <div className="mt-[75px] xl:mt-[250px] flex lg:flex-row flex-col justify-center gap-[20px] lg:gap-[60px] 2xl:gap-[82px] 2xl:px-[60px]">
+            <div className="mt-[75px] xl:mt-[150px] flex lg:flex-row flex-col justify-center gap-[20px] lg:gap-[60px] 2xl:gap-[82px] 2xl:px-[60px]">
                 <div className="flex flex-col items-center">
                     <div className="xl:text-[106px] xl:font-[900]  text-[67px] font-[750] text-[#E95521]">
                         4500+

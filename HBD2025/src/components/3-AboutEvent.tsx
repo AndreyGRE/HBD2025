@@ -2,7 +2,7 @@ function AboutEvent() {
     return (
         <div
             id="AboutEvent"
-            className="w-full flex flex-col lg:flex-row px-[30px] xl:px-[60px] mt-[75px] xl:mt-[250px] items-start relative "
+            className="w-full flex flex-col px-[30px] xl:px-[135px] mt-[75px] xl:mt-[150px]  relative "
         >
             <div className="absolute  opacity-25 lg:top-25 xl:bottom-50 bottom-120 lg:left-0  right-0 lg:w-[677px] xl:w-[877px] xl:h-[519px] w-[70%] :h-[70%]">
                 <svg
@@ -36,24 +36,26 @@ function AboutEvent() {
                     </defs>
                 </svg>
             </div>
-            <div className="flex-1 gradient text-[32px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[750] xl:font-[800] xl:mb-10 mb-6 text-center  ">
+            <div className="flex-1 gradient text-[32px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[750] xl:font-[800] xl:mb-10 mb-6 text-left lg:text-center  ">
                 О СОБЫТИИ
             </div>
             <div className=" absolute -right-[20%] w-[1604px] h-[772px] rounded-[1604px] flex-shrink-0 rotate-[30deg] blur-[250px] custom-gradient-bg -z-10"></div>
 
-            <div className="flex-1 text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[30px] font-[300] xl:font-[400] uppercase xl:max-w-[687px] 2xl:max-w-[887px]">
-                <div className="text-white  shadow-[0px_0px_18px_rgba(0,1,5,0.30) text-left">
+            <div className="flex-1 text-[16px] flex-col lg:flex-row lg:flex  lg:text-[20px] xl:text-[24px] 2xl:text-[30px] font-[300] xl:font-[400] uppercase ">
+                <div className="flex-1  text-white  shadow-[0px_0px_18px_rgba(0,1,5,0.30) text-left leading-[120%] tracking-[0.16px]">
                     Строительный рынок штормит: продажи падают, материалы
                     дорожают, компании банкротятся, требования растут.
                     <br></br>
+                    <br></br>
                     В такой ситуации есть два пути: жаловаться или действовать.
                     И House Business Day — для тех, кто выбирает второй вариант.
-                    <br></br>
-                    <br></br>
                 </div>
-                <div className="text-white shadow-[0px_0px_18px_rgba(0,1,5,0.30) text-left">
+                <br className="block lg:hidden"></br>
+                <div className="flex-1  text-white shadow-[0px_0px_18px_rgba(0,1,5,0.30) text-left leading-[120%] tracking-[0.16px]">
                     Все спикеры в этом году — эксперты GOOD WOOD, которые прошли
                     через множество кризисов за 20 лет работы компании.
+                    <br className="hidden lg:block"></br>
+                    <br className="hidden lg:block"></br> 
                     Мы расскажем, как развиваться на падающем рынке:
                     перестраивать управление, внедрять AI в продажи и стройку,
                     находить нестандартные решения в сервисе и маркетинге.

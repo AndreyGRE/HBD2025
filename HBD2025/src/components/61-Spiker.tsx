@@ -14,23 +14,11 @@ function Speaker({ srcImg, index, text1, text2, text3, url }: speaker) {
 
     return (
         // -skew-x-7
+        //
         <>
             <div
                 className={`speakerBg py-[20px] xl:py-[40px] pl-2 pr-2 -skew-x-9  xl:-skew-x-7 w-6/9 h-[320px] lg:w-[380px] lg:h-[590px] xl:w-[420px] xl:h-[673px]  max-h-[672px] max-w-[600px] xl:rounded-[40px] rounded-[14px]  relative 
-        ${index == 0 ? "lg:-skew-x-7   " : ""}
-        ${index == 0 ? "xl:mt-100 " : ""}
-        ${
-            index == 2
-                ? // '2xl:ml-120 '
-                  "lll"
-                : ""
-        }
-        ${
-            index == 3
-                ? "ggg"
-                : // '2xl:-mt-100'
-                  ""
-        }
+   
         `}
             >
                 <div className="skew-x-9 xl:skew-x-7 flex flex-col h-full items-center">
@@ -82,15 +70,17 @@ function Speaker({ srcImg, index, text1, text2, text3, url }: speaker) {
                             )}
                         </a>
                     </div>
-                    <div className="flex-1 border-black flex-col justify-center w-full">
+                    <div className="flex-1  border-black flex-col flex justify-between  w-full">
                         <div className="max-w-[330px] text-white xl:text-[21px] lg:text-[18px] text-[10px] font-[500] uppercase mt-6 xl:px-2 xl:leading-[25px]">
                             {text1}
                         </div>
-                        <div className="max-w-[120px] text-white  text-[15px] lg:text-[26px] xl:text-[30px] font-[750] uppercase mt-4 xl:px-2 lg:leading-[35px]">
-                            {text2}
-                        </div>
-                        <div className="max-w-[200px] text-white text-[6px] lg:text-[12px] xl:text-[16px] font-[100] mt-3 xl:px-2 xl:leading-[20px]">
-                            {text3}
+                        <div>
+                            <div className="max-w-[120px] text-white  text-[15px] lg:text-[26px] xl:text-[30px] font-[750] uppercase mt-4 xl:px-2 lg:leading-[35px]">
+                                {text2}
+                            </div>
+                            <div className="max-w-[200px] text-white text-[6px] lg:text-[12px] xl:text-[16px] font-[100] mt-3 xl:px-2 xl:leading-[20px]">
+                                {text3}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -100,7 +90,7 @@ function Speaker({ srcImg, index, text1, text2, text3, url }: speaker) {
                 <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
                     <div className="relative bg-black rounded-2xl h-[80%] x aspect-[9/16]">
                         <iframe
-                            src={url} 
+                            src={url}
                             className="w-full h-full rounded-2xl"
                             allow="autoplay; fullscreen"
                         />

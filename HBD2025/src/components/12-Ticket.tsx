@@ -34,7 +34,7 @@ const Ticket: React.FC<TicketProps> = ({ ticket }) => {
                     )}
                     {ticket.name}
                 </div>
-                <div className="flex flex-col gap-2 skew-x-8 text-[12px] xl:text-[18px] font-[400] uppercase max-w-[300px] xl:max-w-[320px] ml-10">
+                <div className="flex flex-col gap-2 skew-x-8 text-[11px] xl:text-[18px] font-[700] uppercase max-w-[300px] xl:max-w-[320px] ml-2">
                     {ticket?.description?.split(";").map((text, index) => {
                         return (
                             <div className="flex gap-2" key={index}>
@@ -47,7 +47,7 @@ const Ticket: React.FC<TicketProps> = ({ ticket }) => {
             </div>
 
             <div className="skew-x-8">
-                <div className=" text-[40px] xl:text-[45px] font-[750] uppercase text-center leading-none mb-[44px]">
+                <div className=" text-[35px] xl:text-[35px] font-[750] uppercase text-center leading-none mb-[44px]">
                     {ticket.price}
                 </div>
                 <a

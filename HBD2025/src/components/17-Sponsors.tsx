@@ -17,6 +17,7 @@ import imageGal35 from "../images/SponsorGallery/ColorLogo_35.png";
 import imageGal36 from "../images/SponsorGallery/ColorLogo_36.png";
 import imageGal37 from "../images/SponsorGallery/ColorLogo_37.png";
 import imageGal38 from "../images/SponsorGallery/ColorLogo_38.png";
+import imageGal39 from "../images/SponsorGallery/ColorLogo_39.png";
 
 import imageGal41 from "../images/SponsorGallery/ColorLogo_41.png";
 import imageGal42 from "../images/SponsorGallery/ColorLogo_42.png";
@@ -27,7 +28,7 @@ import Modal from "./ModalForm";
 
 function Sponsors() {
     return (
-        <div className="mt-[100px]  xl:mt-[240px] relative xl:mx-[240px] mx-[27px]">
+        <div className="mt-[80px]  xl:mt-[150px] relative xl:mx-[240px] mx-[27px]">
             <div className="-z-1 absolute -left-[20%] flex-shrink-0 w-[1604px] h-[772px] rotate-[-32.855deg] rounded-[1604px] bg-custom-gradient blur-[250px]"></div>
             <div className="flex flex-col justify-center items-center gradient text-white text-[30px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[750] uppercase text-center xl:max-w-full  m-auto">
                 Наши партнеры
@@ -41,37 +42,38 @@ function Sponsors() {
                     </div>
                 </div>
                 
-                <div className="flex flex-wrap items-center  justify-center gap-[40px] gap-y-[30px] xl:gap-[69px]">
-                    <div className="flex flex-wrap items-center  justify-center gap-[40px] gap-y-[30px] xl:gap-[69px]">
-                        <img src={imageGal1} className="w-17 lg:w-22 xl:w-25"></img>
-                        <img src={imageGal22} className="w-17 lg:w-22 xl:w-25"></img>  
-                        <img src={imageGal23} className="w-17 lg:w-22 xl:w-25"></img>  
-                        <img src={imageGal24} className="w-17 lg:w-22 xl:w-25"></img>  
-                        <img src={imageGal25} className="w-17 lg:w-22 xl:w-25"></img>  
-                        <img src={imageGal26} className="w-17 lg:w-22 xl:w-25"></img>  
-                        <img src={imageGal21} className="w-17 lg:w-25 xl:w-27"></img>   
-                    </div> 
-                </div>
                 
-                <div className="flex items-center  justify-center gap-[40px] xl:gap-[45px]  ">
-                   <img src={imageGal31} className="w-17 lg:w-22 xl:w-25"></img>   
-                   <img src={imageGal32} className="w-17 lg:w-22 xl:w-25"></img> 
-                   <img src={imageGal33} className="w-17 lg:w-22 xl:w-25"></img>   
-                   <img src={imageGal34} className="w-17 lg:w-19 xl:w-20 "></img>   
-                   <img src={imageGal35} className="w-17 lg:w-22 xl:w-25"></img> 
-                   <img src={imageGal36} className="w-17 lg:w-22 xl:w-25"></img>   
-                   <img src={imageGal37} className="w-17 lg:w-22 xl:w-25"></img>   
-                   <img src={imageGal38} className="w-17 lg:w-22 xl:w-25"></img>  
+                <div className="flex flex-wrap items-center  justify-center gap-[40px] gap-y-[30px] xl:gap-[50px]">
+                    <img src={imageGal1}  className="w-10 lg:w-22 xl:w-25"></img>
+                    <img src={imageGal22} className="w-10 lg:w-22 xl:w-25"></img>  
+                    <img src={imageGal23} className="w-10 lg:w-22 xl:w-25"></img>  
+                    <img src={imageGal24} className="w-10 lg:w-22 xl:w-25"></img>  
+                    <img src={imageGal25} className="w-10 lg:w-22 xl:w-25"></img>  
+                    <img src={imageGal26} className="w-10 lg:w-22 xl:w-25"></img>  
+                    <img src={imageGal21} className="w-10 lg:w-25 xl:w-27"></img>   
+                </div> 
+                
+                
+                <div className="flex flex-wrap items-center  justify-center gap-[40px] xl:gap-[45px] xl:gap-y-[20px]   ">
+                   <img src={imageGal31} className="w-8 lg:w-22 xl:w-25"></img>   
+                   <img src={imageGal32} className="w-8 lg:w-22 xl:w-25"></img> 
+                   <img src={imageGal33} className="w-8 lg:w-22 xl:w-25"></img>   
+                   <img src={imageGal34} className="w-8 lg:w-19 xl:w-20 "></img>   
+                   <img src={imageGal35} className="w-8 lg:w-22 xl:w-25"></img> 
+                   <img src={imageGal36} className="w-8 lg:w-22 xl:w-25"></img>   
+                   <img src={imageGal37} className="w-8 lg:w-22 xl:w-25"></img>   
+                   <img src={imageGal38} className="w-8 lg:w-22 xl:w-25"></img>  
+                   <img src={imageGal39} className="w-8 lg:w-22 xl:w-25"></img> 
                 </div>
 
-                <div className="flex items-center  justify-center gap-[40px] xl:gap-[45px]">
-                   <img src={imageGal41} className="w-17 lg:w-22 xl:w-25"></img>   
-                   <img src={imageGal42} className="w-17 lg:w-22 xl:w-25"></img>   
-                   <img src={imageGal43} className="w-17 lg:w-22 xl:w-25"></img>   
-                   <img src={imageGal44} className="w-17 lg:w-22 xl:w-25"></img> 
+                <div className="flex flex-wrap items-center  justify-center gap-[40px] xl:gap-[45px]">
+                   <img src={imageGal41} className="w-10 lg:w-22 xl:w-25"></img>   
+                   <img src={imageGal42} className="w-10 lg:w-22 xl:w-25"></img>   
+                   <img src={imageGal43} className="w-10 lg:w-22 xl:w-25"></img>   
+                   <img src={imageGal44} className="w-10 lg:w-22 xl:w-25"></img> 
                 </div>
 
-                <div className="flex justify-center w-full lg:max-w-[440px] mt-4">
+                <div className="flex justify-center w-full lg:max-w-[650px] mt-4">
                     <Modal></Modal>
                 </div>
             </div>

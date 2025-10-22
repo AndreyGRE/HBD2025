@@ -18,6 +18,7 @@ import imageGal35 from "../images/SponsorGallery/ColorLogo_35.png";
 import imageGal36 from "../images/SponsorGallery/ColorLogo_36.png";
 import imageGal37 from "../images/SponsorGallery/ColorLogo_37.png";
 import imageGal38 from "../images/SponsorGallery/ColorLogo_38.png";
+import imageGal39 from "../images/SponsorGallery/ColorLogo_39.png";
 
 import imageGal41 from "../images/SponsorGallery/ColorLogo_41.png";
 import imageGal42 from "../images/SponsorGallery/ColorLogo_42.png";
@@ -50,12 +51,12 @@ function ItWas() {
         imageGal36,
         imageGal37,
         imageGal38,
+        imageGal39,
 
         imageGal41,
         imageGal42,
         imageGal43,
-        imageGal44
-
+        imageGal44,
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
     // Дублируем изображения для бесконечного скролла
@@ -97,25 +98,23 @@ function ItWas() {
 
     return (
         <>
-            <div className="mt-[100px] xl:mt-[250px] relative ">
-                <div className="flex flex-col  justify-center xl:gap-[32px] gap-[14px]">
-                    <div className="flex flex-col items-center">
-                        <div className="gradient text-[32px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[750] uppercase">
-                            нетворкинг с лучшими 
+            <div className="mt-[80px] xl:mt-[150px] relative ">
+                <div className="flex flex-col  justify-center xl:gap-[32px] gap-[14px] ">
+                    <div className="flex flex-col items-center lg:px-0 px-[27px] ">
+                        <div className=" gradient text-[32px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[750] uppercase">
+                            нетворкинг с лучшими
                         </div>
                     </div>
-                    <div className="flex justify-center items-center flex-col gap-10">
-                        <div className=" gradient text-[12px] lg:text-[16px]  xl:text-[18px] 2xl:text-[20px] xl:font-[500] font-[700] uppercase text-center max-w-[890px] pl-[42px] pr-[41px]">
-                            Приходите, и вы сможете лично пообщаться с ведущими
-                            специалистами
-                            <br className="unvisible xl:visible"></br>
-                            российских и международных компаний:
+                    <div className="flex justify-center items-center flex-col gap-[24px] lg:gap-[62px]">
+                        <div className="px-[27px] lg:px-0 text-white text-[16px] xl:text-[18px] 2xl:text-[30px] xl:font-[300] font-[300] uppercase text-left lg:text-center max-w-[1100px] ">
+                            Приходите, и вы сможете лично пообщаться с ведущими{" "}
+                            <br className="hidden xl:visible"></br>
+                             специалистами российских и международных компаний:
                         </div>
 
                         <div>
                             <div className="max-w-full overflow-hidden ">
                                 <div
-                                
                                     className="flex ease-in-out duration-500 transition-transform items-center gap-[20px] xl:gap-[89px]"
                                     style={{
                                         transform: `translateX(-${
@@ -145,14 +144,14 @@ function ItWas() {
                                 </div>
                             </div>
                         </div>
-
-                        <Modal></Modal>
+                        <div className="flex justify-center w-full  lg:px-[37px] px-[37px]">
+                            <Modal></Modal>
+                        </div>
                     </div>
 
                     <div className="absolute right-0 xl:-bottom-80 opacity-35 z-0 xl:w-[375px] xl:h-[442px] ">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                 
                             viewBox="0 0 375 442"
                             fill="none"
                         >

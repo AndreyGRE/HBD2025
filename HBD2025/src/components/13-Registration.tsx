@@ -2,14 +2,14 @@ function Registration() {
     return (
         <div
             id="ByTicket"
-            className="mt-[100px] xl:mt-[176px] relative px-[27px]"
+            className="mt-[80px] xl:mt-[150px] relative px-[27px]"
         >
             <div className="flex flex-col  justify-center gap-11 lg:mx-[50px] xl:mx-[60px] 2xl:mx-[70px]">
-                <div className="flex flex-col px-[27px] justify-center items-center">
+                <div className="flex flex-col justify-center lg:items-center items-start">
                     <div className="gradient text-[32px] lg:text-[54px] xl:text-[74px] 2xl:text-[74px]  font-[750] mb-[24px] xl:mb-0">
                         РЕГИСТРАЦИЯ
                     </div>
-                    <div className="gradient  text-[18px] lg:text-[19px]  xl:text-[20px]  lg:max-w-[558px] font-[500] uppercase text-center ">
+                    <div className="text-white  text-[18px] lg:text-[19px]  xl:text-[20px]  lg:max-w-[658px] font-[500] uppercase text-left lg:text-center ">
                         здесь вы можете оплатить билет банковской картой или по
                         безналичному расчету от организации
                     </div>

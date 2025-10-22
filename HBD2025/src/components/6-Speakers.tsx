@@ -56,15 +56,16 @@ function Speakers() {
     }, []);
 
     return (
-        <div id="Speakers" className="mt-[100px] xl:mt-[251px] relative ">
-            <div className="flex flex-col gap-0 xl:gap-17 pl-[28px] pr-[25px] xl:pr-[60px] xl:pl-[201px]">
+        <div id="Speakers" className="mt-[80px] xl:mt-[251px] relative ">
+            <div className="flex flex-col gap-0 xl:gap-14 pl-[28px] pr-[25px] xl:pr-[60px] xl:pl-[201px]">
                 <div className="flex flex-col relative mb-[24px]">
-                    <div className="gradient text-[32px] xl:text-[74px] font-[750] ">
+                    <div className="gradient text-[32px] xl:text-[74px] font-[750] text-left lg:text-center">
                         СПИКЕРЫ
                     </div>
                     <div className="-z-1 absolute -left-[30%] top-140 flex-shrink-0 w-[1604px] h-[772px] rotate-[-32.855deg] rounded-[1604px] bg-custom-gradient blur-[250px]"></div>
                 </div>
-                <div className="flex flex-wrap gap-x-21 xl:gap-y-15 gap-y-6 xl:items-start justify-center overflow-x-hidden overflow-y-visible relative">
+               
+                <div className="flex flex-wrap gap-x-20 xl:gap-y-15 gap-y-6 xl:items-end justify-center overflow-x-hidden overflow-y-visible relative">
                     <>
                         {speakersTop
                             .sort(
@@ -105,6 +106,8 @@ function Speakers() {
                                 );
                             })}
                     </>
+
+                    
                     <div className="absolute top-1 -z-1 -left-10 xl:top-auto xl:bottom-0 xl:left-0 opacity-45 xl:w-[390px] xl:h-[487px] w-[20%] h-[20%]">
                         <svg viewBox="0 0 390 487" fill="none">
                             <path

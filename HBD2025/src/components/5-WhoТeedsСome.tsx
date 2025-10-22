@@ -9,9 +9,14 @@ function WhoTeedsCome() {
     ];
 
     return (
-        <div className="mt-[103px] xl:mt-[250px]  xl:py-[60px] lg:pr-0 z-10 ">
-            <div className="flex flex-col gap-6 xl:gap-18  2xl:pl-[148px]   lg:pr-[0px] relative">
-                <div className="absolute xl:-top-80  z-[-1] right-0 xl:w-[427px] xl:h-[519px] w-[50%] h-[50%] -top-30 opacity-35 z-5">
+        <div className="mt-[103px] xl:mt-[150px]  z-10 ">
+            <div className="flex  flex-col gap-6 xl:gap-18  relative ">
+                <div className="flex font-[750] xl:text-[74px] text-[32px] gradient z-9 px-[30px] lg:px-[0px] lg:items-center lg:justify-center items-start justify-start">
+                    <div className="font-[750] xl:text-[74px] gradient  uppercase lg:max-w-[772px] lg:text-center text-left">
+                        Для кого это мероприятие
+                    </div>
+                </div>
+                <div className="absolute xl:-top-80   right-0 xl:w-[427px] xl:h-[519px] w-[50%] h-[50%] -top-30 opacity-35 z-5">
                     <svg
                         viewBox="0 0 427 519"
                         fill="none"
@@ -160,34 +165,21 @@ function WhoTeedsCome() {
                         </defs>
                     </svg>
                 </div>
-                <div className="flex lg:pl-[58px] xl:pl-[108px] font-[750] xl:text-[74px] pl-[27px] text-[32px] gradient z-9">
-                    <div className="font-[750] xl:text-[74px] gradient  uppercase">
-                        Для кого это мероприятие
-                    </div>
-                </div>
                 <div
-                    className=" flex flex-nowrap overflow-x-auto gap-x-[20px] px-4 z-9 justify-evenly
-                                lg:flex-wrap lg:overflow-visible lg:gap-x-[86px] lg:gap-y-[62px] xl:pl-[46px]
-                                scrollbar-hide 
-                                pl-14
+                    className=" flex flex-nowrap overflow-x-auto gap-x-[20px] z-9 scrollbar-hide justify-start  
+                                lg:flex-wrap  lg:gap-x-[40px] lg:gap-y-[62px]  lg:justify-center
                                 "
                 >
                     {text.map((item, i) => {
                         return (
                             <div
-                             className={`bg-[#2e2a78] pl-11 gap-3 text-white px-8 py-6 lg:max-w-[300px] 2xl:max-w-[350px] 2xl:min-w-[353px] h-[160px] min-w-[305px] lg:justify-center justify-center 2xl:rounded-[40px] rounded-[14px] shadow-lg transform items-center -skew-x-32 flex 
-                                 ${i === 2 ? "2xl:mr-10" : ""}
-                                 ${i === 3 ? "2xl:ml-27" : ""}
+                             className={`bg-[#1E195D] ml-12 lg:ml-0 pl-11 gap-3 text-white px-8 py-6 lg:max-w-[410px] 2xl:max-w-[420px] 2xl:min-w-[353px] h-[160px] lg:h-[240px] min-w-[305px] lg:justify-center justify-center 2xl:rounded-[40px] rounded-[14px] shadow-lg transform items-center -skew-x-22 flex 
+                                ${i === 3 ? "lg:ml-27" : ""}
                                 `}
-                                // className={`bg-WhoТeedsСome pl-11 gap-3 text-white px-8 py-6 xl:max-w-[400px] xl:min-w-[353px] h-[162px] min-w-[337px] justify-center xl:rounded-[40px] shadow-lg transform items-center  flex ${
-                                //     i === 3 ? "xl:ml-27" : ""
-                                // }`}
                                 key={i}
                             >
-                                <div className="w-[6px] 2xl:w-[6px] h-[61px]  bacc skew-x-32"></div>
-                                {/* <div className="w-[6px] xl:w-[6px] h-[61px]  bacc "></div> */}
-                                  <p className="transform skew-x-32 2xl:text-[20px] text-[16px] font-[400] uppercase  ">
-                                {/* <p className="transform  xl:text-[20px] text-[16px] font-[400] uppercase  "> */}
+                            <div className="w-[6px] 2xl:w-[6px] h-[61px]  bacc skew-x-22"></div>
+                                <p className="transform skew-x-22 2xl:text-[20px] text-[16px] font-[400] uppercase  ">
                                     {item}
                                 </p>
                             </div>
