@@ -16,8 +16,8 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
                     onClick={() => setIsOpen(!isOpen)}
                     aria-expanded={isOpen}
                 >
-                    <span className="text-white text-[16px]  lg:text-[24px] font-[300]">
-                        {question}
+                    <span className="text-white text-[16px]  lg:text-[24px] font-[300]" dangerouslySetInnerHTML={{ __html: question }}>
+                        {}
                     </span>
                     
                         <div className="bg-[#1E195D] p-5 rounded-xl -skew-x-8 mr-4">

@@ -58,8 +58,8 @@ function Sponsors() {
                    <img src={imageGal31} className="w-8 lg:w-22 xl:w-25"></img>   
                    <img src={imageGal32} className="w-8 lg:w-22 xl:w-25"></img> 
                    <img src={imageGal33} className="w-8 lg:w-22 xl:w-25"></img>   
-                   <img src={imageGal34} className="w-8 lg:w-19 xl:w-20 "></img>   
-                   <img src={imageGal35} className="w-8 lg:w-22 xl:w-25"></img> 
+                   <img src={imageGal34} className="w-8 lg:w-22 xl:w-20 "></img>   
+                   <img src={imageGal35} className="w-12 lg:w-22 xl:w-25"></img> 
                    <img src={imageGal36} className="w-8 lg:w-22 xl:w-25"></img>   
                    <img src={imageGal37} className="w-8 lg:w-22 xl:w-25"></img>   
                    <img src={imageGal38} className="w-8 lg:w-22 xl:w-25"></img>  

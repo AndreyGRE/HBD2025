@@ -100,15 +100,15 @@ function SpikerTop({ srcImg, text1, text2, text3, url }: speaker) {
                         </a> */}
                     </div>
                     <div className="flex-1  border-black flex-col flex justify-between  w-full">
-                        <div className="max-w-[420px] text-white text-[14px] lg:text-[16px] xl:text-[24px] font-[400] uppercase mt-6 xl:px-3 xl:leading-[30px]">
-                            {text1}
+                        <div  dangerouslySetInnerHTML={{ __html: text1 ?? ' ' }} className="max-w-[420px] text-white text-[14px] lg:text-[16px] xl:text-[24px] font-[400] uppercase mt-4 xl:px-3 xl:leading-[30px]">
+                            {}
                         </div>
                         <div>
-                        <div className="max-w-[212px] text-white text-[18px] lg:text-[26px] xl:text-[40px] font-[750] uppercase mt-4 xl:px-3 xl:leading-[45px]">
-                            {text2}
+                        <div  dangerouslySetInnerHTML={{ __html: text2 ?? ' ' }} className="max-w-[212px] text-white text-[18px] lg:text-[26px] xl:text-[40px] font-[750] uppercase mt-2 xl:px-3 xl:leading-[45px]">
+                            {}
                         </div>
-                        <div className="max-w-[250px] text-white text-[10px] lg:text-[16px]  lg: xl:text-[21px] font-[100] mt-3">
-                            {text3}
+                        <div  dangerouslySetInnerHTML={{ __html: text3 ?? ' ' }} className="max-w-[198px] text-white text-[14px] lg:text-[16px]  lg: xl:text-[21px] font-[100] mt-1">
+                            {}
                         </div>
 
                         </div>

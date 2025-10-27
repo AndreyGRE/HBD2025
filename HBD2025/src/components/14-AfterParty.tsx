@@ -39,7 +39,7 @@ function AfterParty() {
                             <br className="xl:hidden"></br>
                             <br className="xl:hidden"></br> 
                             Вас ждёт фуршет с
-                            напитками и выступлением кавер-группы{" "}
+                            напитками и&nbsp;выступлением кавер-группы{" "}
                             <br className="xl:hidden"></br>
                             <br className="xl:hidden"></br> 
                             Для посещения

@@ -102,14 +102,14 @@ function ItWas() {
                 <div className="flex flex-col  justify-center xl:gap-[32px] gap-[14px] ">
                     <div className="flex flex-col items-center lg:px-0 px-[27px] ">
                         <div className=" gradient text-[32px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[750] uppercase">
-                            нетворкинг с лучшими
+                            нетворкинг с&nbsp;лучшими
                         </div>
                     </div>
                     <div className="flex justify-center items-center flex-col gap-[24px] lg:gap-[62px]">
                         <div className="px-[27px] lg:px-0 text-white text-[16px] xl:text-[18px] 2xl:text-[30px] xl:font-[300] font-[300] uppercase text-left lg:text-center max-w-[1100px] ">
-                            Приходите, и вы сможете лично пообщаться с ведущими{" "}
+                            Приходите, и вы сможете лично&nbsp;пообщаться с ведущими{" "}
                             <br className="hidden xl:visible"></br>
-                             специалистами российских и международных компаний:
+                             специалистами российских и&nbsp;международных компаний:
                         </div>
 
                         <div>

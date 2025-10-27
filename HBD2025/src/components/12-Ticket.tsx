@@ -39,7 +39,7 @@ const Ticket: React.FC<TicketProps> = ({ ticket }) => {
                         return (
                             <div className="flex gap-2" key={index}>
                                 <div>•</div>
-                                <div className="whitespace-normal">{text}</div>
+                                <div className="whitespace-normal" dangerouslySetInnerHTML={{ __html: text }}>{}</div>
                             </div>
                         );
                     })}

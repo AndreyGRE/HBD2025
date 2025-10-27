@@ -71,15 +71,15 @@ function Speaker({ srcImg, index, text1, text2, text3, url }: speaker) {
                         </a>
                     </div>
                     <div className="flex-1  border-black flex-col flex justify-between  w-full">
-                        <div className="max-w-[330px] text-white xl:text-[21px] lg:text-[18px] text-[10px] font-[500] uppercase mt-6 xl:px-2 xl:leading-[25px]">
-                            {text1}
+                        <div dangerouslySetInnerHTML={{ __html: text1 ?? ' ' }} className="max-w-[330px] text-white xl:text-[21px] lg:text-[18px] text-[10px] font-[500] uppercase mt-2 xl:px-2 xl:leading-[25px]">
+                            {}
                         </div>
                         <div>
-                            <div className="max-w-[120px] text-white  text-[15px] lg:text-[26px] xl:text-[30px] font-[750] uppercase mt-4 xl:px-2 lg:leading-[35px]">
-                                {text2}
+                            <div dangerouslySetInnerHTML={{ __html: text2 ?? ' ' }} className="max-w-[120px] text-white  text-[15px] lg:text-[26px] xl:text-[30px] font-[750] uppercase mt-4 xl:px-2 lg:leading-[35px]">
+                                {}
                             </div>
-                            <div className="max-w-[200px] text-white text-[6px] lg:text-[12px] xl:text-[16px] font-[100] mt-3 xl:px-2 xl:leading-[20px]">
-                                {text3}
+                            <div dangerouslySetInnerHTML={{ __html: text3 ?? ' ' }} className="max-w-[195px] text-white text-[14px] lg:text-[12px] xl:text-[16px] font-[100] mt-1 xl:px-2 xl:leading-[20px]">
+                                {}
                             </div>
                         </div>
                     </div>

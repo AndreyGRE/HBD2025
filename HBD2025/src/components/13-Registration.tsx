@@ -10,8 +10,7 @@ function Registration() {
                         РЕГИСТРАЦИЯ
                     </div>
                     <div className="text-white  text-[18px] lg:text-[19px]  xl:text-[20px]  lg:max-w-[658px] font-[500] uppercase text-left lg:text-center ">
-                        здесь вы можете оплатить билет банковской картой или по
-                        безналичному расчету от организации
+                        здесь вы можете оплатить билет банковской картой или по&nbsp;безналичному расчету от&nbsp;организации
                     </div>
                 </div>
                 <div className="flex flex-col items-center relative">

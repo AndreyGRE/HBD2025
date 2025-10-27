@@ -224,7 +224,7 @@ function ExpoZone() {
                         ЭКСПОЗОНА
                     </div>
                     <div className="  text-[18px] text-white lg:text-[19px] xl:text-[20px] font-[300] max-w-[620px]  uppercase text-left lg:text-center ">
-                        Новинки материалов и технологий 
+                        Новинки материалов и&nbsp;технологий 
                         от ключевых игроков строительного рынка
                     </div>
                 </div>
