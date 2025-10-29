@@ -28,7 +28,7 @@ function Speakers() {
             .then((res) => res.json())
             .then((data) => {
                 if (Array.isArray(data)) {
-                    console.log(data);
+                    // console.log(data);
                     setSpeakers(data);
                 } else {
                     console.error("Данные не являются массивом:", data);
@@ -56,7 +56,7 @@ function Speakers() {
     }, []);
 
     return (
-        <div id="Speakers" className="mt-[80px] xl:mt-[251px] relative ">
+        <div id="Speakers" className="mt-[80px] xl:mt-[150px] relative ">
             <div className="flex flex-col gap-0 xl:gap-14 pl-[28px] pr-[25px] xl:pr-[60px] xl:pl-[201px]">
                 <div className="flex flex-col relative mb-[24px]">
                     <div className="gradient text-[32px] xl:text-[74px] font-[750] text-left lg:text-center">
