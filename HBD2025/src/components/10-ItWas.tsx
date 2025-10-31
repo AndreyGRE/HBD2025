@@ -1,5 +1,8 @@
-import { useEffect, useState } from "react";
+
+import { useEffect, useState, useRef  } from "react";
 import Modal from "./ModalForm";
+
+// Импорт изображений
 import imageGal0 from "../images/SponsorGallery/ColorLogo_00.png";
 
 import imageGal1 from "../images/SponsorGallery/ColorLogo_01.png";
@@ -26,16 +29,10 @@ import imageGal43 from "../images/SponsorGallery/ColorLogo_43.png";
 import imageGal44 from "../images/SponsorGallery/ColorLogo_44.png";
 
 function ItWas() {
-    interface originalImages {
-        imageUrls: string;
-    }
-    interface duplicatedImages {
-        imageUrls: string;
-    }
     const originalImages = [
         imageGal0,
-        imageGal1,
 
+        imageGal1,
         imageGal21,
         imageGal22,
         imageGal23,
@@ -58,21 +55,30 @@ function ItWas() {
         imageGal43,
         imageGal44,
     ];
+
     const [currentIndex, setCurrentIndex] = useState(0);
-    // Дублируем изображения для бесконечного скролла
-    const duplicatedImages = [...originalImages, ...originalImages];
-    // количество картинок в зависимости от экрана
-    const [imagesPerView, setImagesPerView] = useState(4);
+    const [imagesPerView, setImagesPerView] = useState(8);
+    const containerRef = useRef<HTMLDivElement>(null);
+    const animationRef = useRef<number | undefined>(undefined);
+
+    // Определяем специальные индексы для разных размеров
+    const largeImageIndices = [0]; // Увеличенные изображения (imageGal0)
+    const smallImageIndices = [11]; // Уменьшенные изображения (imageGal34 - индекс 11 в массиве)
+
+    // Создаем бесконечный массив (5 копий для плавности)
+    const infiniteImages = [...originalImages, ...originalImages, ...originalImages, ...originalImages, ...originalImages];
+
+    // Расчет количества отображаемых изображений
     useEffect(() => {
         const updateImagesPerView = () => {
             if (window.innerWidth < 640) {
-                setImagesPerView(8); // мобилки
+                setImagesPerView(4); // мобилки
             } else if (window.innerWidth < 1024) {
-                setImagesPerView(18); // планшеты
+                setImagesPerView(6); // планшеты
             } else if (window.innerWidth < 1440) {
-                setImagesPerView(18); // десктоп
+                setImagesPerView(8); // десктоп
             } else {
-                setImagesPerView(18); // большие экраны
+                setImagesPerView(10); // большие экраны
             }
         };
 
@@ -81,76 +87,134 @@ function ItWas() {
         return () => window.removeEventListener("resize", updateImagesPerView);
     }, []);
 
-    // автопрокрутка
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prev) => {
-                const nextIndex = prev + 1;
-                if (nextIndex >= originalImages.length) {
-                    return 0;
-                }
-                return nextIndex;
-            });
-        }, 3000);
+    // Плавная анимация прокрутки
+    const animateScroll = () => {
+        setCurrentIndex(prev => {
+            const nextIndex = prev + 1;
+            // Когда доходим до конца второй копии, плавно переходим к началу
+            if (nextIndex >= originalImages.length * 2) {
+                return 0;
+            }
+            return nextIndex;
+        });
+    };
 
-        return () => clearInterval(interval);
-    }, [originalImages.length]);
+    // Автопрокрутка с requestAnimationFrame для плавности
+    useEffect(() => {
+        let startTime: number | null = null;
+        const interval = 3000; // 3 секунды между сдвигами
+
+        const animationLoop = (timestamp: number) => {
+            if (!startTime) startTime = timestamp;
+            const elapsed = timestamp - startTime;
+
+            if (elapsed >= interval) {
+                animateScroll();
+                startTime = timestamp;
+            }
+
+            animationRef.current = requestAnimationFrame(animationLoop);
+        };
+
+        animationRef.current = requestAnimationFrame(animationLoop);
+
+        return () => {
+            if (animationRef.current) {
+                cancelAnimationFrame(animationRef.current);
+            }
+        };
+    }, []);
+
+    // Рассчитываем смещение для плавной прокрутки
+    const getTransform = () => {
+        const itemWidth = 100 / imagesPerView;
+        return `translateX(-${currentIndex * itemWidth}%)`;
+    };
+
+    // Функция для определения класса размера изображения
+    const getImageSizeClass = (index: number) => {
+        const originalIndex = index % originalImages.length;
+        
+        if (largeImageIndices.includes(originalIndex)) {
+            return "w-full "; // Увеличенные изображения
+        } else if (smallImageIndices.includes(originalIndex)) {
+            return "w-3/4"; // Уменьшенные изображения
+        } else {
+            return "w-full"; // Обычный размер
+        }
+    };
+
+    // Функция для определения ширины элемента
+    const getItemWidth = (index: number) => {
+        const originalIndex = index % originalImages.length;
+        
+        if (largeImageIndices.includes(originalIndex)) {
+            return (100 / imagesPerView) * 2; // Шире для больших изображений
+        } else if (smallImageIndices.includes(originalIndex)) {
+            return (100 / imagesPerView) * 1; // Уже для маленьких изображений
+        } else {
+            return 100 / imagesPerView; // Обычная ширина
+        }
+    };
 
     return (
         <>
-            <div className="mt-[80px] xl:mt-[150px] relative ">
-                <div className="flex flex-col  justify-center xl:gap-[32px] gap-[14px] ">
-                    <div className="flex flex-col items-center lg:px-0 px-[27px] ">
-                        <div className=" gradient text-[32px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[750] uppercase">
+            <div className="mt-[80px] xl:mt-[150px] relative">
+                <div className="flex flex-col justify-center xl:gap-[32px] gap-[14px]">
+                    <div className="flex flex-col items-center lg:px-0 px-[27px]">
+                        <div className="gradient text-[32px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] font-[750] uppercase">
                             нетворкинг с&nbsp;лучшими
                         </div>
                     </div>
                     <div className="flex justify-center items-center flex-col gap-[24px] lg:gap-[62px]">
-                        <div className="px-[27px] lg:px-0 text-white text-[16px] xl:text-[18px] 2xl:text-[30px] xl:font-[300] font-[300] uppercase text-left lg:text-center max-w-[1100px] ">
-                            Приходите, и вы сможете лично&nbsp;пообщаться с ведущими{" "}
-                            <br className="hidden xl:visible"></br>
-                             специалистами российских и&nbsp;международных компаний:
+                        <div className="px-[27px] lg:px-0 text-white text-[16px] xl:text-[18px] 2xl:text-[30px] xl:font-[300] font-[300] uppercase text-left lg:text-center max-w-[1100px]">
+                            Приходите, и вы сможете лично&nbsp;пообщаться с
+                            ведущими <br className="hidden xl:visible" />
+                            специалистами российских и&nbsp;международных
+                            компаний:
                         </div>
 
-                        <div>
-                            <div className="max-w-full overflow-hidden ">
-                                <div
-                                    className="flex ease-in-out duration-500 transition-transform items-center gap-[20px] xl:gap-[89px]"
-                                    style={{
-                                        transform: `translateX(-${
-                                            currentIndex * (100 / imagesPerView)
-                                        }%)`,
-                                    }}
-                                >
-                                    {duplicatedImages.map((src, index) => (
+                        <div className="w-full overflow-hidden">
+                            <div
+                                ref={containerRef}
+                                className="flex items-center gap-[20px] xl:gap-[80px] transition-transform duration-300 ease-linear"
+                                style={{
+                                    transform: getTransform(),
+                                }}
+                            >
+                                {infiniteImages.map((src, index) => {
+                                    const itemWidth = getItemWidth(index);
+                                    const sizeClass = getImageSizeClass(index);
+
+                                    return (
                                         <div
                                             key={index}
                                             style={{
-                                                flex: `0 0 ${
-                                                    100 / imagesPerView
-                                                }%`,
+                                                flex: `0 0 ${itemWidth}%`,
                                             }}
-                                            className=" px-[5px] flex-shrink-0"
+                                            className="px-[5px] flex-shrink-0 flex justify-center items-center"
                                         >
-                                            <div className="overflow-hidden ">
+                                            <div className="overflow-hidden flex justify-center items-center h-full">
                                                 <img
                                                     src={src}
-                                                    alt={`slide-${index}`}
-                                                    className="h-full w-full object-contain"
+                                                    alt={`sponsor-${index % originalImages.length}`}
+                                                    className={`h-full object-contain ${sizeClass} transition-all duration-300 hover:opacity-80`}
+                                                    loading="lazy"
                                                 />
                                             </div>
                                         </div>
-                                    ))}
-                                </div>
+                                    );
+                                })}
                             </div>
                         </div>
-                        <div className="flex justify-center w-full  lg:px-[37px] px-[37px]">
-                            <Modal></Modal>
+                        <div className="flex justify-center w-full lg:px-[37px] px-[37px]">
+                            <Modal />
                         </div>
                     </div>
 
-                    <div className="absolute right-0 xl:-bottom-80 opacity-35 z-0 xl:w-[375px] xl:h-[442px] ">
-                        <svg
+                    {/* SVG декор */}
+                    <div className="absolute right-0 xl:-bottom-80 opacity-35 z-0 xl:w-[375px] xl:h-[442px]">
+                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 375 442"
                             fill="none"

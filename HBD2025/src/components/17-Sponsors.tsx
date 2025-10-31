@@ -38,7 +38,7 @@ function Sponsors() {
                 
                 <div className="flex flex-wrap items-center justify-center gap-[30px] xl:gap-[89px]">
                     <div className="flex flex-wrap items-center justify-center gap-[30px] xl:gap-[89px]">
-                        <img src={imageGal0} className="w-17 lg:w-40 xl:w-40"></img>
+                        <img src={imageGal0} className="w-24 lg:w-65 xl:w-65"></img>
                     </div>
                 </div>
                 
