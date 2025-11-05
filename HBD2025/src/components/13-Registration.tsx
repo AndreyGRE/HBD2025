@@ -2,22 +2,30 @@ import { useEffect } from "react";
 
 
 function Registration() {
-    // Обработка якорной ссылки при монтировании компонента
     useEffect(() => {
-        // Проверяем, есть ли якорь в URL и соответствует ли он нашему id
+        // Проверяем якорь при монтировании компонента
         if (window.location.hash === '#ByTicket') {
-            // Небольшая задержка для гарантированной отрисовки компонента
-            setTimeout(() => {
+            const scrollToSection = () => {
                 const element = document.getElementById('ByTicket');
                 if (element) {
                     element.scrollIntoView({ 
                         behavior: 'smooth',
                         block: 'start'
                     });
+                    
                 }
-            }, 1000);
+            };
+
+            // Первая попытка через 500мс
+            setTimeout(scrollToSection, 1000);
+            
+            // Вторая попытка через 1500мс на случай медленной загрузки
+            const retryTimeout = setTimeout(scrollToSection, 3000);
+            
+            return () => clearTimeout(retryTimeout);
         }
     }, []);
+
     return (
         <div
             id="ByTicket"
