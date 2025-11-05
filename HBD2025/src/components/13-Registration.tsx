@@ -1,4 +1,23 @@
+import { useEffect } from "react";
+
+
 function Registration() {
+    // Обработка якорной ссылки при монтировании компонента
+    useEffect(() => {
+        // Проверяем, есть ли якорь в URL и соответствует ли он нашему id
+        if (window.location.hash === '#ByTicket') {
+            // Небольшая задержка для гарантированной отрисовки компонента
+            setTimeout(() => {
+                const element = document.getElementById('ByTicket');
+                if (element) {
+                    element.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }, 1000);
+        }
+    }, []);
     return (
         <div
             id="ByTicket"
