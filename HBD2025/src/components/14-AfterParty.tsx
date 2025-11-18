@@ -3,15 +3,27 @@ import AfImg from "../images/AfterParty/image1.png";
 import AfImg2 from "../images/AfterParty/image2.png";
 
 function AfterParty() {
-
-    useEffect(() => {
+   useEffect(() => {
+        // Проверяем якорь при монтировании компонента
         if (window.location.hash === '#AfterParty') {
-            setTimeout(() => {
+            const scrollToSection = () => {
                 const element = document.getElementById('AfterParty');
                 if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
+                    element.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
                 }
-            }, 2000);
+            };
+
+            // Первая попытка через 500мс
+            setTimeout(scrollToSection, 1000);
+            
+            // Вторая попытка через 1500мс на случай медленной загрузки
+            const retryTimeout = setTimeout(scrollToSection, 3000);
+            
+            return () => clearTimeout(retryTimeout);
         }
     }, []);
 
@@ -35,11 +47,11 @@ function AfterParty() {
                         </p>
                         <p className="text-[16px] font-[400] 2xl:ml-[220px] max-w-[440px] pr-[60px]">
                             4 часа неформального общения после основного
-                            меропртиятия HOUSE BUSINESS DAY.
+                            мероприятия HOUSE BUSINESS DAY.{" "}
                             <br className="xl:hidden"></br>
                             <br className="xl:hidden"></br> 
                             Вас ждёт фуршет с
-                            напитками и&nbsp;выступлением кавер-группы{" "}
+                            напитками и&nbsp;выступлением кавер-группы.{" "}
                             <br className="xl:hidden"></br>
                             <br className="xl:hidden"></br> 
                             Для посещения
